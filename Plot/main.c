@@ -6,6 +6,10 @@
 #include "BinaryTree.h"
 
 int main() {
-    printf("Hello, World!\n");
+    FILE *file;
+    file = fopen("C:\\Users\\Cabral\\Documents\\Prog\\teste.txt","w+");     //Dps trocar diretório para "teste.txt"
+    fputs("Testando saida", file);
+    fclose(file);
+
     return 0;
 }
