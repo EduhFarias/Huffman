@@ -1,0 +1,8 @@
+<application>
+  <component name="CPPToolchains">
+    <option name="detectedVersion" value="5" />
+    <option name="minGWHomePath" value="C:\MinGW" />
+    <option name="specifiedCMakeExecutablePath" value="C:\Program Files\CMake\bin" />
+    <option name="winEnvironment" value="MINGW" />
+  </component>
+</application>

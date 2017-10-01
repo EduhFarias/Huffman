@@ -1,0 +1,15 @@
+<application>
+  <component name="ProjectManager">
+    <defaultProject>
+      <component name="CMakeSettings">
+        <configurations>
+          <configuration CONFIG_NAME="Debug" />
+        </configurations>
+      </component>
+      <component name="PropertiesComponent">
+        <property name="settings.editor.selected.configurable" value="CPPToolchains" />
+        <property name="last_opened_file_path" value="D:/Novo backup/P2" />
+      </component>
+    </defaultProject>
+  </component>
+</application>
