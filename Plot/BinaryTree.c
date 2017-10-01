@@ -33,12 +33,12 @@ BinaryTree* add(BinaryTree *bt, int item){
     bt->right = add(bt->right, item);
 }
 
-BinaryTree* search(BinaryTree *bt, int item){   //tentar fazer a funçao ser int
+BinaryTree* searchTree(BinaryTree *bt, int item){   //tentar fazer a funçao ser int
     if(bt == NULL || bt->item == item){         //para usar o cont
         return bt;
     } else if(bt->item > item){
-        bt->left = search(bt->left, item);
+        bt->left = searchTree(bt->left, item);
     } else{
-        bt->right = search(bt->right, item);
+        bt->right = searchTree(bt->right, item);
     }
 }

@@ -13,6 +13,6 @@ BinaryTree* createBinaryTree(int item, BinaryTree *left, BinaryTree *right);
 
 BinaryTree* add(BinaryTree *bt, int item);
 
-BinaryTree* search(BinaryTree *bt, int item);
+BinaryTree* searchTree(BinaryTree *bt, int item);
 
 #endif //PLOT_BINARYTREE_H
