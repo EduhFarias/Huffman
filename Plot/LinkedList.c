@@ -31,4 +31,5 @@ int search(Node *node, int item){
         count++;
         node = node->next;
     }
+    return count;
 }

@@ -26,19 +26,20 @@ BinaryTree* createBinaryTree(int item, BinaryTree *left, BinaryTree *right){
 
 BinaryTree* add(BinaryTree *bt, int item){
     if(bt == NULL){
-        createBinaryTree(item, NULL, NULL);
+        bt = createBinaryTree(item, NULL, NULL);
     } else if(bt->item > item){
         bt->left = add(bt->left, item);
-    } else{}
-    bt->right = add(bt->right, item);
+    } else {
+        bt->right = add(bt->right, item);
+    }
 }
 
-BinaryTree* searchTree(BinaryTree *bt, int item){   //tentar fazer a funçao ser int
+int searchTree(BinaryTree *bt, int item){   //tentar fazer a funçao ser int
     if(bt == NULL || bt->item == item){         //para usar o cont
-        return bt;
+        return 1;
     } else if(bt->item > item){
-        bt->left = searchTree(bt->left, item);
+        return 1 + searchTree(bt->left, item);
     } else{
-        bt->right = searchTree(bt->right, item);
+        return 1 + searchTree(bt->right, item);
     }
 }
