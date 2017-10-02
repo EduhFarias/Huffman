@@ -13,7 +13,7 @@ int main() {
     Node *node = createLinkedList();
     int i, valueN, valueT, random;
 
-    file = fopen("C:\\Users\\Cabral\\Documents\\Prog\\teste.txt","w+");     //Dps trocar diretório para "teste.txt"
+    file = fopen("C:\\Users\\Cabral\\Documents\\Prog\\count.txt","w+");     //Dps trocar diretório para "teste.txt"
     for(i = 0; i < MAX; i++){
         random = rand() % MAX + 1;
         bt = add(bt, random);
