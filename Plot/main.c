@@ -3,13 +3,13 @@
 #include <string.h>
 #include <math.h>
 #include "LinkedList.h"
-#include "BinaryTree.h"
+#include "BST.h"
 
 #define MAX 1000
 
 int main() {
     FILE *file;
-    BinaryTree *bt = createEmptyBinaryTree();
+    BST *bt = createEmptyBinaryTree();
     Node *node = createLinkedList();
     int i, valueN, valueT, random;
 
