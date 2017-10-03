@@ -34,8 +34,8 @@ BST* add(BST *bt, int item){
     }
 }
 
-int searchTree(BST *bt, int item){   //tentar fazer a funçao ser int
-    if(bt == NULL || bt->item == item){         //para usar o cont
+int searchTree(BST *bt, int item){   
+    if(bt == NULL || bt->item == item){         
         return 1;
     } else if(bt->item > item){
         return 1 + searchTree(bt->left, item);
