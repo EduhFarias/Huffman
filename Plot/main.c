@@ -13,18 +13,12 @@ int main() {
     Node *node = createLinkedList();
     int i, valueN, valueT, random;
 
-    file = fopen("C:\\Users\\Cabral\\Documents\\Prog\\count.txt","w+");     //Dps trocar diretório para "teste.txt"
+    file = fopen("C:\\Users\\Cabral\\Documents\\Prog\\count.txt","w+");
     for(i = 0; i < MAX; i++){
         random = rand() % MAX + 1;
         bt = add(bt, random);
         node = insertNode(node, random);
     }
-    /*for(i = 0; i < 10; i++){
-        scanf("%d", &random);
-        valueN = search(node,random);
-        valueT = searchTree(bt,random)
-        fprintf(file,"%d %d\n", random, valueN, valueT);
-    }*/
     for(i = 0; i < MAX; i++){
         random = rand() % MAX + 1;
         valueN = search(node, random);
