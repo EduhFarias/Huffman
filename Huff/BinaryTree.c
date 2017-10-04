@@ -8,6 +8,7 @@
 typedef struct b_tree{
     unsigned char c;
     int freq;
+    struct b_tree *next;
     struct b_tree *left;
     struct b_tree *right;
 }BinaryTree;
