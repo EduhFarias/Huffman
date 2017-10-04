@@ -4,6 +4,5 @@
 
 #include "Compress.h"
 #include "BinaryTree.h"
-#include "PQueue.h"
 #include <stdio.h>
 #include <stdlib.h>
