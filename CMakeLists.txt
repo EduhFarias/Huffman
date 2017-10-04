@@ -3,5 +3,7 @@ project(Huffman)
 
 set(CMAKE_C_STANDARD 99)
 
-set(SOURCE_FILES Plot/main.c Plot/LinkedList.c Plot/LinkedList.h Plot/BST.c Plot/BST.h)
-add_executable(Huffman ${SOURCE_FILES})
+set(PLOT Plot/mainPlot.c Plot/LinkedList.c Plot/LinkedList.h Plot/BST.c Plot/BST.h)
+set(HUFF Huff/PQueue.c Huff/PQueue.h Huff/BinaryTree.c Huff/BinaryTree.h Huff/mainHuff.c)
+add_executable(Plotagem ${PLOT})
+add_executable(Huffman ${HUFF})
