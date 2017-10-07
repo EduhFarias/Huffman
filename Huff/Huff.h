@@ -5,4 +5,8 @@
 #ifndef HUFFMAN_COMPRESS_H
 #define HUFFMAN_COMPRESS_H
 
+void compress(FILE *file);
+
+
+
 #endif //HUFFMAN_COMPRESS_H
