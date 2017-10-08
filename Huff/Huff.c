@@ -6,22 +6,23 @@
 #include "BinaryTree.h"
 #include <stdio.h>
 #include <stdlib.h>
-#include "Helpful.h"
 
 void compress(FILE *file){
-    int c;
+    int c, i;
+    BinaryTree *bt = createEmpty();
     int ch[256] = {0};
     while((c = fgetc(file)) != EOF){
         ch[c]++;
     }
-    int i;
     for(i = 0; i < 256; i++){
         if(ch[i] > 0){
             printf("%c %d\n", i, ch[i]);
+            bt = createBinaryTree(i,ch[i],bt);
         }
     }
-    ch = quickSort(ch,256);
+    printx(bt);
 }
+
 
 /*BinaryTree* huff(BinaryTree *head){
     while(head->next) {

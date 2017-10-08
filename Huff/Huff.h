@@ -5,8 +5,9 @@
 #ifndef HUFFMAN_COMPRESS_H
 #define HUFFMAN_COMPRESS_H
 
+#include <stdio.h>
+#include "BinaryTree.h"
 void compress(FILE *file);
-
 
 
 #endif //HUFFMAN_COMPRESS_H
