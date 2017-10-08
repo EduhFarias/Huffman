@@ -7,8 +7,16 @@
 
 typedef struct b_tree BinaryTree;
 
+BinaryTree* createEmpty();
+
 BinaryTree* createBinaryTree(unsigned char c, int freq, BinaryTree *bt);
 
 BinaryTree* removeNode(BinaryTree *bt);
+
+void printPreOrder(BinaryTree *bt);
+
+int isEmpty(BinaryTree *bt);
+
+void printx(BinaryTree *bt);
 
 #endif //HUFFMAN_BINARYTREE_H
