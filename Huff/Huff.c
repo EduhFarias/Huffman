@@ -1,5 +1,5 @@
 //
-// Created by Cabral on 04/10/2017.
+// Created by Eduardo on 04/10/2017.
 //
 
 #include "Huff.h"
@@ -21,14 +21,6 @@ void compress(FILE *file){
         }
     }
     printx(bt);
+    //bt = huff(bt);
+    //printPreOrder(bt);
 }
-
-
-/*BinaryTree* huff(BinaryTree *head){
-    while(head->next) {
-        BinaryTree *A, *B, *prev = NULL;
-        A = removeNode(head);
-        B = removeNode(head);
-
-    }
-}*/

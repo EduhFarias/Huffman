@@ -28,20 +28,52 @@ BinaryTree* createBinaryTree(unsigned char c, int freq, BinaryTree *bt){
     new_bt->right = NULL;
     new_bt->next = NULL;
 
-    BinaryTree *current = bt, *prev = NULL;
-    while(current != NULL && current->freq <= new_bt->freq){
-        prev = current;
-        current = current->next;
-    }
-    if(prev == NULL){
-        new_bt->next = current;
+    if(bt == NULL){
         head = new_bt;
-    } else if(prev != NULL){
-        prev->next = new_bt;
-        new_bt->next = current;
-        head = prev;
+    }else {
+        BinaryTree *current = bt, *prev = NULL;
+        while(current != NULL && current->freq <= new_bt->freq){
+            prev = current;
+            current = current->next;
+        }
+        if(prev == NULL){
+            new_bt->next = current;
+            head = new_bt;
+        } else if(prev != NULL){
+            prev->next = new_bt;
+            new_bt->next = current;
+            head = prev;
+        }
     }
     return head;
+}
+
+BinaryTree* huff(BinaryTree *bt){
+    while(bt) {
+        BinaryTree *A, *B, *prev = NULL, *current = bt;
+        A = removeNode(bt);
+        B = removeNode(bt);
+        head = B->next;
+
+        BinaryTree *new_parent = (BinaryTree*) malloc(sizeof(BinaryTree));
+        new_parent->c = '*';
+        new_parent->freq = (A->freq) + (B->freq);
+        new_parent->left = A;
+        new_parent->right = B;
+
+        while(current != NULL && current->freq <= new_parent->freq){
+            prev = current;
+            current = current->next;
+        }
+        if(prev == NULL){
+            new_parent->next = current;
+            head = new_parent;
+        } else if(prev != NULL){
+            prev->next = new_parent;
+            new_parent->next = current;
+            head = prev;
+        }
+    }
 }
 
 BinaryTree* removeNode(BinaryTree *bt){
@@ -53,7 +85,7 @@ BinaryTree* removeNode(BinaryTree *bt){
 
 void printPreOrder(BinaryTree *bt){
     if(isEmpty(bt)){
-        printf("%d", bt->c);
+        printf("%c", bt->c);
         printPreOrder(bt->left);
         printPreOrder(bt->right);
     }

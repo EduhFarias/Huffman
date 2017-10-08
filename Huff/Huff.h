@@ -1,5 +1,5 @@
 //
-// Created by Cabral on 04/10/2017.
+// Created by Eduardo on 04/10/2017.
 //
 
 #ifndef HUFFMAN_COMPRESS_H
