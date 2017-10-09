@@ -42,7 +42,6 @@ BinaryTree* createBinaryTree(unsigned char c, int freq, BinaryTree *bt){
         } else if(prev != NULL){
             prev->next = new_bt;
             new_bt->next = current;
-            head = prev;
         }
     }
     return head;
@@ -71,9 +70,9 @@ BinaryTree* huff(BinaryTree *bt){
         } else if(prev != NULL){
             prev->next = new_parent;
             new_parent->next = current;
-            head = prev;
         }
     }
+    return head;
 }
 
 BinaryTree* removeNode(BinaryTree *bt){
@@ -83,7 +82,7 @@ BinaryTree* removeNode(BinaryTree *bt){
     return tmp;
 }
 
-void printPreOrder(BinaryTree *bt){
+void printPreOrder(BinaryTree *bt)  {
     if(isEmpty(bt)){
         printf("%c", bt->c);
         printPreOrder(bt->left);
@@ -97,7 +96,7 @@ int isEmpty(BinaryTree *bt){
 
 void printx(BinaryTree *bt){
     while(bt){
-        printf("-%c ", bt->c);
+        printf("-%c %d ", bt->c, bt->freq);
         bt = bt->next;
     }
 }
