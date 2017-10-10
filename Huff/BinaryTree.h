@@ -13,7 +13,11 @@ BinaryTree* createBinaryTree(unsigned char c, int freq, BinaryTree *bt);
 
 BinaryTree* removeNode(BinaryTree *bt);
 
+BinaryTree* getNode(BinaryTree *bt);
+
 void printPreOrder(BinaryTree *bt);
+
+BinaryTree* huff(BinaryTree *bt);
 
 int isEmpty(BinaryTree *bt);
 
