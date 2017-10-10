@@ -7,9 +7,14 @@
 
 #include <stdio.h>
 #include "BinaryTree.h"
+
 void compress(FILE *file);
 
 void createTable(BinaryTree *bt, unsigned char table[][50], unsigned char *ch);
 
-unsigned char createCode(BinaryTree *bt, unsigned char position, unsigned char *string)
+unsigned char createCode(BinaryTree *bt, unsigned char position, unsigned char *string);
+
+int isBit_i_set(unsigned char c, int i);
+
 #endif //HUFFMAN_COMPRESS_H
+
