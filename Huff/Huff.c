@@ -45,14 +45,21 @@ void createTable(BinaryTree *bt,unsigned char table[][50], unsigned char *ch){
     for(i = 0; i < 256; i++){
         if(ch[i] > 0){
             *string = createCode(bt,(unsigned char)i,string);
+            strcat(table[i][50],string[50]);
         }
     }
 }
 
 unsigned char* createCode(BinaryTree *bt, unsigned char position, unsigned char *string){
-    if(bt->left == NULL || bt->right == NULL || bt->c == position){
+    if(bt->left == NULL && bt->right == NULL || bt->c == position){
         return string;
-    } else if(bt->left != NULL){
-        string[position] =
+    } else{
+        string = createCode(bt,position+1,string) + '0';
+        string = createCode(bt,position+1,string) + '1';
     }
+}
+
+int isBit_i_set(unsigned char c, int i){
+    unsigned char mask = 1 << i;
+    return mask & c;
 }
