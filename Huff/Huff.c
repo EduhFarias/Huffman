@@ -45,14 +45,30 @@ void compress(FILE *file){
     for(i = 0; i < 256; i++){
         if(ch[i] > 0){
             *string = createCode(bt,(unsigned char)i,string);
+            strcat(table[i][50],string[50]);
         }
     }
 }*/
 
+<<<<<<< HEAD
 /*unsigned char* createCode(BinaryTree *bt, unsigned char position, unsigned char *string){
     if(bt->left == NULL || bt->right == NULL || bt->c == position){
+=======
+unsigned char* createCode(BinaryTree *bt, unsigned char position, unsigned char *string){
+    if(bt->left == NULL && bt->right == NULL || bt->c == position){
+>>>>>>> f0dec830842ebffd568ec2f86cd5f334ee6907f7
         return string;
-    } else if(bt->left != NULL){
-        string[position] =
+    } else{
+        string = createCode(bt,position+1,string) + '0';
+        string = createCode(bt,position+1,string) + '1';
     }
+<<<<<<< HEAD
 }*/
+=======
+}
+
+int isBit_i_set(unsigned char c, int i){
+    unsigned char mask = 1 << i;
+    return mask & c;
+}
+>>>>>>> f0dec830842ebffd568ec2f86cd5f334ee6907f7
