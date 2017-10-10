@@ -39,7 +39,7 @@ void compress(FILE *file){
     printPreOrder(bt);
 }
 
-void createTable(BinaryTree *bt,unsigned char table[][50], unsigned char *ch){
+/*void createTable(BinaryTree *bt,unsigned char table[][50], unsigned char *ch){
     int i;
     unsigned char string[50];
     for(i = 0; i < 256; i++){
@@ -47,12 +47,12 @@ void createTable(BinaryTree *bt,unsigned char table[][50], unsigned char *ch){
             *string = createCode(bt,(unsigned char)i,string);
         }
     }
-}
+}*/
 
-unsigned char* createCode(BinaryTree *bt, unsigned char position, unsigned char *string){
+/*unsigned char* createCode(BinaryTree *bt, unsigned char position, unsigned char *string){
     if(bt->left == NULL || bt->right == NULL || bt->c == position){
         return string;
     } else if(bt->left != NULL){
         string[position] =
     }
-}
+}*/

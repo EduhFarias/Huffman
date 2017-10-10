@@ -11,5 +11,5 @@ void compress(FILE *file);
 
 void createTable(BinaryTree *bt, unsigned char table[][50], unsigned char *ch);
 
-unsigned char createCode(BinaryTree *bt, unsigned char position, unsigned char *string)
+unsigned char createCode(BinaryTree *bt, unsigned char position, unsigned char *string);
 #endif //HUFFMAN_COMPRESS_H
