@@ -10,7 +10,7 @@
 
 void compress(FILE *file);
 
-void createTable(BinaryTree *bt, BinaryTree *table[256], unsigned char *ch);
+void createTable(BinaryTree *bt, unsigned char table[256][256], unsigned char *ch);
 
 unsigned char createCode(BinaryTree *bt, unsigned char position, unsigned char *string);
 

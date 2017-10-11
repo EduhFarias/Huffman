@@ -12,7 +12,7 @@ void compress(FILE *file){
     int c, i, size_tree;
     BinaryTree *bt = createEmpty();
     unsigned char ch[256] = {0};
-    BinaryTree *table[256];
+    unsigned char table[256][256];
 
 
     while((c = fgetc(file)) != EOF){ //Percorre o arquivo e soma +1 em toda posição referente ao caracter
@@ -27,7 +27,7 @@ void compress(FILE *file){
     //printx(bt);
     bt = huff(bt);
 
-    createTable(bt,table[256],ch);
+    createTable(bt,table,ch);
 
     unsigned char rest = 2;
     unsigned char trash = (8 - rest) << 5;
@@ -40,26 +40,25 @@ void compress(FILE *file){
     fprintf(oFile,"%c", trash);
     fprintf(oFile,"%c",size_tree);
 }
-    
-void createTable(BinaryTree *bt,BinaryTree *table[256], unsigned char *ch){
+
+void createTable(BinaryTree *bt, unsigned char table[][256], unsigned char *ch){
     int i;
+    unsigned char string[256];
     for(i = 0; i < 256; i++){
         if(ch[i] > 0){
-            //table[i] = createCode(bt,(unsigned char)i);
+            *table[i] = createCode(bt,(unsigned char)i, string);
         }
     }
 }
 
-BinaryTree *node = NULL;
-
-/*BinaryTree* createCode(BinaryTree *bt, unsigned char position){
+unsigned char* createCode(BinaryTree *bt, unsigned char position, unsigned char *string){
     if(bt->left == NULL && bt->right == NULL || bt->c == position){
-        return node;
+        return string;
     } else{
-        node = createCode(bt->left,position+1) + '0';
-        node = createCode(bt->right,position+1) + '1';
+        string[position] = createCode(bt->left,position+1, string) + '0';
+        string[position] = createCode(bt->right,position+1, string) + '1';
     }
-}*/
+}
 
 
 int isBit_i_set(unsigned char c, int i){

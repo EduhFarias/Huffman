@@ -8,7 +8,7 @@
 
 int main(void){
     FILE *file;
-    file = fopen("C:\\Users\\Cabral\\Documents\\Prog\\comp.txt", "rb");
+    file = fopen("C:\\Users\\Cabral\\Documents\\Prog\\teste.png", "rb");
     if(file == NULL){
         printf("Arquivo nao pode ser aberto\n");
         exit(1);
