@@ -5,6 +5,7 @@
 #ifndef HUFFMAN_BINARYTREE_H
 #define HUFFMAN_BINARYTREE_H
 
+#include <stdio.h>
 typedef struct b_tree BinaryTree;
 
 BinaryTree* createEmpty();
@@ -15,7 +16,7 @@ BinaryTree* removeNode(BinaryTree *bt);
 
 BinaryTree* getNode(BinaryTree *bt);
 
-void printPreOrder(BinaryTree *bt);
+int printPreOrder(BinaryTree *bt, FILE *file);
 
 BinaryTree* huff(BinaryTree *bt);
 

@@ -9,10 +9,10 @@
 #include <string.h>
 
 void compress(FILE *file){
-    int c, i, aux = 0;
+    int c, i, size_tree;
     BinaryTree *bt = createEmpty();
     unsigned char ch[256] = {0};
-    unsigned char table[256][50];
+    BinaryTree *table[256];
 
 
     while((c = fgetc(file)) != EOF){ //Percorre o arquivo e soma +1 em toda posição referente ao caracter
@@ -27,48 +27,42 @@ void compress(FILE *file){
     //printx(bt);
     bt = huff(bt);
 
-    //createTable(bt,table[256][50],ch);
+    createTable(bt,table[256],ch);
 
     unsigned char rest = 2;
     unsigned char trash = (8 - rest) << 5;
     FILE *oFile;
-    //oFile = fopen("C:\\Users\\Cabral\\Documents\\Prog\\saida.huff", "wb");
+    oFile = fopen("C:\\Users\\Cabral\\Documents\\Prog\\saida.huff", "wb");
 
-    //fprintf(oFile,"%c", trash);
-    //fprintf(oFile,"%c",);
-    printPreOrder(bt);
+
+    size_tree = printPreOrder(bt, oFile);
+    rewind(oFile);
+    fprintf(oFile,"%c", trash);
+    fprintf(oFile,"%c",size_tree);
 }
-
-/*void createTable(BinaryTree *bt,unsigned char table[][50], unsigned char *ch){
+    
+void createTable(BinaryTree *bt,BinaryTree *table[256], unsigned char *ch){
     int i;
-    unsigned char string[50];
     for(i = 0; i < 256; i++){
         if(ch[i] > 0){
-            *string = createCode(bt,(unsigned char)i,string);
-            strcat(table[i][50],string[50]);
+            //table[i] = createCode(bt,(unsigned char)i);
         }
+    }
+}
+
+BinaryTree *node = NULL;
+
+/*BinaryTree* createCode(BinaryTree *bt, unsigned char position){
+    if(bt->left == NULL && bt->right == NULL || bt->c == position){
+        return node;
+    } else{
+        node = createCode(bt->left,position+1) + '0';
+        node = createCode(bt->right,position+1) + '1';
     }
 }*/
 
-<<<<<<< HEAD
-/*unsigned char* createCode(BinaryTree *bt, unsigned char position, unsigned char *string){
-    if(bt->left == NULL || bt->right == NULL || bt->c == position){
-=======
-unsigned char* createCode(BinaryTree *bt, unsigned char position, unsigned char *string){
-    if(bt->left == NULL && bt->right == NULL || bt->c == position){
->>>>>>> f0dec830842ebffd568ec2f86cd5f334ee6907f7
-        return string;
-    } else{
-        string = createCode(bt,position+1,string) + '0';
-        string = createCode(bt,position+1,string) + '1';
-    }
-<<<<<<< HEAD
-}*/
-=======
-}
 
 int isBit_i_set(unsigned char c, int i){
     unsigned char mask = 1 << i;
     return mask & c;
 }
->>>>>>> f0dec830842ebffd568ec2f86cd5f334ee6907f7
