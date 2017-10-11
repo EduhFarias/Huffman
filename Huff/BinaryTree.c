@@ -90,12 +90,15 @@ BinaryTree* removeNode(BinaryTree *bt){
     return bt;
 }
 
-void printPreOrder(BinaryTree *bt)  {
-    if(isEmpty(bt)){
-        printf("%c", bt->c);
-        printPreOrder(bt->left);
-        printPreOrder(bt->right);
+short int size = 0;
+
+int printPreOrder(BinaryTree *bt, FILE *file)  {
+    if(isEmpty(bt)){size++;
+        fprintf(file,"%c", bt->c);
+        printPreOrder(bt->left,file);
+        printPreOrder(bt->right,file);
     }
+    return size;
 }
 
 int isEmpty(BinaryTree *bt){
