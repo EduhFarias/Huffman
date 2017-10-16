@@ -56,6 +56,7 @@ void compress(FILE *file){
 
 void createTable(BinaryTree *bt, unsigned char table[][256], int pos, unsigned char *aux) {
     if (bt->left == NULL && bt->right == NULL) {
+        aux[pos] = '\0';
         strcpy(table[bt->c], aux);
         return;
     } else {
