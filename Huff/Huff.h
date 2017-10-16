@@ -10,9 +10,7 @@
 
 void compress(FILE *file);
 
-void createTable(BinaryTree *bt, unsigned char table[256][256], unsigned char *ch);
-
-unsigned char createCode(BinaryTree *bt, unsigned char position, unsigned char *string);
+void createTable(BinaryTree *bt, unsigned char table[][256], int pos, unsigned char *aux);
 
 int isBit_i_set(unsigned char c, int i);
 

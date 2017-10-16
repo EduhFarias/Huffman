@@ -22,6 +22,4 @@ BinaryTree* huff(BinaryTree *bt);
 
 int isEmpty(BinaryTree *bt);
 
-void printx(BinaryTree *bt);
-
 #endif //HUFFMAN_BINARYTREE_H

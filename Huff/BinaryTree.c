@@ -105,9 +105,3 @@ int isEmpty(BinaryTree *bt){
     return (bt != NULL);
 }
 
-void printx(BinaryTree *bt){
-    while(bt){
-        printf("-%c %d ", bt->c, bt->freq);
-        bt = bt->next;
-    }
-}
