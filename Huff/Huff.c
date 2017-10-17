@@ -20,13 +20,13 @@ void compress(FILE *file){
     }
     for(i = 0; i < 256; i++){        //Checa toda as 256 posições e cria um nó pra cara caracter
         if(ch[i] > 0){
-            bt = createBinaryTree((unsigned char)i,ch[i],bt);
+            bt = createBinaryTree((unsigned char)i,ch[i],bt, NULL, NULL);
         }
     }
     bt = huff(bt);
 
     unsigned char *aux, rest;
-    createTable(bt, table, 0, aux);
+    //createTable(bt, table, 0, aux);
     for (i = 0; i < 256; i++){
         if(ch[i] > 0){
             int freq = ch[i];
@@ -40,7 +40,7 @@ void compress(FILE *file){
     FILE *oFile;
     oFile = fopen("C:\\Users\\Cabral\\Documents\\Prog\\saida.huff", "wb");
 
-
+    printOrder(bt);
     size_tree = printPreOrder(bt, oFile);
     rewind(oFile);
     fprintf(oFile,"%c", trash);
@@ -48,25 +48,38 @@ void compress(FILE *file){
     for(i = 0; i < 256; i++){
         if(ch[i] > 0){
             for(j = 0; j < 256; j++){
-                printf("%c", table[i][j]);
+                //printf("%c", table[i][j]);
             }
         }
     }
 }
 
 void createTable(BinaryTree *bt, unsigned char table[][256], int pos, unsigned char *aux) {
-    if (bt->left == NULL && bt->right == NULL) {
+    if ( (getLeft(bt) == NULL) && (getRight(bt) == NULL) ){
         aux[pos] = '\0';
-        strcpy(table[bt->c], aux);
+        strcpy(table[getValue(bt)], aux);
         return;
     } else {
         aux[pos] = '0';
-        createTable(bt->left, table, pos + 1, aux);
+        createTable(getLeft(bt), table, pos + 1, aux);
         aux[pos] = '1';
-        createTable(bt->right, table, pos + 1, aux);
+        createTable(getRight(bt), table, pos + 1, aux);
     }
 }
 
+BinaryTree* huff(BinaryTree *bt){                                           //Começa o merge
+    while(getNext(bt)) {                                                             //Enquanto ouver mais de um nó
+        BinaryTree *A, *B;                     //Cria dois nós auxiliares
+        A = getNode(bt);                                                    //A recebe o nó de menor frequência
+        B = getNode(getNext(bt));
+        int freq = (getFreq(A)) + (getFreq(B));
+
+        bt = removeNode(bt);
+        bt = removeNode(bt);
+        bt = createBinaryTree('*', freq, bt, A, B);
+    }
+    return bt;
+}
 
 int isBit_i_set(unsigned char c, int i){
     unsigned char mask = 1 << i;

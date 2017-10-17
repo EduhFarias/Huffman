@@ -20,19 +20,19 @@ BinaryTree* createEmpty(){
     return NULL;
 }
 
-BinaryTree* createBinaryTree(unsigned char c, int freq, BinaryTree *bt){ //Cria um novo nó
+BinaryTree* createBinaryTree(unsigned char c, int freq, BinaryTree *bt, BinaryTree *left, BinaryTree *right){ //Cria um novo nó
     BinaryTree *new_bt = (BinaryTree*) malloc(sizeof(BinaryTree));
     new_bt->c = c;
     new_bt->freq = freq;
-    new_bt->left = NULL;
-    new_bt->right = NULL;
+    new_bt->left = left;
+    new_bt->right = right;
     new_bt->next = NULL;
 
     if(bt == NULL){                                                      //Checa se o nó inicial é nulo
         head = new_bt;                                                   //Se for a nova cabeça será o novo nó
     }else {                                                              //Se não percorre toda a lista de nós
         BinaryTree *current = bt, *prev = NULL;                          //até achar uma posição ideal
-        while(current != NULL && current->freq <= new_bt->freq){
+        while(current != NULL && current->freq < new_bt->freq){
             prev = current;
             current = current->next;
         }
@@ -47,39 +47,29 @@ BinaryTree* createBinaryTree(unsigned char c, int freq, BinaryTree *bt){ //Cria 
     return head;
 }
 
-BinaryTree* huff(BinaryTree *bt){                                           //Começa o merge
-    while(bt->next) {                                                             //Enquanto ouver mais de um nó
-        BinaryTree *A, *B, *prev = NULL, *current = bt;                     //Cria dois nós auxiliares
-        A = getNode(bt);                                                    //A recebe o nó de menor frequência
-        B = getNode(bt->next);
-
-        BinaryTree *new_parent = (BinaryTree*) malloc(sizeof(BinaryTree));  //Cria um novo nó que será a raiz
-        new_parent->c = '*';
-        new_parent->freq = (A->freq) + (B->freq);
-        new_parent->left = A;
-        new_parent->right = B;
-
-        while(current != NULL && current->freq < new_parent->freq){        //Procura a melhor posição pra colocar
-            prev = current;                                                 //o novo nó
-            current = current->next;
-        }
-        if(prev == NULL){
-            new_parent->next = current;
-            head = new_parent;
-        } else if(prev != NULL){
-            prev->next = new_parent;
-            new_parent->next = current;
-        }
-        head = new_parent;
-        bt = removeNode(bt);
-        bt = removeNode(bt);
-    }
-    return head;
-}
-
 BinaryTree* getNode(BinaryTree *bt){
     BinaryTree *tmp = bt;
     return tmp;
+}
+
+BinaryTree* getLeft(BinaryTree *bt){
+    return bt->left;
+}
+
+BinaryTree* getRight(BinaryTree *bt){
+    return bt->right;
+}
+
+unsigned char getValue(BinaryTree *bt){
+    return bt->c;
+}
+
+BinaryTree* getNext(BinaryTree *bt){
+    return bt->next;
+}
+
+int getFreq(BinaryTree *bt){
+    return bt->freq;
 }
 
 BinaryTree* removeNode(BinaryTree *bt){
@@ -99,6 +89,14 @@ int printPreOrder(BinaryTree *bt, FILE *file)  {
         printPreOrder(bt->right,file);
     }
     return size;
+}
+
+void printOrder(BinaryTree *bt)  {
+    if(isEmpty(bt)){size++;
+        printf("%c", bt->c);
+        printOrder(bt->left);
+        printOrder(bt->right);
+    }
 }
 
 int isEmpty(BinaryTree *bt){
