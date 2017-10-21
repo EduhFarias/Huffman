@@ -12,6 +12,8 @@ void compress(FILE *file);
 
 void createTable(BinaryTree *bt, unsigned char table[][256], int pos, unsigned char *aux);
 
+BinaryTree* huff(BinaryTree *bt);
+
 int isBit_i_set(unsigned char c, int i);
 
 

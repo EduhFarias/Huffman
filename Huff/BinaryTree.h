@@ -10,7 +10,7 @@ typedef struct b_tree BinaryTree;
 
 BinaryTree* createEmpty();
 
-BinaryTree* createBinaryTree(unsigned char c, int freq, BinaryTree *bt);
+BinaryTree* createBinaryTree(unsigned char c, int freq, BinaryTree *bt, BinaryTree *left, BinaryTree *right);
 
 BinaryTree* removeNode(BinaryTree *bt);
 
@@ -18,7 +18,17 @@ BinaryTree* getNode(BinaryTree *bt);
 
 int printPreOrder(BinaryTree *bt, FILE *file);
 
-BinaryTree* huff(BinaryTree *bt);
+BinaryTree* getLeft(BinaryTree *bt);
+
+BinaryTree* getRight(BinaryTree *bt);
+
+void printOrder(BinaryTree *bt);
+
+BinaryTree* getNext(BinaryTree *bt);
+
+unsigned char getValue(BinaryTree *bt);
+
+int getFreq(BinaryTree *bt);
 
 int isEmpty(BinaryTree *bt);
 
