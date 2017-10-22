@@ -9,11 +9,14 @@
 #include <string.h>
 
 void compress(FILE *file){
-    int c, i, size_tree, j;
+    int c, i, size_tree, j, rest = 0;
     BinaryTree *bt = createEmpty();
     unsigned char ch[256] = {0};
     unsigned char table[256][256];
 
+    for(i = 0; i < 256; i++){
+        memset(table[i],'\0',256);
+    }
 
     while((c = fgetc(file)) != EOF){ //Percorre o arquivo e soma +1 em toda posição referente ao caracter
         ch[c]++;
@@ -25,39 +28,46 @@ void compress(FILE *file){
     }
     bt = huff(bt);
 
-    unsigned char *aux, rest;
-    //createTable(bt, table, 0, aux);
-    for (i = 0; i < 256; i++){
-        if(ch[i] > 0){
-            int freq = ch[i];
-            for (j = 0; strlen(table[i]); j++){
-            }
-            rest+= (freq * j);
-        }
-    }
+    unsigned char aux[256];
+    memset(aux,NULL,256);
 
-    unsigned char trash = (8 - rest) << 5;
+    createTable(bt, table, 0, aux);
+
     FILE *oFile;
     oFile = fopen("C:\\Users\\Cabral\\Documents\\Prog\\saida.huff", "wb");
 
-    printOrder(bt);
+    rewind(file);
+    while((c = fgetc(file)) != EOF){ //Percorre o arquivo e soma +1 em toda posição referente ao caracter
+        fprintf(oFile,"%s", table[c]);
+    }
+    fseek(oFile, NULL, SEEK_CUR);
+    
+    int bits = ftell(oFile);
+    rest = bits % 8;
+    unsigned char trash = rest << 5;
+
+    rewind(oFile);
     size_tree = printPreOrder(bt, oFile);
     rewind(oFile);
     fprintf(oFile,"%c", trash);
     fprintf(oFile,"%c",size_tree);
+
+    //----------
+    printOrder(bt);
+    printf("\n");
     for(i = 0; i < 256; i++){
         if(ch[i] > 0){
-            for(j = 0; j < 256; j++){
-                //printf("%c", table[i][j]);
-            }
+                //printf("%c: %s\n", i,table[i]);
         }
     }
+    //----------
 }
 
 void createTable(BinaryTree *bt, unsigned char table[][256], int pos, unsigned char *aux) {
     if ( (getLeft(bt) == NULL) && (getRight(bt) == NULL) ){
         aux[pos] = '\0';
         strcpy(table[getValue(bt)], aux);
+        pos--;
         return;
     } else {
         aux[pos] = '0';
@@ -65,6 +75,8 @@ void createTable(BinaryTree *bt, unsigned char table[][256], int pos, unsigned c
         aux[pos] = '1';
         createTable(getRight(bt), table, pos + 1, aux);
     }
+    pos--;
+    return;
 }
 
 BinaryTree* huff(BinaryTree *bt){                                           //Começa o merge
