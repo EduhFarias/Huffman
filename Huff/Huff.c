@@ -9,7 +9,7 @@
 #include <string.h>
 
 void compress(FILE *file){
-    int c, i, size_tree, j;
+    int c, i, size_tree, j, rest = 0;
     BinaryTree *bt = createEmpty();
     unsigned char ch[256] = {0};
     unsigned char table[256][256];
@@ -25,8 +25,10 @@ void compress(FILE *file){
     }
     bt = huff(bt);
 
-    unsigned char *aux, rest;
-    //createTable(bt, table, 0, aux);
+    unsigned char aux[256];
+    memset(aux,NULL,256);
+
+    createTable(bt, table, 0, aux);
     for (i = 0; i < 256; i++){
         if(ch[i] > 0){
             int freq = ch[i];
@@ -35,7 +37,7 @@ void compress(FILE *file){
             rest+= (freq * j);
         }
     }
-
+    rest = rest % 8;
     unsigned char trash = (8 - rest) << 5;
     FILE *oFile;
     oFile = fopen("C:\\Users\\Cabral\\Documents\\Prog\\saida.huff", "wb");
@@ -48,7 +50,7 @@ void compress(FILE *file){
     for(i = 0; i < 256; i++){
         if(ch[i] > 0){
             for(j = 0; j < 256; j++){
-                //printf("%c", table[i][j]);
+                printf("%c", table[i][j]);
             }
         }
     }
@@ -58,6 +60,7 @@ void createTable(BinaryTree *bt, unsigned char table[][256], int pos, unsigned c
     if ( (getLeft(bt) == NULL) && (getRight(bt) == NULL) ){
         aux[pos] = '\0';
         strcpy(table[getValue(bt)], aux);
+        pos--;
         return;
     } else {
         aux[pos] = '0';
@@ -65,6 +68,8 @@ void createTable(BinaryTree *bt, unsigned char table[][256], int pos, unsigned c
         aux[pos] = '1';
         createTable(getRight(bt), table, pos + 1, aux);
     }
+    pos--;
+    return;;
 }
 
 BinaryTree* huff(BinaryTree *bt){                                           //Começa o merge
