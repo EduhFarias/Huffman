@@ -16,6 +16,7 @@ BinaryTree* huff(BinaryTree *bt);
 
 int isBit_i_set(unsigned char c, int i);
 
+unsigned char setBit(unsigned char c, int i);
 
 #endif //HUFFMAN_COMPRESS_H
 

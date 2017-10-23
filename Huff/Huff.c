@@ -36,12 +36,26 @@ void compress(FILE *file){
     FILE *oFile;
     oFile = fopen("C:\\Users\\Cabral\\Documents\\Prog\\saida.huff", "wb");
 
+    int bit = 7, pos = 0;
+    unsigned char b = 0;
+
     rewind(file);
     while((c = fgetc(file)) != EOF){ //Percorre o arquivo e soma +1 em toda posição referente ao caracter
-        fprintf(oFile,"%s", table[c]);
+        while(table[c][pos] != '\0'){
+            if(bit == 0){
+                fprintf(oFile,"%c", b);
+                bit = 7;
+            }
+            if(table[c][pos] == '1'){
+                b = setBit(b, pos);
+                bit--;
+                pos++;
+            }
+        }
+        pos = 0;
     }
     fseek(oFile, NULL, SEEK_CUR);
-    
+
     int bits = ftell(oFile);
     rest = bits % 8;
     unsigned char trash = rest << 5;
@@ -53,8 +67,8 @@ void compress(FILE *file){
     fprintf(oFile,"%c",size_tree);
 
     //----------
+    printf("%c%c", trash, size_tree);
     printOrder(bt);
-    printf("\n");
     for(i = 0; i < 256; i++){
         if(ch[i] > 0){
                 //printf("%c: %s\n", i,table[i]);
@@ -76,7 +90,6 @@ void createTable(BinaryTree *bt, unsigned char table[][256], int pos, unsigned c
         createTable(getRight(bt), table, pos + 1, aux);
     }
     pos--;
-    return;
 }
 
 BinaryTree* huff(BinaryTree *bt){                                           //Começa o merge
@@ -96,4 +109,9 @@ BinaryTree* huff(BinaryTree *bt){                                           //Co
 int isBit_i_set(unsigned char c, int i){
     unsigned char mask = 1 << i;
     return mask & c;
+}
+
+unsigned char setBit(unsigned char c, int i){
+    unsigned char mask = 1 << i;
+    return c | mask;
 }
