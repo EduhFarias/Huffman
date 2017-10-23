@@ -58,7 +58,7 @@ void compress(FILE *file){
     fseek(oFile, NULL, SEEK_CUR);
 
     int rest = ftell(oFile) % 8;
-    int size_tree = printPreOrder(bt, oFile);
+    int size_tree = printPreOrder(bt, oFile); //Talvez mudar de int para unsigned char, size_tree e a função print
     unsigned char trash = rest << 5;
     unsigned char fByte = trash | size_tree >> 3;
 
