@@ -9,7 +9,7 @@
 #include <string.h>
 
 void compress(FILE *file){
-    int c, i, size_tree, j, rest = 0;
+    int c, i, j;
     BinaryTree *bt = createEmpty();
     unsigned char ch[256] = {0};
     unsigned char table[256][256];
@@ -36,19 +36,20 @@ void compress(FILE *file){
     FILE *oFile;
     oFile = fopen("C:\\Users\\Cabral\\Documents\\Prog\\saida.huff", "wb");
 
-    int bit = 7, pos = 0;
+    int bits = 7, pos = 0;
     unsigned char b = 0;
 
     rewind(file);
     while((c = fgetc(file)) != EOF){ //Percorre o arquivo e soma +1 em toda posição referente ao caracter
         while(table[c][pos] != '\0'){
-            if(bit == 0){
+            if(bits == 0){
                 fprintf(oFile,"%c", b);
-                bit = 7;
+                bits = 7;
+                b = 0;
             }
             if(table[c][pos] == '1'){
-                b = setBit(b, pos);
-                bit--;
+                b = setBit(b, bits);
+                bits--;
                 pos++;
             }
         }
@@ -56,12 +57,11 @@ void compress(FILE *file){
     }
     fseek(oFile, NULL, SEEK_CUR);
 
-    int bits = ftell(oFile);
-    rest = bits % 8;
+    int rest = ftell(oFile) % 8;
     unsigned char trash = rest << 5;
 
     rewind(oFile);
-    size_tree = printPreOrder(bt, oFile);
+    int size_tree = printPreOrder(bt, oFile);
     rewind(oFile);
     fprintf(oFile,"%c", trash);
     fprintf(oFile,"%c",size_tree);
