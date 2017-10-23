@@ -9,7 +9,7 @@
 #include <string.h>
 
 void compress(FILE *file){
-    int c, i, size_tree, j, rest = 0;
+    int c, i, j;
     BinaryTree *bt = createEmpty();
     unsigned char ch[256] = {0};
     unsigned char table[256][256];
@@ -36,25 +36,39 @@ void compress(FILE *file){
     FILE *oFile;
     oFile = fopen("C:\\Users\\Cabral\\Documents\\Prog\\saida.huff", "wb");
 
+    int bits = 7, pos = 0;
+    unsigned char b = 0;
+
     rewind(file);
     while((c = fgetc(file)) != EOF){ //Percorre o arquivo e soma +1 em toda posição referente ao caracter
-        fprintf(oFile,"%s", table[c]);
+        while(table[c][pos] != '\0'){
+            if(bits == 0){
+                fprintf(oFile,"%c", b);
+                bits = 7;
+                b = 0;
+            }
+            if(table[c][pos] == '1'){
+                b = setBit(b, bits);
+            }
+            bits--;
+            pos++;
+        }
+        pos = 0;
     }
     fseek(oFile, NULL, SEEK_CUR);
-    
-    int bits = ftell(oFile);
-    rest = bits % 8;
+
+    int rest = ftell(oFile) % 8;
+    int size_tree = printPreOrder(bt, oFile);
     unsigned char trash = rest << 5;
+    unsigned char fByte = trash | size_tree >> 3;
 
     rewind(oFile);
-    size_tree = printPreOrder(bt, oFile);
-    rewind(oFile);
-    fprintf(oFile,"%c", trash);
+    fprintf(oFile,"%c", fByte);
     fprintf(oFile,"%c",size_tree);
 
     //----------
+    printf("%c%c", trash, size_tree);
     printOrder(bt);
-    printf("\n");
     for(i = 0; i < 256; i++){
         if(ch[i] > 0){
                 //printf("%c: %s\n", i,table[i]);
@@ -76,7 +90,6 @@ void createTable(BinaryTree *bt, unsigned char table[][256], int pos, unsigned c
         createTable(getRight(bt), table, pos + 1, aux);
     }
     pos--;
-    return;
 }
 
 BinaryTree* huff(BinaryTree *bt){                                           //Começa o merge
@@ -96,4 +109,9 @@ BinaryTree* huff(BinaryTree *bt){                                           //Co
 int isBit_i_set(unsigned char c, int i){
     unsigned char mask = 1 << i;
     return mask & c;
+}
+
+unsigned char setBit(unsigned char c, int i){
+    unsigned char mask = 1 << i;
+    return c | mask;
 }
