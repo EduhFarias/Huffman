@@ -49,21 +49,21 @@ void compress(FILE *file){
             }
             if(table[c][pos] == '1'){
                 b = setBit(b, bits);
-                bits--;
-                pos++;
             }
+            bits--;
+            pos++;
         }
         pos = 0;
     }
     fseek(oFile, NULL, SEEK_CUR);
 
     int rest = ftell(oFile) % 8;
+    int size_tree = printPreOrder(bt, oFile);
     unsigned char trash = rest << 5;
+    unsigned char fByte = trash | size_tree >> 3;
 
     rewind(oFile);
-    int size_tree = printPreOrder(bt, oFile);
-    rewind(oFile);
-    fprintf(oFile,"%c", trash);
+    fprintf(oFile,"%c", fByte);
     fprintf(oFile,"%c",size_tree);
 
     //----------
