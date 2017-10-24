@@ -16,13 +16,15 @@ BinaryTree* removeNode(BinaryTree *bt);
 
 BinaryTree* getNode(BinaryTree *bt);
 
-int printPreOrder(BinaryTree *bt, FILE *file);
+unsigned char sizeTree(BinaryTree *bt, FILE *file);
+
+void printPreOrder(BinaryTree *bt, FILE *file);
 
 BinaryTree* getLeft(BinaryTree *bt);
 
 BinaryTree* getRight(BinaryTree *bt);
 
-void printOrder(BinaryTree *bt);
+void printOrder(BinaryTree *bt);            //Remover dps, somente para teste
 
 BinaryTree* getNext(BinaryTree *bt);
 

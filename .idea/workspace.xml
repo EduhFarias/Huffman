@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true" buildAllGenerated="true">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" buildAllGenerated="true">
     <generated>
       <config projectName="Huffman" targetName="Huffman" />
       <config projectName="Huffman" targetName="Plotagem" />
@@ -13,8 +13,55 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8af1f2ca-56a3-4387-a685-fb0e32ba64f3" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Huff/Decompress.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Huff/Decompress.h" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.8.2/CMakeCCompiler.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.8.2/CMakeCXXCompiler.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.8.2/CMakeDetermineCompilerABI_C.bin" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.8.2/CMakeDetermineCompilerABI_CXX.bin" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.8.2/CMakeRCCompiler.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.8.2/CMakeSystem.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Huffman.dir/linklibs.rsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Huffman.dir/objects1.rsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Plotagem.dir/linklibs.rsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Plotagem.dir/objects1.rsp" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.bin" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeLists.txt" afterPath="$PROJECT_DIR$/CMakeLists.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Huff/BinaryTree.c" afterPath="$PROJECT_DIR$/Huff/BinaryTree.c" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Huff/BinaryTree.h" afterPath="$PROJECT_DIR$/Huff/BinaryTree.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Huff/Huff.c" afterPath="$PROJECT_DIR$/Huff/Huff.c" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Huff/mainHuff.c" afterPath="$PROJECT_DIR$/Huff/mainHuff.c" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Huffman.dir/C.includecache" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Huffman.dir/C.includecache" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Huffman.dir/DependInfo.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Huffman.dir/DependInfo.cmake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Huffman.dir/build.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Huffman.dir/build.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Huffman.dir/cmake_clean.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Huffman.dir/cmake_clean.cmake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Huffman.dir/depend.internal" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Huffman.dir/depend.internal" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Huffman.dir/depend.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Huffman.dir/depend.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Huffman.dir/flags.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Huffman.dir/flags.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Huffman.dir/link.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Huffman.dir/link.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Huffman.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Huffman.dir/progress.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Plotagem.dir/DependInfo.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Plotagem.dir/DependInfo.cmake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Plotagem.dir/build.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Plotagem.dir/build.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Plotagem.dir/cmake_clean.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Plotagem.dir/cmake_clean.cmake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Plotagem.dir/flags.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Plotagem.dir/flags.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Plotagem.dir/link.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Plotagem.dir/link.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Plotagem.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Plotagem.dir/progress.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.c" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.c" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/Huffman.cbp" afterPath="$PROJECT_DIR$/cmake-build-debug/Huffman.cbp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,18 +71,54 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Huff.c" pinned="false" current-in-tab="true">
+      <file leaf-file-name="mainHuff.c" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Huff/mainHuff.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="10" column="24" lean-forward="false" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Decompress.c" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Huff/Decompress.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="21" lean-forward="false" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
+              <folding>
+                <element signature="e#42#60#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Decompress.h" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Huff/Decompress.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="21" lean-forward="false" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Huff.c" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Huff/Huff.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="70" column="31" lean-forward="false" selection-start-line="70" selection-start-column="31" selection-end-line="70" selection-end-column="31" />
+            <state relative-caret-position="108">
+              <caret line="59" column="29" lean-forward="false" selection-start-line="59" selection-start-column="29" selection-end-line="59" selection-end-column="29" />
               <folding>
-                <element signature="e#44#61#0" expanded="true" />
-                <element signature="e#3034#3130#0" expanded="false" />
-                <marker date="1508811923263" expanded="false" signature="2070:2420" ph="{...}" />
-                <marker date="1508811923263" expanded="false" signature="2454:3032" ph="{...}" />
+                <element signature="e#2091#2531#0" expanded="false" />
+                <element signature="e#2533#3143#0" expanded="false" />
+                <element signature="e#3145#3241#0" expanded="false" />
+                <element signature="e#3243#3344#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -44,7 +127,7 @@
       <file leaf-file-name="Huff.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Huff/Huff.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
+            <state relative-caret-position="270">
               <caret line="18" column="45" lean-forward="false" selection-start-line="18" selection-start-column="45" selection-end-line="18" selection-end-column="45" />
               <folding />
             </state>
@@ -54,21 +137,31 @@
       <file leaf-file-name="BinaryTree.c" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Huff/BinaryTree.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="93" column="0" lean-forward="true" selection-start-line="93" selection-start-column="0" selection-end-line="99" selection-end-column="1" />
+            <state relative-caret-position="18">
+              <caret line="84" column="53" lean-forward="false" selection-start-line="84" selection-start-column="53" selection-end-line="84" selection-end-column="53" />
               <folding>
                 <element signature="e#44#67#0" expanded="true" />
                 <element signature="e#116#243#0" expanded="false" />
-                <element signature="e#282#327#0" expanded="false" />
-                <element signature="e#329#1439#0" expanded="false" />
-                <element signature="e#1441#1521#0" expanded="false" />
-                <element signature="e#1523#1582#0" expanded="false" />
-                <element signature="e#1584#1645#0" expanded="false" />
-                <element signature="e#1647#1706#0" expanded="false" />
-                <element signature="e#1708#1767#0" expanded="false" />
-                <element signature="e#1769#1820#0" expanded="false" />
-                <element signature="e#1822#1960#0" expanded="false" />
+                <marker date="1508845471270" expanded="false" signature="307:327" ph="{...}" />
+                <marker date="1508845471270" expanded="false" signature="437:1439" ph="{...}" />
+                <marker date="1508845471270" expanded="false" signature="1476:1521" ph="{...}" />
+                <marker date="1508845471270" expanded="false" signature="1558:1582" ph="{...}" />
+                <marker date="1508845471270" expanded="false" signature="1620:1645" ph="{...}" />
+                <marker date="1508845471270" expanded="false" signature="1685:1706" ph="{...}" />
+                <marker date="1508845471270" expanded="false" signature="1743:1767" ph="{...}" />
+                <marker date="1508845471270" expanded="false" signature="1796:1820" ph="{...}" />
+                <marker date="1508845471270" expanded="false" signature="1860:1960" ph="{...}" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BinaryTree.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Huff/BinaryTree.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="310">
+              <caret line="26" column="44" lean-forward="true" selection-start-line="26" selection-start-column="44" selection-end-line="26" selection-end-column="77" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -81,11 +174,14 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Huff/mainHuff.c" />
-        <option value="$PROJECT_DIR$/Huff/BinaryTree.h" />
-        <option value="$PROJECT_DIR$/Huff/BinaryTree.c" />
         <option value="$PROJECT_DIR$/Huff/Huff.h" />
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/Huff/mainHuff.c" />
         <option value="$PROJECT_DIR$/Huff/Huff.c" />
+        <option value="$PROJECT_DIR$/Huff/BinaryTree.c" />
+        <option value="$PROJECT_DIR$/Huff/BinaryTree.h" />
+        <option value="$PROJECT_DIR$/Huff/Decompress.c" />
+        <option value="$PROJECT_DIR$/Huff/Decompress.h" />
       </list>
     </option>
   </component>
@@ -95,10 +191,10 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="673" />
-    <option name="width" value="694" />
-    <option name="height" value="735" />
+  <component name="ProjectFrameBounds">
+    <option name="y" value="27" />
+    <option name="width" value="1440" />
+    <option name="height" value="873" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -117,24 +213,39 @@
     <panes>
       <pane id="ProjectPane">
         <subPane>
-          <expand>
-            <path>
-              <item name="Huffman" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
-              <item name="Huffman" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Huffman" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
-              <item name="Huffman" type="462c0819:PsiDirectoryNode" />
-              <item name="Huff" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Huffman" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Huffman" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Huffman" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Huffman" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Huff" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_interpreter_path" value="$USER_HOME$/.nvm/versions/node/v8.4.0/bin/node" />
+    <property name="js.eslint.eslintPackage" value="" />
+    <property name="js-jscs-nodeInterpreter" value="$USER_HOME$/.nvm/versions/node/v8.4.0/bin/node" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -149,14 +260,178 @@
     </option>
   </component>
   <component name="RunManager" selected="Application.Huffman">
-    <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" EXPLICIT_BUILD_TARGET_NAME="all">
+    <configuration default="true" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Huffman" TARGET_NAME="Huffman" CONFIG_NAME="Debug" TEST_MODE="SUITE_TEST">
       <envs />
+      <method />
     </configuration>
-    <configuration name="Huffman" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Huffman" TARGET_NAME="Huffman" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Huffman" RUN_TARGET_NAME="Huffman">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true">
       <envs />
+      <method />
     </configuration>
-    <configuration name="Plotagem" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Huffman" TARGET_NAME="Plotagem" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Huffman" RUN_TARGET_NAME="Plotagem">
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
       <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Huffman" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Huffman" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Attests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Huffman" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Huffman" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Nosetests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Huffman" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Huffman" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="py.test">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Huffman" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="testToRun" value="" />
+      <option name="keywords" value="" />
+      <option name="params" value="" />
+      <option name="USE_PARAM" value="false" />
+      <option name="USE_KEYWORD" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" EXPLICIT_BUILD_TARGET_NAME="all">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="Huffman" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Huffman" TARGET_NAME="Huffman" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Huffman" RUN_TARGET_NAME="Huffman">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="Plotagem" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Huffman" TARGET_NAME="Plotagem" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Huffman" RUN_TARGET_NAME="Plotagem">
+      <envs />
+      <method />
     </configuration>
     <list size="3">
       <item index="0" class="java.lang.String" itemvalue="Application.Build All" />
@@ -190,28 +465,28 @@
       <workItem from="1508624391057" duration="14279000" />
       <workItem from="1508715657756" duration="7502000" />
       <workItem from="1508803460704" duration="6068000" />
+      <workItem from="1508842118260" duration="3599000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55712000" />
+    <option name="totallyTimeSpent" value="59311000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1376" height="744" extended-state="6" />
+    <frame x="0" y="27" width="1440" height="873" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24468085" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24444444" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32847682" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26887417" sideWeight="0.49722221" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26887417" sideWeight="0.50277776" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32847682" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39967105" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -219,6 +494,7 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -243,7 +519,7 @@
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="processedProjectFiles" value="true" />
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -253,7 +529,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/Huff/Huff.c</url>
-          <line>42</line>
+          <line>41</line>
           <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
@@ -262,49 +538,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Huff/Huff.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="867">
-          <caret line="51" column="16" lean-forward="false" selection-start-line="51" selection-start-column="16" selection-end-line="51" selection-end-column="16" />
-          <folding>
-            <element signature="e#44#61#0" expanded="true" />
-            <element signature="e#3034#3130#0" expanded="false" />
-            <marker date="1508811923263" expanded="false" signature="2070:2420" ph="{...}" />
-            <marker date="1508811923263" expanded="false" signature="2454:3032" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Huff/mainHuff.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="58" lean-forward="false" selection-start-line="10" selection-start-column="58" selection-end-line="10" selection-end-column="58" />
-          <folding>
-            <element signature="e#43#62#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Huff/BinaryTree.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="34" column="48" lean-forward="false" selection-start-line="34" selection-start-column="48" selection-end-line="34" selection-end-column="48" />
-          <folding>
-            <element signature="e#44#67#0" expanded="true" />
-            <element signature="e#116#243#0" expanded="false" />
-            <element signature="e#282#327#0" expanded="false" />
-            <element signature="e#329#1439#0" expanded="false" />
-            <element signature="e#1441#1521#0" expanded="false" />
-            <element signature="e#1523#1582#0" expanded="false" />
-            <element signature="e#1584#1645#0" expanded="false" />
-            <element signature="e#1647#1706#0" expanded="false" />
-            <element signature="e#1708#1767#0" expanded="false" />
-            <element signature="e#1769#1820#0" expanded="false" />
-            <element signature="e#1822#1960#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Huff/Huff.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -326,10 +559,10 @@
         <state relative-caret-position="1360">
           <caret line="80" column="14" lean-forward="false" selection-start-line="80" selection-start-column="13" selection-end-line="80" selection-end-column="14" />
           <folding>
-            <element signature="e#44#61#0" expanded="true" />
-            <element signature="e#3034#3130#0" expanded="false" />
-            <marker date="1508811923263" expanded="false" signature="2070:2420" ph="{...}" />
-            <marker date="1508811923263" expanded="false" signature="2454:3032" ph="{...}" />
+            <element signature="e#2091#2531#0" expanded="false" />
+            <element signature="e#2533#3143#0" expanded="false" />
+            <element signature="e#3145#3241#0" expanded="false" />
+            <element signature="e#3243#3344#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -338,9 +571,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="58" lean-forward="false" selection-start-line="10" selection-start-column="58" selection-end-line="10" selection-end-column="58" />
-          <folding>
-            <element signature="e#43#62#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -359,15 +590,15 @@
           <folding>
             <element signature="e#44#67#0" expanded="true" />
             <element signature="e#116#243#0" expanded="false" />
-            <element signature="e#282#327#0" expanded="false" />
-            <element signature="e#329#1439#0" expanded="false" />
-            <element signature="e#1441#1521#0" expanded="false" />
-            <element signature="e#1523#1582#0" expanded="false" />
-            <element signature="e#1584#1645#0" expanded="false" />
-            <element signature="e#1647#1706#0" expanded="false" />
-            <element signature="e#1708#1767#0" expanded="false" />
-            <element signature="e#1769#1820#0" expanded="false" />
-            <element signature="e#1822#1960#0" expanded="false" />
+            <marker date="1508845471270" expanded="false" signature="307:327" ph="{...}" />
+            <marker date="1508845471270" expanded="false" signature="437:1439" ph="{...}" />
+            <marker date="1508845471270" expanded="false" signature="1476:1521" ph="{...}" />
+            <marker date="1508845471270" expanded="false" signature="1558:1582" ph="{...}" />
+            <marker date="1508845471270" expanded="false" signature="1620:1645" ph="{...}" />
+            <marker date="1508845471270" expanded="false" signature="1685:1706" ph="{...}" />
+            <marker date="1508845471270" expanded="false" signature="1743:1767" ph="{...}" />
+            <marker date="1508845471270" expanded="false" signature="1796:1820" ph="{...}" />
+            <marker date="1508845471270" expanded="false" signature="1860:1960" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -385,10 +616,10 @@
         <state relative-caret-position="629">
           <caret line="37" column="0" lean-forward="true" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
           <folding>
-            <element signature="e#44#61#0" expanded="true" />
-            <element signature="e#3034#3130#0" expanded="false" />
-            <marker date="1508811923263" expanded="false" signature="2070:2420" ph="{...}" />
-            <marker date="1508811923263" expanded="false" signature="2454:3032" ph="{...}" />
+            <element signature="e#2091#2531#0" expanded="false" />
+            <element signature="e#2533#3143#0" expanded="false" />
+            <element signature="e#3145#3241#0" expanded="false" />
+            <element signature="e#3243#3344#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -397,9 +628,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="58" lean-forward="false" selection-start-line="10" selection-start-column="58" selection-end-line="10" selection-end-column="58" />
-          <folding>
-            <element signature="e#43#62#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -408,10 +637,10 @@
         <state relative-caret-position="714">
           <caret line="42" column="23" lean-forward="false" selection-start-line="42" selection-start-column="23" selection-end-line="42" selection-end-column="23" />
           <folding>
-            <element signature="e#44#61#0" expanded="true" />
-            <element signature="e#3034#3130#0" expanded="false" />
-            <marker date="1508811923263" expanded="false" signature="2070:2420" ph="{...}" />
-            <marker date="1508811923263" expanded="false" signature="2454:3032" ph="{...}" />
+            <element signature="e#2091#2531#0" expanded="false" />
+            <element signature="e#2533#3143#0" expanded="false" />
+            <element signature="e#3145#3241#0" expanded="false" />
+            <element signature="e#3243#3344#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -439,15 +668,15 @@
           <folding>
             <element signature="e#44#67#0" expanded="true" />
             <element signature="e#116#243#0" expanded="false" />
-            <element signature="e#282#327#0" expanded="false" />
-            <element signature="e#329#1439#0" expanded="false" />
-            <element signature="e#1441#1521#0" expanded="false" />
-            <element signature="e#1523#1582#0" expanded="false" />
-            <element signature="e#1584#1645#0" expanded="false" />
-            <element signature="e#1647#1706#0" expanded="false" />
-            <element signature="e#1708#1767#0" expanded="false" />
-            <element signature="e#1769#1820#0" expanded="false" />
-            <element signature="e#1822#1960#0" expanded="false" />
+            <marker date="1508845471270" expanded="false" signature="307:327" ph="{...}" />
+            <marker date="1508845471270" expanded="false" signature="437:1439" ph="{...}" />
+            <marker date="1508845471270" expanded="false" signature="1476:1521" ph="{...}" />
+            <marker date="1508845471270" expanded="false" signature="1558:1582" ph="{...}" />
+            <marker date="1508845471270" expanded="false" signature="1620:1645" ph="{...}" />
+            <marker date="1508845471270" expanded="false" signature="1685:1706" ph="{...}" />
+            <marker date="1508845471270" expanded="false" signature="1743:1767" ph="{...}" />
+            <marker date="1508845471270" expanded="false" signature="1796:1820" ph="{...}" />
+            <marker date="1508845471270" expanded="false" signature="1860:1960" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -456,9 +685,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="58" lean-forward="false" selection-start-line="10" selection-start-column="58" selection-end-line="10" selection-end-column="58" />
-          <folding>
-            <element signature="e#43#62#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -467,10 +694,10 @@
         <state relative-caret-position="714">
           <caret line="42" column="23" lean-forward="false" selection-start-line="42" selection-start-column="23" selection-end-line="42" selection-end-column="23" />
           <folding>
-            <element signature="e#44#61#0" expanded="true" />
-            <element signature="e#3034#3130#0" expanded="false" />
-            <marker date="1508811923263" expanded="false" signature="2070:2420" ph="{...}" />
-            <marker date="1508811923263" expanded="false" signature="2454:3032" ph="{...}" />
+            <element signature="e#2091#2531#0" expanded="false" />
+            <element signature="e#2533#3143#0" expanded="false" />
+            <element signature="e#3145#3241#0" expanded="false" />
+            <element signature="e#3243#3344#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -498,15 +725,15 @@
           <folding>
             <element signature="e#44#67#0" expanded="true" />
             <element signature="e#116#243#0" expanded="false" />
-            <element signature="e#282#327#0" expanded="false" />
-            <element signature="e#329#1439#0" expanded="false" />
-            <element signature="e#1441#1521#0" expanded="false" />
-            <element signature="e#1523#1582#0" expanded="false" />
-            <element signature="e#1584#1645#0" expanded="false" />
-            <element signature="e#1647#1706#0" expanded="false" />
-            <element signature="e#1708#1767#0" expanded="false" />
-            <element signature="e#1769#1820#0" expanded="false" />
-            <element signature="e#1822#1960#0" expanded="false" />
+            <marker date="1508845471270" expanded="false" signature="307:327" ph="{...}" />
+            <marker date="1508845471270" expanded="false" signature="437:1439" ph="{...}" />
+            <marker date="1508845471270" expanded="false" signature="1476:1521" ph="{...}" />
+            <marker date="1508845471270" expanded="false" signature="1558:1582" ph="{...}" />
+            <marker date="1508845471270" expanded="false" signature="1620:1645" ph="{...}" />
+            <marker date="1508845471270" expanded="false" signature="1685:1706" ph="{...}" />
+            <marker date="1508845471270" expanded="false" signature="1743:1767" ph="{...}" />
+            <marker date="1508845471270" expanded="false" signature="1796:1820" ph="{...}" />
+            <marker date="1508845471270" expanded="false" signature="1860:1960" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -515,9 +742,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="58" lean-forward="false" selection-start-line="10" selection-start-column="58" selection-end-line="10" selection-end-column="58" />
-          <folding>
-            <element signature="e#43#62#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -526,10 +751,10 @@
         <state relative-caret-position="714">
           <caret line="42" column="23" lean-forward="false" selection-start-line="42" selection-start-column="23" selection-end-line="42" selection-end-column="23" />
           <folding>
-            <element signature="e#44#61#0" expanded="true" />
-            <element signature="e#3034#3130#0" expanded="false" />
-            <marker date="1508811923263" expanded="false" signature="2070:2420" ph="{...}" />
-            <marker date="1508811923263" expanded="false" signature="2454:3032" ph="{...}" />
+            <element signature="e#2091#2531#0" expanded="false" />
+            <element signature="e#2533#3143#0" expanded="false" />
+            <element signature="e#3145#3241#0" expanded="false" />
+            <element signature="e#3243#3344#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -557,15 +782,15 @@
           <folding>
             <element signature="e#44#67#0" expanded="true" />
             <element signature="e#116#243#0" expanded="false" />
-            <element signature="e#282#327#0" expanded="false" />
-            <element signature="e#329#1439#0" expanded="false" />
-            <element signature="e#1441#1521#0" expanded="false" />
-            <element signature="e#1523#1582#0" expanded="false" />
-            <element signature="e#1584#1645#0" expanded="false" />
-            <element signature="e#1647#1706#0" expanded="false" />
-            <element signature="e#1708#1767#0" expanded="false" />
-            <element signature="e#1769#1820#0" expanded="false" />
-            <element signature="e#1822#1960#0" expanded="false" />
+            <marker date="1508845471270" expanded="false" signature="307:327" ph="{...}" />
+            <marker date="1508845471270" expanded="false" signature="437:1439" ph="{...}" />
+            <marker date="1508845471270" expanded="false" signature="1476:1521" ph="{...}" />
+            <marker date="1508845471270" expanded="false" signature="1558:1582" ph="{...}" />
+            <marker date="1508845471270" expanded="false" signature="1620:1645" ph="{...}" />
+            <marker date="1508845471270" expanded="false" signature="1685:1706" ph="{...}" />
+            <marker date="1508845471270" expanded="false" signature="1743:1767" ph="{...}" />
+            <marker date="1508845471270" expanded="false" signature="1796:1820" ph="{...}" />
+            <marker date="1508845471270" expanded="false" signature="1860:1960" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -574,9 +799,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="58" lean-forward="false" selection-start-line="10" selection-start-column="58" selection-end-line="10" selection-end-column="58" />
-          <folding>
-            <element signature="e#43#62#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -585,10 +808,10 @@
         <state relative-caret-position="714">
           <caret line="42" column="23" lean-forward="false" selection-start-line="42" selection-start-column="23" selection-end-line="42" selection-end-column="23" />
           <folding>
-            <element signature="e#44#61#0" expanded="true" />
-            <element signature="e#3034#3130#0" expanded="false" />
-            <marker date="1508811923263" expanded="false" signature="2070:2420" ph="{...}" />
-            <marker date="1508811923263" expanded="false" signature="2454:3032" ph="{...}" />
+            <element signature="e#2091#2531#0" expanded="false" />
+            <element signature="e#2533#3143#0" expanded="false" />
+            <element signature="e#3145#3241#0" expanded="false" />
+            <element signature="e#3243#3344#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -616,15 +839,15 @@
           <folding>
             <element signature="e#44#67#0" expanded="true" />
             <element signature="e#116#243#0" expanded="false" />
-            <element signature="e#282#327#0" expanded="false" />
-            <element signature="e#329#1439#0" expanded="false" />
-            <element signature="e#1441#1521#0" expanded="false" />
-            <element signature="e#1523#1582#0" expanded="false" />
-            <element signature="e#1584#1645#0" expanded="false" />
-            <element signature="e#1647#1706#0" expanded="false" />
-            <element signature="e#1708#1767#0" expanded="false" />
-            <element signature="e#1769#1820#0" expanded="false" />
-            <element signature="e#1822#1960#0" expanded="false" />
+            <marker date="1508845471270" expanded="false" signature="307:327" ph="{...}" />
+            <marker date="1508845471270" expanded="false" signature="437:1439" ph="{...}" />
+            <marker date="1508845471270" expanded="false" signature="1476:1521" ph="{...}" />
+            <marker date="1508845471270" expanded="false" signature="1558:1582" ph="{...}" />
+            <marker date="1508845471270" expanded="false" signature="1620:1645" ph="{...}" />
+            <marker date="1508845471270" expanded="false" signature="1685:1706" ph="{...}" />
+            <marker date="1508845471270" expanded="false" signature="1743:1767" ph="{...}" />
+            <marker date="1508845471270" expanded="false" signature="1796:1820" ph="{...}" />
+            <marker date="1508845471270" expanded="false" signature="1860:1960" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -633,9 +856,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="63" lean-forward="false" selection-start-line="10" selection-start-column="63" selection-end-line="10" selection-end-column="63" />
-          <folding>
-            <element signature="e#43#62#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -654,15 +875,15 @@
           <folding>
             <element signature="e#44#67#0" expanded="true" />
             <element signature="e#116#243#0" expanded="false" />
-            <element signature="e#282#327#0" expanded="false" />
-            <element signature="e#329#1439#0" expanded="false" />
-            <element signature="e#1441#1521#0" expanded="false" />
-            <element signature="e#1523#1582#0" expanded="false" />
-            <element signature="e#1584#1645#0" expanded="false" />
-            <element signature="e#1647#1706#0" expanded="false" />
-            <element signature="e#1708#1767#0" expanded="false" />
-            <element signature="e#1769#1820#0" expanded="false" />
-            <element signature="e#1822#1960#0" expanded="false" />
+            <marker date="1508845471270" expanded="false" signature="307:327" ph="{...}" />
+            <marker date="1508845471270" expanded="false" signature="437:1439" ph="{...}" />
+            <marker date="1508845471270" expanded="false" signature="1476:1521" ph="{...}" />
+            <marker date="1508845471270" expanded="false" signature="1558:1582" ph="{...}" />
+            <marker date="1508845471270" expanded="false" signature="1620:1645" ph="{...}" />
+            <marker date="1508845471270" expanded="false" signature="1685:1706" ph="{...}" />
+            <marker date="1508845471270" expanded="false" signature="1743:1767" ph="{...}" />
+            <marker date="1508845471270" expanded="false" signature="1796:1820" ph="{...}" />
+            <marker date="1508845471270" expanded="false" signature="1860:1960" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -680,10 +901,10 @@
         <state relative-caret-position="952">
           <caret line="56" column="10" lean-forward="false" selection-start-line="56" selection-start-column="10" selection-end-line="56" selection-end-column="10" />
           <folding>
-            <element signature="e#44#61#0" expanded="true" />
-            <element signature="e#3034#3130#0" expanded="false" />
-            <marker date="1508811923263" expanded="false" signature="2070:2420" ph="{...}" />
-            <marker date="1508811923263" expanded="false" signature="2454:3032" ph="{...}" />
+            <element signature="e#2091#2531#0" expanded="false" />
+            <element signature="e#2533#3143#0" expanded="false" />
+            <element signature="e#3145#3241#0" expanded="false" />
+            <element signature="e#3243#3344#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -692,9 +913,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="14" lean-forward="false" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
-          <folding>
-            <element signature="e#43#62#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -713,15 +932,15 @@
           <folding>
             <element signature="e#44#67#0" expanded="true" />
             <element signature="e#116#243#0" expanded="false" />
-            <element signature="e#282#327#0" expanded="false" />
-            <element signature="e#329#1439#0" expanded="false" />
-            <element signature="e#1441#1521#0" expanded="false" />
-            <element signature="e#1523#1582#0" expanded="false" />
-            <element signature="e#1584#1645#0" expanded="false" />
-            <element signature="e#1647#1706#0" expanded="false" />
-            <element signature="e#1708#1767#0" expanded="false" />
-            <element signature="e#1769#1820#0" expanded="false" />
-            <element signature="e#1822#1960#0" expanded="false" />
+            <marker date="1508845471270" expanded="false" signature="307:327" ph="{...}" />
+            <marker date="1508845471270" expanded="false" signature="437:1439" ph="{...}" />
+            <marker date="1508845471270" expanded="false" signature="1476:1521" ph="{...}" />
+            <marker date="1508845471270" expanded="false" signature="1558:1582" ph="{...}" />
+            <marker date="1508845471270" expanded="false" signature="1620:1645" ph="{...}" />
+            <marker date="1508845471270" expanded="false" signature="1685:1706" ph="{...}" />
+            <marker date="1508845471270" expanded="false" signature="1743:1767" ph="{...}" />
+            <marker date="1508845471270" expanded="false" signature="1796:1820" ph="{...}" />
+            <marker date="1508845471270" expanded="false" signature="1860:1960" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -739,10 +958,10 @@
         <state relative-caret-position="714">
           <caret line="42" column="0" lean-forward="true" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
           <folding>
-            <element signature="e#44#61#0" expanded="true" />
-            <element signature="e#3034#3130#0" expanded="false" />
-            <marker date="1508811923263" expanded="false" signature="2070:2420" ph="{...}" />
-            <marker date="1508811923263" expanded="false" signature="2454:3032" ph="{...}" />
+            <element signature="e#2091#2531#0" expanded="false" />
+            <element signature="e#2533#3143#0" expanded="false" />
+            <element signature="e#3145#3241#0" expanded="false" />
+            <element signature="e#3243#3344#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -754,15 +973,15 @@
           <folding>
             <element signature="e#44#67#0" expanded="true" />
             <element signature="e#116#243#0" expanded="false" />
-            <element signature="e#282#327#0" expanded="false" />
-            <element signature="e#329#1439#0" expanded="false" />
-            <element signature="e#1441#1521#0" expanded="false" />
-            <element signature="e#1523#1582#0" expanded="false" />
-            <element signature="e#1584#1645#0" expanded="false" />
-            <element signature="e#1647#1706#0" expanded="false" />
-            <element signature="e#1708#1767#0" expanded="false" />
-            <element signature="e#1769#1820#0" expanded="false" />
-            <element signature="e#1822#1960#0" expanded="false" />
+            <marker date="1508845471270" expanded="false" signature="307:327" ph="{...}" />
+            <marker date="1508845471270" expanded="false" signature="437:1439" ph="{...}" />
+            <marker date="1508845471270" expanded="false" signature="1476:1521" ph="{...}" />
+            <marker date="1508845471270" expanded="false" signature="1558:1582" ph="{...}" />
+            <marker date="1508845471270" expanded="false" signature="1620:1645" ph="{...}" />
+            <marker date="1508845471270" expanded="false" signature="1685:1706" ph="{...}" />
+            <marker date="1508845471270" expanded="false" signature="1743:1767" ph="{...}" />
+            <marker date="1508845471270" expanded="false" signature="1796:1820" ph="{...}" />
+            <marker date="1508845471270" expanded="false" signature="1860:1960" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -771,9 +990,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="14" lean-forward="false" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
-          <folding>
-            <element signature="e#43#62#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -782,10 +999,10 @@
         <state relative-caret-position="833">
           <caret line="49" column="3" lean-forward="false" selection-start-line="49" selection-start-column="3" selection-end-line="49" selection-end-column="3" />
           <folding>
-            <element signature="e#44#61#0" expanded="true" />
-            <element signature="e#3034#3130#0" expanded="false" />
-            <marker date="1508811923263" expanded="false" signature="2070:2420" ph="{...}" />
-            <marker date="1508811923263" expanded="false" signature="2454:3032" ph="{...}" />
+            <element signature="e#2091#2531#0" expanded="false" />
+            <element signature="e#2533#3143#0" expanded="false" />
+            <element signature="e#3145#3241#0" expanded="false" />
+            <element signature="e#3243#3344#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -806,62 +1023,86 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Huff/Huff.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="45" lean-forward="false" selection-start-line="18" selection-start-column="45" selection-end-line="18" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="36" lean-forward="false" selection-start-line="0" selection-start-column="36" selection-end-line="0" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Huff/mainHuff.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="58" lean-forward="false" selection-start-line="10" selection-start-column="58" selection-end-line="10" selection-end-column="58" />
-          <folding>
-            <element signature="e#43#62#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="105">
+          <caret line="10" column="24" lean-forward="false" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Huff/BinaryTree.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
-          <caret line="24" column="32" lean-forward="false" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Huff/Huff.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="45" lean-forward="false" selection-start-line="18" selection-start-column="45" selection-end-line="18" selection-end-column="45" />
+        <state relative-caret-position="310">
+          <caret line="26" column="44" lean-forward="true" selection-start-line="26" selection-start-column="44" selection-end-line="26" selection-end-column="77" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Huff/BinaryTree.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="93" column="0" lean-forward="true" selection-start-line="93" selection-start-column="0" selection-end-line="99" selection-end-column="1" />
+        <state relative-caret-position="18">
+          <caret line="84" column="53" lean-forward="false" selection-start-line="84" selection-start-column="53" selection-end-line="84" selection-end-column="53" />
           <folding>
             <element signature="e#44#67#0" expanded="true" />
             <element signature="e#116#243#0" expanded="false" />
-            <element signature="e#282#327#0" expanded="false" />
-            <element signature="e#329#1439#0" expanded="false" />
-            <element signature="e#1441#1521#0" expanded="false" />
-            <element signature="e#1523#1582#0" expanded="false" />
-            <element signature="e#1584#1645#0" expanded="false" />
-            <element signature="e#1647#1706#0" expanded="false" />
-            <element signature="e#1708#1767#0" expanded="false" />
-            <element signature="e#1769#1820#0" expanded="false" />
-            <element signature="e#1822#1960#0" expanded="false" />
+            <marker date="1508845471270" expanded="false" signature="307:327" ph="{...}" />
+            <marker date="1508845471270" expanded="false" signature="437:1439" ph="{...}" />
+            <marker date="1508845471270" expanded="false" signature="1476:1521" ph="{...}" />
+            <marker date="1508845471270" expanded="false" signature="1558:1582" ph="{...}" />
+            <marker date="1508845471270" expanded="false" signature="1620:1645" ph="{...}" />
+            <marker date="1508845471270" expanded="false" signature="1685:1706" ph="{...}" />
+            <marker date="1508845471270" expanded="false" signature="1743:1767" ph="{...}" />
+            <marker date="1508845471270" expanded="false" signature="1796:1820" ph="{...}" />
+            <marker date="1508845471270" expanded="false" signature="1860:1960" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Huff/Huff.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="70" column="31" lean-forward="false" selection-start-line="70" selection-start-column="31" selection-end-line="70" selection-end-column="31" />
+        <state relative-caret-position="108">
+          <caret line="59" column="29" lean-forward="false" selection-start-line="59" selection-start-column="29" selection-end-line="59" selection-end-column="29" />
           <folding>
-            <element signature="e#44#61#0" expanded="true" />
-            <element signature="e#3034#3130#0" expanded="false" />
-            <marker date="1508811923263" expanded="false" signature="2070:2420" ph="{...}" />
-            <marker date="1508811923263" expanded="false" signature="2454:3032" ph="{...}" />
+            <element signature="e#2091#2531#0" expanded="false" />
+            <element signature="e#2533#3143#0" expanded="false" />
+            <element signature="e#3145#3241#0" expanded="false" />
+            <element signature="e#3243#3344#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Huff/Decompress.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="21" lean-forward="false" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
+          <folding>
+            <element signature="e#42#60#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Huff/Decompress.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="21" lean-forward="false" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
+          <folding />
         </state>
       </provider>
     </entry>

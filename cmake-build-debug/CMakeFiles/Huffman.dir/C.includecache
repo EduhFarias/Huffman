@@ -1,4 +1,4 @@
-#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
 
 #IncludeRegexScan: ^.*$
 
@@ -6,23 +6,31 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/Cabral/Documents/GitHub/Huffman/Huff/BinaryTree.c
+/home/alunoic/CLionProjects/Huffman/Huff/BinaryTree.c
 BinaryTree.h
-C:/Users/Cabral/Documents/GitHub/Huffman/Huff/BinaryTree.h
+/home/alunoic/CLionProjects/Huffman/Huff/BinaryTree.h
 stdio.h
 -
 stdlib.h
 -
 
-C:/Users/Cabral/Documents/GitHub/Huffman/Huff/BinaryTree.h
+/home/alunoic/CLionProjects/Huffman/Huff/BinaryTree.h
 stdio.h
 -
 
-C:/Users/Cabral/Documents/GitHub/Huffman/Huff/Huff.c
+/home/alunoic/CLionProjects/Huffman/Huff/Decompress.c
+stdio.h
+-
+Decompress.h
+/home/alunoic/CLionProjects/Huffman/Huff/Decompress.h
+
+/home/alunoic/CLionProjects/Huffman/Huff/Decompress.h
+
+/home/alunoic/CLionProjects/Huffman/Huff/Huff.c
 Huff.h
-C:/Users/Cabral/Documents/GitHub/Huffman/Huff/Huff.h
+/home/alunoic/CLionProjects/Huffman/Huff/Huff.h
 BinaryTree.h
-C:/Users/Cabral/Documents/GitHub/Huffman/Huff/BinaryTree.h
+/home/alunoic/CLionProjects/Huffman/Huff/BinaryTree.h
 stdio.h
 -
 stdlib.h
@@ -30,19 +38,19 @@ stdlib.h
 string.h
 -
 
-C:/Users/Cabral/Documents/GitHub/Huffman/Huff/Huff.h
+/home/alunoic/CLionProjects/Huffman/Huff/Huff.h
 stdio.h
 -
 BinaryTree.h
-C:/Users/Cabral/Documents/GitHub/Huffman/Huff/BinaryTree.h
+/home/alunoic/CLionProjects/Huffman/Huff/BinaryTree.h
 
-C:/Users/Cabral/Documents/GitHub/Huffman/Huff/mainHuff.c
+/home/alunoic/CLionProjects/Huffman/Huff/mainHuff.c
 stdlib.h
 -
 stdio.h
 -
 BinaryTree.h
-C:/Users/Cabral/Documents/GitHub/Huffman/Huff/BinaryTree.h
+/home/alunoic/CLionProjects/Huffman/Huff/BinaryTree.h
 Huff.h
-C:/Users/Cabral/Documents/GitHub/Huffman/Huff/Huff.h
+/home/alunoic/CLionProjects/Huffman/Huff/Huff.h
 

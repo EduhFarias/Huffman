@@ -82,13 +82,21 @@ BinaryTree* removeNode(BinaryTree *bt){
 
 short int size = 0;
 
-int printPreOrder(BinaryTree *bt, FILE *file)  { //Vễ se coloco no huff.c
-    if(isEmpty(bt)){size++;
+unsigned char sizeTree(BinaryTree *bt, FILE *file)  {
+    if(isEmpty(bt)){
+        size++;
+        sizeTree(bt->left,file);
+        sizeTree(bt->right,file);
+    }
+    return size;
+}
+
+void printPreOrder(BinaryTree *bt, FILE *file)  {
+    if(isEmpty(bt)){
         fprintf(file,"%c", bt->c);        //Colocar um condicional, se bt->c for '*' imprimir '\*', se for '\' imprimir '\\'
         printPreOrder(bt->left,file);
         printPreOrder(bt->right,file);
     }
-    return size;
 }
 
 void printOrder(BinaryTree *bt)  {

@@ -4,9 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "C:/Users/Cabral/Documents/GitHub/Huffman/Huff/BinaryTree.c" "C:/Users/Cabral/Documents/GitHub/Huffman/cmake-build-debug/CMakeFiles/Huffman.dir/Huff/BinaryTree.c.obj"
-  "C:/Users/Cabral/Documents/GitHub/Huffman/Huff/Huff.c" "C:/Users/Cabral/Documents/GitHub/Huffman/cmake-build-debug/CMakeFiles/Huffman.dir/Huff/Huff.c.obj"
-  "C:/Users/Cabral/Documents/GitHub/Huffman/Huff/mainHuff.c" "C:/Users/Cabral/Documents/GitHub/Huffman/cmake-build-debug/CMakeFiles/Huffman.dir/Huff/mainHuff.c.obj"
+  "/home/alunoic/CLionProjects/Huffman/Huff/BinaryTree.c" "/home/alunoic/CLionProjects/Huffman/cmake-build-debug/CMakeFiles/Huffman.dir/Huff/BinaryTree.c.o"
+  "/home/alunoic/CLionProjects/Huffman/Huff/Decompress.c" "/home/alunoic/CLionProjects/Huffman/cmake-build-debug/CMakeFiles/Huffman.dir/Huff/Decompress.c.o"
+  "/home/alunoic/CLionProjects/Huffman/Huff/Huff.c" "/home/alunoic/CLionProjects/Huffman/cmake-build-debug/CMakeFiles/Huffman.dir/Huff/Huff.c.o"
+  "/home/alunoic/CLionProjects/Huffman/Huff/mainHuff.c" "/home/alunoic/CLionProjects/Huffman/cmake-build-debug/CMakeFiles/Huffman.dir/Huff/mainHuff.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

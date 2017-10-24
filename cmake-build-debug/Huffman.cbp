@@ -8,155 +8,165 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="C:/Users/Cabral/Documents/GitHub/Huffman/cmake-build-debug"/>
+				<Option working_dir="/home/alunoic/CLionProjects/Huffman/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Cabral/Documents/GitHub/Huffman/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Cabral/Documents/GitHub/Huffman/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Cabral/Documents/GitHub/Huffman/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Cabral/Documents/GitHub/Huffman/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/alunoic/CLionProjects/Huffman/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/alunoic/CLionProjects/Huffman/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/alunoic/CLionProjects/Huffman/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/alunoic/CLionProjects/Huffman/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="C:/Users/Cabral/Documents/GitHub/Huffman/cmake-build-debug"/>
+				<Option working_dir="/home/alunoic/CLionProjects/Huffman/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Cabral/Documents/GitHub/Huffman/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Cabral/Documents/GitHub/Huffman/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Cabral/Documents/GitHub/Huffman/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Cabral/Documents/GitHub/Huffman/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="Plotagem">
-				<Option output="C:/Users/Cabral/Documents/GitHub/Huffman/cmake-build-debug/Plotagem.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/Cabral/Documents/GitHub/Huffman/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/mingw32"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/backward"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../include"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include-fixed"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../mingw32/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Cabral/Documents/GitHub/Huffman/cmake-build-debug/Makefile&quot;  VERBOSE=1 Plotagem"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Cabral/Documents/GitHub/Huffman/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Cabral/Documents/GitHub/Huffman/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Cabral/Documents/GitHub/Huffman/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="Plotagem/fast">
-				<Option output="C:/Users/Cabral/Documents/GitHub/Huffman/cmake-build-debug/Plotagem.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/Cabral/Documents/GitHub/Huffman/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/mingw32"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/backward"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../include"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include-fixed"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../mingw32/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Cabral/Documents/GitHub/Huffman/cmake-build-debug/Makefile&quot;  VERBOSE=1 Plotagem/fast"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Cabral/Documents/GitHub/Huffman/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Cabral/Documents/GitHub/Huffman/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Cabral/Documents/GitHub/Huffman/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="Huffman">
-				<Option output="C:/Users/Cabral/Documents/GitHub/Huffman/cmake-build-debug/Huffman.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/Cabral/Documents/GitHub/Huffman/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/mingw32"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/backward"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../include"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include-fixed"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../mingw32/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Cabral/Documents/GitHub/Huffman/cmake-build-debug/Makefile&quot;  VERBOSE=1 Huffman"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Cabral/Documents/GitHub/Huffman/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Cabral/Documents/GitHub/Huffman/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Cabral/Documents/GitHub/Huffman/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="Huffman/fast">
-				<Option output="C:/Users/Cabral/Documents/GitHub/Huffman/cmake-build-debug/Huffman.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/Cabral/Documents/GitHub/Huffman/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/mingw32"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/backward"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../include"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include-fixed"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../mingw32/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Cabral/Documents/GitHub/Huffman/cmake-build-debug/Makefile&quot;  VERBOSE=1 Huffman/fast"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Cabral/Documents/GitHub/Huffman/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Cabral/Documents/GitHub/Huffman/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Cabral/Documents/GitHub/Huffman/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/alunoic/CLionProjects/Huffman/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/alunoic/CLionProjects/Huffman/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/alunoic/CLionProjects/Huffman/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/alunoic/CLionProjects/Huffman/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="C:/Users/Cabral/Documents/GitHub/Huffman/cmake-build-debug"/>
+				<Option working_dir="/home/alunoic/CLionProjects/Huffman/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Cabral/Documents/GitHub/Huffman/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Cabral/Documents/GitHub/Huffman/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Cabral/Documents/GitHub/Huffman/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Cabral/Documents/GitHub/Huffman/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/alunoic/CLionProjects/Huffman/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/alunoic/CLionProjects/Huffman/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/alunoic/CLionProjects/Huffman/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/alunoic/CLionProjects/Huffman/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Huffman">
+				<Option output="/home/alunoic/CLionProjects/Huffman/cmake-build-debug/Huffman" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/alunoic/CLionProjects/Huffman/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/include/c++/6"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/6"/>
+					<Add directory="/usr/include/c++/6/backward"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/alunoic/CLionProjects/Huffman/cmake-build-debug/Makefile&quot;  VERBOSE=1 Huffman"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/alunoic/CLionProjects/Huffman/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/alunoic/CLionProjects/Huffman/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/alunoic/CLionProjects/Huffman/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Huffman/fast">
+				<Option output="/home/alunoic/CLionProjects/Huffman/cmake-build-debug/Huffman" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/alunoic/CLionProjects/Huffman/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/include/c++/6"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/6"/>
+					<Add directory="/usr/include/c++/6/backward"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/alunoic/CLionProjects/Huffman/cmake-build-debug/Makefile&quot;  VERBOSE=1 Huffman/fast"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/alunoic/CLionProjects/Huffman/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/alunoic/CLionProjects/Huffman/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/alunoic/CLionProjects/Huffman/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Plotagem">
+				<Option output="/home/alunoic/CLionProjects/Huffman/cmake-build-debug/Plotagem" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/alunoic/CLionProjects/Huffman/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/include/c++/6"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/6"/>
+					<Add directory="/usr/include/c++/6/backward"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/alunoic/CLionProjects/Huffman/cmake-build-debug/Makefile&quot;  VERBOSE=1 Plotagem"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/alunoic/CLionProjects/Huffman/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/alunoic/CLionProjects/Huffman/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/alunoic/CLionProjects/Huffman/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Plotagem/fast">
+				<Option output="/home/alunoic/CLionProjects/Huffman/cmake-build-debug/Plotagem" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/alunoic/CLionProjects/Huffman/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/include/c++/6"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/6"/>
+					<Add directory="/usr/include/c++/6/backward"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/alunoic/CLionProjects/Huffman/cmake-build-debug/Makefile&quot;  VERBOSE=1 Plotagem/fast"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/alunoic/CLionProjects/Huffman/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/alunoic/CLionProjects/Huffman/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/alunoic/CLionProjects/Huffman/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/Cabral/Documents/GitHub/Huffman/Huff/BinaryTree.c">
+		<Unit filename="/home/alunoic/CLionProjects/Huffman/Huff/BinaryTree.c">
 			<Option target="Huffman"/>
 		</Unit>
-		<Unit filename="C:/Users/Cabral/Documents/GitHub/Huffman/Huff/BinaryTree.h">
+		<Unit filename="/home/alunoic/CLionProjects/Huffman/Huff/BinaryTree.h">
 			<Option target="Huffman"/>
 		</Unit>
-		<Unit filename="C:/Users/Cabral/Documents/GitHub/Huffman/Huff/Huff.c">
+		<Unit filename="/home/alunoic/CLionProjects/Huffman/Huff/Decompress.c">
 			<Option target="Huffman"/>
 		</Unit>
-		<Unit filename="C:/Users/Cabral/Documents/GitHub/Huffman/Huff/Huff.h">
+		<Unit filename="/home/alunoic/CLionProjects/Huffman/Huff/Decompress.h">
 			<Option target="Huffman"/>
 		</Unit>
-		<Unit filename="C:/Users/Cabral/Documents/GitHub/Huffman/Huff/mainHuff.c">
+		<Unit filename="/home/alunoic/CLionProjects/Huffman/Huff/Huff.c">
 			<Option target="Huffman"/>
 		</Unit>
-		<Unit filename="C:/Users/Cabral/Documents/GitHub/Huffman/Plot/BST.c">
+		<Unit filename="/home/alunoic/CLionProjects/Huffman/Huff/Huff.h">
+			<Option target="Huffman"/>
+		</Unit>
+		<Unit filename="/home/alunoic/CLionProjects/Huffman/Huff/mainHuff.c">
+			<Option target="Huffman"/>
+		</Unit>
+		<Unit filename="/home/alunoic/CLionProjects/Huffman/Plot/BST.c">
 			<Option target="Plotagem"/>
 		</Unit>
-		<Unit filename="C:/Users/Cabral/Documents/GitHub/Huffman/Plot/BST.h">
+		<Unit filename="/home/alunoic/CLionProjects/Huffman/Plot/BST.h">
 			<Option target="Plotagem"/>
 		</Unit>
-		<Unit filename="C:/Users/Cabral/Documents/GitHub/Huffman/Plot/LinkedList.c">
+		<Unit filename="/home/alunoic/CLionProjects/Huffman/Plot/LinkedList.c">
 			<Option target="Plotagem"/>
 		</Unit>
-		<Unit filename="C:/Users/Cabral/Documents/GitHub/Huffman/Plot/LinkedList.h">
+		<Unit filename="/home/alunoic/CLionProjects/Huffman/Plot/LinkedList.h">
 			<Option target="Plotagem"/>
 		</Unit>
-		<Unit filename="C:/Users/Cabral/Documents/GitHub/Huffman/Plot/mainPlot.c">
+		<Unit filename="/home/alunoic/CLionProjects/Huffman/Plot/mainPlot.c">
 			<Option target="Plotagem"/>
 		</Unit>
-		<Unit filename="C:/Users/Cabral/Documents/GitHub/Huffman/CMakeLists.txt">
+		<Unit filename="/home/alunoic/CLionProjects/Huffman/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

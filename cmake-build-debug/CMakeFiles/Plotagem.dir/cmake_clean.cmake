@@ -1,11 +1,9 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/Plotagem.dir/Plot/mainPlot.c.obj"
-  "CMakeFiles/Plotagem.dir/Plot/LinkedList.c.obj"
-  "CMakeFiles/Plotagem.dir/Plot/BST.c.obj"
+  "CMakeFiles/Plotagem.dir/Plot/mainPlot.c.o"
+  "CMakeFiles/Plotagem.dir/Plot/LinkedList.c.o"
+  "CMakeFiles/Plotagem.dir/Plot/BST.c.o"
   "Plotagem.pdb"
-  "Plotagem.exe"
-  "Plotagem.exe.manifest"
-  "libPlotagem.dll.a"
+  "Plotagem"
 )
 
 # Per-language clean rules from dependency scanning.

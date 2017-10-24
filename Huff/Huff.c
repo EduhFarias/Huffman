@@ -34,12 +34,31 @@ void compress(FILE *file){
     createTable(bt, table, 0, aux);
 
     FILE *oFile;
-    oFile = fopen("C:\\Users\\Cabral\\Documents\\Prog\\saida.huff", "wb");
+    oFile = fopen("/home/alunoic/CLionProjects/saida.huff", "wb");
 
     int bits = 7, pos = 0, bit = 0;
-    unsigned char b = 0;
 
     rewind(file);
+    while((c = fgetc(file)) != EOF){
+        while(table[c][pos] != '\0'){
+            bit++;
+            pos++;
+        }
+        pos = 0;
+    }
+    rewind(file);
+
+    int rest = bit % 8;
+
+    unsigned char size_tree = sizeTree(bt, oFile);
+    unsigned char trash = (unsigned char)(8 - rest) << 5;
+    unsigned char fByte = trash | (size_tree >> 8);
+
+
+    fprintf(oFile,"%c", fByte);
+    fprintf(oFile,"%c", size_tree);
+    printPreOrder(bt, oFile);
+    int b = 0;
     while((c = fgetc(file)) != EOF){
         while(table[c][pos] != '\0'){
             if(bits < 0){
@@ -58,18 +77,8 @@ void compress(FILE *file){
         pos = 0;
     }
 
-    int rest = bit % 8;
-    rewind(oFile);
-    unsigned char size_tree = (unsigned char)printPreOrder(bt, oFile);
-    unsigned char trash = (unsigned char)(8 - rest) << 5;
-    unsigned char fByte = trash | (size_tree >> 8);
-
-    rewind(oFile);
-    fprintf(oFile,"%c", fByte);
-    fprintf(oFile,"%c", size_tree);
-
     //---------- TESTE --------
-    printf("- trash/size_tree: %d%d %d", trash, size_tree, rest);
+    printf("- trash/size_tree: %d%d", fByte, size_tree);
     printOrder(bt);
     for(i = 0; i < 256; i++){
         if(ch[i] > 0){
