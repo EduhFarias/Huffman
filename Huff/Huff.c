@@ -36,14 +36,15 @@ void compress(FILE *file){
     FILE *oFile;
     oFile = fopen("C:\\Users\\Cabral\\Documents\\Prog\\saida.huff", "wb");
 
-    int bits = 7, pos = 0;
+    int bits = 7, pos = 0, bit = 0;
     unsigned char b = 0;
 
     rewind(file);
-    while((c = fgetc(file)) != EOF){ //Percorre o arquivo e soma +1 em toda posição referente ao caracter
+    while((c = fgetc(file)) != EOF){
         while(table[c][pos] != '\0'){
-            if(bits == 0){
+            if(bits < 0){
                 fprintf(oFile,"%c", b);
+                //printf("%c",b);
                 bits = 7;
                 b = 0;
             }
@@ -52,22 +53,23 @@ void compress(FILE *file){
             }
             bits--;
             pos++;
+            bit++;
         }
         pos = 0;
     }
-    fseek(oFile, NULL, SEEK_CUR);
 
-    int rest = ftell(oFile) % 8;
-    int size_tree = printPreOrder(bt, oFile); //Talvez mudar de int para unsigned char, size_tree e a função print
-    unsigned char trash = rest << 5;
-    unsigned char fByte = trash | size_tree >> 3;
+    int rest = bit % 8;
+    rewind(oFile);
+    unsigned char size_tree = (unsigned char)printPreOrder(bt, oFile);
+    unsigned char trash = (unsigned char)(8 - rest) << 5;
+    unsigned char fByte = trash | (size_tree >> 8);
 
     rewind(oFile);
     fprintf(oFile,"%c", fByte);
-    fprintf(oFile,"%c",size_tree);
+    fprintf(oFile,"%c", size_tree);
 
-    //----------
-    printf("%c%c", trash, size_tree);
+    //---------- TESTE --------
+    printf("- trash/size_tree: %d%d %d", trash, size_tree, rest);
     printOrder(bt);
     for(i = 0; i < 256; i++){
         if(ch[i] > 0){
