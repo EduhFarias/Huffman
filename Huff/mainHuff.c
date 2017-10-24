@@ -4,16 +4,20 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include "BinaryTree.h"
-#include "Huff.h"
+#include "Compress.h"
 
 int main(void){
-    FILE *file;
-    file = fopen("/home/alunoic/CLionProjects/test.txt", "rb");
-    if(file == NULL){
-        printf("Arquivo nao pode ser aberto\n");
-        exit(1);
+    printf("Deseja (C)omprimir ou (D)escomprimir ?\n");
+    char c;
+    scanf("%c", &c);
+    system("clear");
+
+    if(c == 'C'){
+        compress();
+    } else if(c == 'D'){
+        //decompress();
+    } else{
+        printf("Comando inválido, programa está sendo encerrado\n");
     }
-    compress(file);
-    //decompress(file);
-    fclose(file);
+
 }
