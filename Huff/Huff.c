@@ -8,6 +8,8 @@
 #include <stdlib.h>
 #include <string.h>
 
+//Mudar esse arquivo para compress.c
+
 void compress(FILE *file){
     int c, i, j;
     BinaryTree *bt = createEmpty();
@@ -120,9 +122,9 @@ BinaryTree* huff(BinaryTree *bt){                                           //Co
 int isBit_i_set(unsigned char c, int i){
     unsigned char mask = 1 << i;
     return mask & c;
-}
-
+}           //Talvez criar um arquivo helpful.c para guardar essa funçoes
+                                                       //Para reduzir o tamanho desse arquivo e para ficar acessivel
 unsigned char setBit(unsigned char c, int i){
     unsigned char mask = 1 << i;
     return c | mask;
-}
+}      //No decompress.c
