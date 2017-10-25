@@ -1,7 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Huffman.dir/Huff/BinaryTree.c.obj"
   "CMakeFiles/Huffman.dir/Huff/mainHuff.c.obj"
-  "CMakeFiles/Huffman.dir/Huff/Huff.c.obj"
+  "CMakeFiles/Huffman.dir/Huff/Compress.c.obj"
+  "CMakeFiles/Huffman.dir/Huff/Decompress.c.obj"
   "Huffman.pdb"
   "Huffman.exe"
   "Huffman.exe.manifest"

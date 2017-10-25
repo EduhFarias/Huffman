@@ -4,11 +4,14 @@
 CMakeFiles/Huffman.dir/Huff/BinaryTree.c.obj
  C:/Users/Cabral/Documents/GitHub/Huffman/Huff/BinaryTree.c
  C:/Users/Cabral/Documents/GitHub/Huffman/Huff/BinaryTree.h
-CMakeFiles/Huffman.dir/Huff/Huff.c.obj
+CMakeFiles/Huffman.dir/Huff/Compress.c.obj
  C:/Users/Cabral/Documents/GitHub/Huffman/Huff/BinaryTree.h
- C:/Users/Cabral/Documents/GitHub/Huffman/Huff/Huff.c
- C:/Users/Cabral/Documents/GitHub/Huffman/Huff/Huff.h
+ C:/Users/Cabral/Documents/GitHub/Huffman/Huff/Compress.c
+ C:/Users/Cabral/Documents/GitHub/Huffman/Huff/Compress.h
+CMakeFiles/Huffman.dir/Huff/Decompress.c.obj
+ C:/Users/Cabral/Documents/GitHub/Huffman/Huff/Decompress.c
+ C:/Users/Cabral/Documents/GitHub/Huffman/Huff/Decompress.h
 CMakeFiles/Huffman.dir/Huff/mainHuff.c.obj
  C:/Users/Cabral/Documents/GitHub/Huffman/Huff/BinaryTree.h
- C:/Users/Cabral/Documents/GitHub/Huffman/Huff/Huff.h
+ C:/Users/Cabral/Documents/GitHub/Huffman/Huff/Compress.h
  C:/Users/Cabral/Documents/GitHub/Huffman/Huff/mainHuff.c

@@ -4,11 +4,14 @@
 CMakeFiles/Huffman.dir/Huff/BinaryTree.c.obj: ../Huff/BinaryTree.c
 CMakeFiles/Huffman.dir/Huff/BinaryTree.c.obj: ../Huff/BinaryTree.h
 
-CMakeFiles/Huffman.dir/Huff/Huff.c.obj: ../Huff/BinaryTree.h
-CMakeFiles/Huffman.dir/Huff/Huff.c.obj: ../Huff/Huff.c
-CMakeFiles/Huffman.dir/Huff/Huff.c.obj: ../Huff/Huff.h
+CMakeFiles/Huffman.dir/Huff/Compress.c.obj: ../Huff/BinaryTree.h
+CMakeFiles/Huffman.dir/Huff/Compress.c.obj: ../Huff/Compress.c
+CMakeFiles/Huffman.dir/Huff/Compress.c.obj: ../Huff/Compress.h
+
+CMakeFiles/Huffman.dir/Huff/Decompress.c.obj: ../Huff/Decompress.c
+CMakeFiles/Huffman.dir/Huff/Decompress.c.obj: ../Huff/Decompress.h
 
 CMakeFiles/Huffman.dir/Huff/mainHuff.c.obj: ../Huff/BinaryTree.h
-CMakeFiles/Huffman.dir/Huff/mainHuff.c.obj: ../Huff/Huff.h
+CMakeFiles/Huffman.dir/Huff/mainHuff.c.obj: ../Huff/Compress.h
 CMakeFiles/Huffman.dir/Huff/mainHuff.c.obj: ../Huff/mainHuff.c
 

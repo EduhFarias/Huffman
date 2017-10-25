@@ -18,9 +18,9 @@ C:/Users/Cabral/Documents/GitHub/Huffman/Huff/BinaryTree.h
 stdio.h
 -
 
-C:/Users/Cabral/Documents/GitHub/Huffman/Huff/Huff.c
-Huff.h
-C:/Users/Cabral/Documents/GitHub/Huffman/Huff/Huff.h
+C:/Users/Cabral/Documents/GitHub/Huffman/Huff/Compress.c
+Compress.h
+C:/Users/Cabral/Documents/GitHub/Huffman/Huff/Compress.h
 BinaryTree.h
 C:/Users/Cabral/Documents/GitHub/Huffman/Huff/BinaryTree.h
 stdio.h
@@ -30,11 +30,21 @@ stdlib.h
 string.h
 -
 
-C:/Users/Cabral/Documents/GitHub/Huffman/Huff/Huff.h
+C:/Users/Cabral/Documents/GitHub/Huffman/Huff/Compress.h
 stdio.h
 -
 BinaryTree.h
 C:/Users/Cabral/Documents/GitHub/Huffman/Huff/BinaryTree.h
+
+C:/Users/Cabral/Documents/GitHub/Huffman/Huff/Decompress.c
+stdio.h
+-
+stdlib.h
+-
+Decompress.h
+C:/Users/Cabral/Documents/GitHub/Huffman/Huff/Decompress.h
+
+C:/Users/Cabral/Documents/GitHub/Huffman/Huff/Decompress.h
 
 C:/Users/Cabral/Documents/GitHub/Huffman/Huff/mainHuff.c
 stdlib.h
@@ -43,6 +53,6 @@ stdio.h
 -
 BinaryTree.h
 C:/Users/Cabral/Documents/GitHub/Huffman/Huff/BinaryTree.h
-Huff.h
-C:/Users/Cabral/Documents/GitHub/Huffman/Huff/Huff.h
+Compress.h
+C:/Users/Cabral/Documents/GitHub/Huffman/Huff/Compress.h
 

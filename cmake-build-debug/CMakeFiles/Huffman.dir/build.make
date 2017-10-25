@@ -104,47 +104,73 @@ CMakeFiles/Huffman.dir/Huff/mainHuff.c.obj.provides: CMakeFiles/Huffman.dir/Huff
 CMakeFiles/Huffman.dir/Huff/mainHuff.c.obj.provides.build: CMakeFiles/Huffman.dir/Huff/mainHuff.c.obj
 
 
-CMakeFiles/Huffman.dir/Huff/Huff.c.obj: CMakeFiles/Huffman.dir/flags.make
-CMakeFiles/Huffman.dir/Huff/Huff.c.obj: ../Huff/Huff.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Cabral\Documents\GitHub\Huffman\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/Huffman.dir/Huff/Huff.c.obj"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Huffman.dir\Huff\Huff.c.obj   -c C:\Users\Cabral\Documents\GitHub\Huffman\Huff\Huff.c
+CMakeFiles/Huffman.dir/Huff/Compress.c.obj: CMakeFiles/Huffman.dir/flags.make
+CMakeFiles/Huffman.dir/Huff/Compress.c.obj: ../Huff/Compress.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Cabral\Documents\GitHub\Huffman\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/Huffman.dir/Huff/Compress.c.obj"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Huffman.dir\Huff\Compress.c.obj   -c C:\Users\Cabral\Documents\GitHub\Huffman\Huff\Compress.c
 
-CMakeFiles/Huffman.dir/Huff/Huff.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Huffman.dir/Huff/Huff.c.i"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Cabral\Documents\GitHub\Huffman\Huff\Huff.c > CMakeFiles\Huffman.dir\Huff\Huff.c.i
+CMakeFiles/Huffman.dir/Huff/Compress.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Huffman.dir/Huff/Compress.c.i"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Cabral\Documents\GitHub\Huffman\Huff\Compress.c > CMakeFiles\Huffman.dir\Huff\Compress.c.i
 
-CMakeFiles/Huffman.dir/Huff/Huff.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Huffman.dir/Huff/Huff.c.s"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Cabral\Documents\GitHub\Huffman\Huff\Huff.c -o CMakeFiles\Huffman.dir\Huff\Huff.c.s
+CMakeFiles/Huffman.dir/Huff/Compress.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Huffman.dir/Huff/Compress.c.s"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Cabral\Documents\GitHub\Huffman\Huff\Compress.c -o CMakeFiles\Huffman.dir\Huff\Compress.c.s
 
-CMakeFiles/Huffman.dir/Huff/Huff.c.obj.requires:
+CMakeFiles/Huffman.dir/Huff/Compress.c.obj.requires:
 
-.PHONY : CMakeFiles/Huffman.dir/Huff/Huff.c.obj.requires
+.PHONY : CMakeFiles/Huffman.dir/Huff/Compress.c.obj.requires
 
-CMakeFiles/Huffman.dir/Huff/Huff.c.obj.provides: CMakeFiles/Huffman.dir/Huff/Huff.c.obj.requires
-	$(MAKE) -f CMakeFiles\Huffman.dir\build.make CMakeFiles/Huffman.dir/Huff/Huff.c.obj.provides.build
-.PHONY : CMakeFiles/Huffman.dir/Huff/Huff.c.obj.provides
+CMakeFiles/Huffman.dir/Huff/Compress.c.obj.provides: CMakeFiles/Huffman.dir/Huff/Compress.c.obj.requires
+	$(MAKE) -f CMakeFiles\Huffman.dir\build.make CMakeFiles/Huffman.dir/Huff/Compress.c.obj.provides.build
+.PHONY : CMakeFiles/Huffman.dir/Huff/Compress.c.obj.provides
 
-CMakeFiles/Huffman.dir/Huff/Huff.c.obj.provides.build: CMakeFiles/Huffman.dir/Huff/Huff.c.obj
+CMakeFiles/Huffman.dir/Huff/Compress.c.obj.provides.build: CMakeFiles/Huffman.dir/Huff/Compress.c.obj
+
+
+CMakeFiles/Huffman.dir/Huff/Decompress.c.obj: CMakeFiles/Huffman.dir/flags.make
+CMakeFiles/Huffman.dir/Huff/Decompress.c.obj: ../Huff/Decompress.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Cabral\Documents\GitHub\Huffman\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/Huffman.dir/Huff/Decompress.c.obj"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Huffman.dir\Huff\Decompress.c.obj   -c C:\Users\Cabral\Documents\GitHub\Huffman\Huff\Decompress.c
+
+CMakeFiles/Huffman.dir/Huff/Decompress.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Huffman.dir/Huff/Decompress.c.i"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Cabral\Documents\GitHub\Huffman\Huff\Decompress.c > CMakeFiles\Huffman.dir\Huff\Decompress.c.i
+
+CMakeFiles/Huffman.dir/Huff/Decompress.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Huffman.dir/Huff/Decompress.c.s"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Cabral\Documents\GitHub\Huffman\Huff\Decompress.c -o CMakeFiles\Huffman.dir\Huff\Decompress.c.s
+
+CMakeFiles/Huffman.dir/Huff/Decompress.c.obj.requires:
+
+.PHONY : CMakeFiles/Huffman.dir/Huff/Decompress.c.obj.requires
+
+CMakeFiles/Huffman.dir/Huff/Decompress.c.obj.provides: CMakeFiles/Huffman.dir/Huff/Decompress.c.obj.requires
+	$(MAKE) -f CMakeFiles\Huffman.dir\build.make CMakeFiles/Huffman.dir/Huff/Decompress.c.obj.provides.build
+.PHONY : CMakeFiles/Huffman.dir/Huff/Decompress.c.obj.provides
+
+CMakeFiles/Huffman.dir/Huff/Decompress.c.obj.provides.build: CMakeFiles/Huffman.dir/Huff/Decompress.c.obj
 
 
 # Object files for target Huffman
 Huffman_OBJECTS = \
 "CMakeFiles/Huffman.dir/Huff/BinaryTree.c.obj" \
 "CMakeFiles/Huffman.dir/Huff/mainHuff.c.obj" \
-"CMakeFiles/Huffman.dir/Huff/Huff.c.obj"
+"CMakeFiles/Huffman.dir/Huff/Compress.c.obj" \
+"CMakeFiles/Huffman.dir/Huff/Decompress.c.obj"
 
 # External object files for target Huffman
 Huffman_EXTERNAL_OBJECTS =
 
 Huffman.exe: CMakeFiles/Huffman.dir/Huff/BinaryTree.c.obj
 Huffman.exe: CMakeFiles/Huffman.dir/Huff/mainHuff.c.obj
-Huffman.exe: CMakeFiles/Huffman.dir/Huff/Huff.c.obj
+Huffman.exe: CMakeFiles/Huffman.dir/Huff/Compress.c.obj
+Huffman.exe: CMakeFiles/Huffman.dir/Huff/Decompress.c.obj
 Huffman.exe: CMakeFiles/Huffman.dir/build.make
 Huffman.exe: CMakeFiles/Huffman.dir/linklibs.rsp
 Huffman.exe: CMakeFiles/Huffman.dir/objects1.rsp
 Huffman.exe: CMakeFiles/Huffman.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Cabral\Documents\GitHub\Huffman\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable Huffman.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Cabral\Documents\GitHub\Huffman\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C executable Huffman.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Huffman.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -154,7 +180,8 @@ CMakeFiles/Huffman.dir/build: Huffman.exe
 
 CMakeFiles/Huffman.dir/requires: CMakeFiles/Huffman.dir/Huff/BinaryTree.c.obj.requires
 CMakeFiles/Huffman.dir/requires: CMakeFiles/Huffman.dir/Huff/mainHuff.c.obj.requires
-CMakeFiles/Huffman.dir/requires: CMakeFiles/Huffman.dir/Huff/Huff.c.obj.requires
+CMakeFiles/Huffman.dir/requires: CMakeFiles/Huffman.dir/Huff/Compress.c.obj.requires
+CMakeFiles/Huffman.dir/requires: CMakeFiles/Huffman.dir/Huff/Decompress.c.obj.requires
 
 .PHONY : CMakeFiles/Huffman.dir/requires
 

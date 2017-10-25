@@ -8,7 +8,7 @@
 #include <stdio.h>
 #include "BinaryTree.h"
 
-void compress(FILE *file);
+void compress(FILE *iFile);
 
 void createTable(BinaryTree *bt, unsigned char table[][256], int pos, unsigned char *aux);
 
