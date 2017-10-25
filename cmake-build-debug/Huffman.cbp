@@ -132,10 +132,16 @@
 		<Unit filename="C:/Users/Cabral/Documents/GitHub/Huffman/Huff/BinaryTree.h">
 			<Option target="Huffman"/>
 		</Unit>
-		<Unit filename="C:/Users/Cabral/Documents/GitHub/Huffman/Huff/Huff.c">
+		<Unit filename="C:/Users/Cabral/Documents/GitHub/Huffman/Huff/Compress.c">
 			<Option target="Huffman"/>
 		</Unit>
-		<Unit filename="C:/Users/Cabral/Documents/GitHub/Huffman/Huff/Huff.h">
+		<Unit filename="C:/Users/Cabral/Documents/GitHub/Huffman/Huff/Compress.h">
+			<Option target="Huffman"/>
+		</Unit>
+		<Unit filename="C:/Users/Cabral/Documents/GitHub/Huffman/Huff/Decompress.c">
+			<Option target="Huffman"/>
+		</Unit>
+		<Unit filename="C:/Users/Cabral/Documents/GitHub/Huffman/Huff/Decompress.h">
 			<Option target="Huffman"/>
 		</Unit>
 		<Unit filename="C:/Users/Cabral/Documents/GitHub/Huffman/Huff/mainHuff.c">

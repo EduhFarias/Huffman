@@ -162,32 +162,59 @@ Huff/BinaryTree.c.s:
 	$(MAKE) -f CMakeFiles\Huffman.dir\build.make CMakeFiles/Huffman.dir/Huff/BinaryTree.c.s
 .PHONY : Huff/BinaryTree.c.s
 
-Huff/Huff.obj: Huff/Huff.c.obj
+Huff/Compress.obj: Huff/Compress.c.obj
 
-.PHONY : Huff/Huff.obj
+.PHONY : Huff/Compress.obj
 
 # target to build an object file
-Huff/Huff.c.obj:
-	$(MAKE) -f CMakeFiles\Huffman.dir\build.make CMakeFiles/Huffman.dir/Huff/Huff.c.obj
-.PHONY : Huff/Huff.c.obj
+Huff/Compress.c.obj:
+	$(MAKE) -f CMakeFiles\Huffman.dir\build.make CMakeFiles/Huffman.dir/Huff/Compress.c.obj
+.PHONY : Huff/Compress.c.obj
 
-Huff/Huff.i: Huff/Huff.c.i
+Huff/Compress.i: Huff/Compress.c.i
 
-.PHONY : Huff/Huff.i
+.PHONY : Huff/Compress.i
 
 # target to preprocess a source file
-Huff/Huff.c.i:
-	$(MAKE) -f CMakeFiles\Huffman.dir\build.make CMakeFiles/Huffman.dir/Huff/Huff.c.i
-.PHONY : Huff/Huff.c.i
+Huff/Compress.c.i:
+	$(MAKE) -f CMakeFiles\Huffman.dir\build.make CMakeFiles/Huffman.dir/Huff/Compress.c.i
+.PHONY : Huff/Compress.c.i
 
-Huff/Huff.s: Huff/Huff.c.s
+Huff/Compress.s: Huff/Compress.c.s
 
-.PHONY : Huff/Huff.s
+.PHONY : Huff/Compress.s
 
 # target to generate assembly for a file
-Huff/Huff.c.s:
-	$(MAKE) -f CMakeFiles\Huffman.dir\build.make CMakeFiles/Huffman.dir/Huff/Huff.c.s
-.PHONY : Huff/Huff.c.s
+Huff/Compress.c.s:
+	$(MAKE) -f CMakeFiles\Huffman.dir\build.make CMakeFiles/Huffman.dir/Huff/Compress.c.s
+.PHONY : Huff/Compress.c.s
+
+Huff/Decompress.obj: Huff/Decompress.c.obj
+
+.PHONY : Huff/Decompress.obj
+
+# target to build an object file
+Huff/Decompress.c.obj:
+	$(MAKE) -f CMakeFiles\Huffman.dir\build.make CMakeFiles/Huffman.dir/Huff/Decompress.c.obj
+.PHONY : Huff/Decompress.c.obj
+
+Huff/Decompress.i: Huff/Decompress.c.i
+
+.PHONY : Huff/Decompress.i
+
+# target to preprocess a source file
+Huff/Decompress.c.i:
+	$(MAKE) -f CMakeFiles\Huffman.dir\build.make CMakeFiles/Huffman.dir/Huff/Decompress.c.i
+.PHONY : Huff/Decompress.c.i
+
+Huff/Decompress.s: Huff/Decompress.c.s
+
+.PHONY : Huff/Decompress.s
+
+# target to generate assembly for a file
+Huff/Decompress.c.s:
+	$(MAKE) -f CMakeFiles\Huffman.dir\build.make CMakeFiles/Huffman.dir/Huff/Decompress.c.s
+.PHONY : Huff/Decompress.c.s
 
 Huff/mainHuff.obj: Huff/mainHuff.c.obj
 
@@ -310,9 +337,12 @@ help:
 	@echo ... Huff/BinaryTree.obj
 	@echo ... Huff/BinaryTree.i
 	@echo ... Huff/BinaryTree.s
-	@echo ... Huff/Huff.obj
-	@echo ... Huff/Huff.i
-	@echo ... Huff/Huff.s
+	@echo ... Huff/Compress.obj
+	@echo ... Huff/Compress.i
+	@echo ... Huff/Compress.s
+	@echo ... Huff/Decompress.obj
+	@echo ... Huff/Decompress.i
+	@echo ... Huff/Decompress.s
 	@echo ... Huff/mainHuff.obj
 	@echo ... Huff/mainHuff.i
 	@echo ... Huff/mainHuff.s

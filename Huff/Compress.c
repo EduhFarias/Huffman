@@ -2,13 +2,16 @@
 // Created by Eduardo on 04/10/2017.
 //
 
-#include "Huff.h"
+#include "Compress.h"
 #include "BinaryTree.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
-void compress(FILE *file){
+//Mudar esse arquivo para compress.c
+
+void compress(FILE *iFile){
+
     int c, i, j;
     BinaryTree *bt = createEmpty();
     unsigned char ch[256] = {0};
@@ -18,7 +21,7 @@ void compress(FILE *file){
         memset(table[i],'\0',256);
     }
 
-    while((c = fgetc(file)) != EOF){ //Percorre o arquivo e soma +1 em toda posição referente ao caracter
+    while((c = fgetc(iFile)) != EOF){ //Percorre o arquivo e soma +1 em toda posição referente ao caracter
         ch[c]++;
     }
     for(i = 0; i < 256; i++){        //Checa toda as 256 posições e cria um nó pra cara caracter
@@ -33,14 +36,33 @@ void compress(FILE *file){
 
     createTable(bt, table, 0, aux);
 
-    FILE *oFile;
-    oFile = fopen("C:\\Users\\Cabral\\Documents\\Prog\\saida.huff", "wb");
-
     int bits = 7, pos = 0, bit = 0;
-    unsigned char b = 0;
 
-    rewind(file);
-    while((c = fgetc(file)) != EOF){
+    rewind(iFile);
+    while((c = fgetc(iFile)) != EOF){
+        while(table[c][pos] != '\0'){
+            bit++;
+            pos++;
+        }
+        pos = 0;
+    }
+    rewind(iFile);
+
+    int rest = bit % 8;
+
+    FILE *oFile = fopen("C:\\Users\\Cabral\\Documents\\Prog\\saida.huff", "wb");
+
+    unsigned char size_tree = sizeTree(bt, oFile);
+    unsigned char trash = (unsigned char)(8 - rest) << 5;
+    unsigned char fByte = trash | (size_tree >> 8);
+
+
+    fprintf(oFile,"%c", fByte);
+    fprintf(oFile,"%c", size_tree);
+    printPreOrder(bt, oFile);
+
+    unsigned char b = 0;
+    while((c = fgetc(iFile)) != EOF){
         while(table[c][pos] != '\0'){
             if(bits < 0){
                 fprintf(oFile,"%c", b);
@@ -58,18 +80,8 @@ void compress(FILE *file){
         pos = 0;
     }
 
-    int rest = bit % 8;
-    rewind(oFile);
-    unsigned char size_tree = (unsigned char)printPreOrder(bt, oFile);
-    unsigned char trash = (unsigned char)(8 - rest) << 5;
-    unsigned char fByte = trash | (size_tree >> 8);
-
-    rewind(oFile);
-    fprintf(oFile,"%c", fByte);
-    fprintf(oFile,"%c", size_tree);
-
     //---------- TESTE --------
-    printf("- trash/size_tree: %d%d %d", trash, size_tree, rest);
+    printf("- trash/size_tree: %d%d", fByte, size_tree);
     printOrder(bt);
     for(i = 0; i < 256; i++){
         if(ch[i] > 0){
@@ -77,6 +89,9 @@ void compress(FILE *file){
         }
     }
     //----------
+
+    fclose(iFile);
+    fclose(oFile);
 }
 
 void createTable(BinaryTree *bt, unsigned char table[][256], int pos, unsigned char *aux) {
@@ -111,9 +126,9 @@ BinaryTree* huff(BinaryTree *bt){                                           //Co
 int isBit_i_set(unsigned char c, int i){
     unsigned char mask = 1 << i;
     return mask & c;
-}
-
+}           //Talvez criar um arquivo helpful.c para guardar essa funçoes
+                                                       //Para reduzir o tamanho desse arquivo e para ficar acessivel
 unsigned char setBit(unsigned char c, int i){
     unsigned char mask = 1 << i;
     return c | mask;
-}
+}      //No decompress.c
