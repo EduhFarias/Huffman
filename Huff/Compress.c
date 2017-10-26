@@ -57,9 +57,9 @@ void compress(FILE *iFile){
     //-------------------------------------------------------------------------------
 
     int trash[3], count = 0;
-    converter((8-rest),3, trash);
+    bin_converter((8-rest),3, trash);
     int size_tree[13];
-    converter(sizeTree(bt, oFile),13, size_tree);
+    bin_converter(sizeTree(bt, oFile),13, size_tree);
 
     unsigned char byteTS = 0;
 
