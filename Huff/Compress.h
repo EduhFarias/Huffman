@@ -14,9 +14,5 @@ void createTable(BinaryTree *bt, unsigned char table[][256], int pos, unsigned c
 
 BinaryTree* huff(BinaryTree *bt);
 
-int isBit_i_set(unsigned char c, int i);
-
-unsigned char setBit(unsigned char c, int i);
-
 #endif //HUFFMAN_COMPRESS_H
 

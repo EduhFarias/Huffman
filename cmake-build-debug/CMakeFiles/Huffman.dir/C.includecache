@@ -29,6 +29,8 @@ stdlib.h
 -
 string.h
 -
+Helpful.h
+C:/Users/Cabral/Documents/GitHub/Huffman/Huff/Helpful.h
 
 C:/Users/Cabral/Documents/GitHub/Huffman/Huff/Compress.h
 stdio.h
@@ -45,6 +47,12 @@ Decompress.h
 C:/Users/Cabral/Documents/GitHub/Huffman/Huff/Decompress.h
 
 C:/Users/Cabral/Documents/GitHub/Huffman/Huff/Decompress.h
+
+C:/Users/Cabral/Documents/GitHub/Huffman/Huff/Helpful.c
+Helpful.h
+C:/Users/Cabral/Documents/GitHub/Huffman/Huff/Helpful.h
+
+C:/Users/Cabral/Documents/GitHub/Huffman/Huff/Helpful.h
 
 C:/Users/Cabral/Documents/GitHub/Huffman/Huff/mainHuff.c
 stdlib.h

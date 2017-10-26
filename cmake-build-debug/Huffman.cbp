@@ -144,6 +144,12 @@
 		<Unit filename="C:/Users/Cabral/Documents/GitHub/Huffman/Huff/Decompress.h">
 			<Option target="Huffman"/>
 		</Unit>
+		<Unit filename="C:/Users/Cabral/Documents/GitHub/Huffman/Huff/Helpful.c">
+			<Option target="Huffman"/>
+		</Unit>
+		<Unit filename="C:/Users/Cabral/Documents/GitHub/Huffman/Huff/Helpful.h">
+			<Option target="Huffman"/>
+		</Unit>
 		<Unit filename="C:/Users/Cabral/Documents/GitHub/Huffman/Huff/mainHuff.c">
 			<Option target="Huffman"/>
 		</Unit>

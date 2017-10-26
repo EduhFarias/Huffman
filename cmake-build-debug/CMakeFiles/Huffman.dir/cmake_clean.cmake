@@ -3,6 +3,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Huffman.dir/Huff/mainHuff.c.obj"
   "CMakeFiles/Huffman.dir/Huff/Compress.c.obj"
   "CMakeFiles/Huffman.dir/Huff/Decompress.c.obj"
+  "CMakeFiles/Huffman.dir/Huff/Helpful.c.obj"
   "Huffman.pdb"
   "Huffman.exe"
   "Huffman.exe.manifest"

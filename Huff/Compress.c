@@ -7,19 +7,17 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-
-//Mudar esse arquivo para compress.c
+#include "Helpful.h"
 
 void compress(FILE *iFile){
+
+    FILE *oFile = fopen("C:\\Users\\Cabral\\Documents\\Prog\\saida.huff", "wb");
 
     int c, i, j;
     BinaryTree *bt = createEmpty();
     unsigned char ch[256] = {0};
-    unsigned char table[256][256];
 
-    for(i = 0; i < 256; i++){
-        memset(table[i],'\0',256);
-    }
+    //-------------------------------------------------------------------------------
 
     while((c = fgetc(iFile)) != EOF){ //Percorre o arquivo e soma +1 em toda posição referente ao caracter
         ch[c]++;
@@ -30,11 +28,18 @@ void compress(FILE *iFile){
         }
     }
     bt = huff(bt);
+    //-------------------------------------------------------------------------------
 
     unsigned char aux[256];
+    unsigned char table[256][256];
+
+    for(i = 0; i < 256; i++){
+        memset(table[i],'\0',256);
+    }
     memset(aux,NULL,256);
 
     createTable(bt, table, 0, aux);
+    //-------------------------------------------------------------------------------
 
     int bits = 7, pos = 0, bit = 0;
 
@@ -49,46 +54,51 @@ void compress(FILE *iFile){
     rewind(iFile);
 
     int rest = bit % 8;
+    //-------------------------------------------------------------------------------
 
-    FILE *oFile = fopen("C:\\Users\\Cabral\\Documents\\Prog\\saida.huff", "wb");
+    int trash[3], count = 0;
+    converter((8-rest),3, trash);
+    int size_tree[13];
+    converter(sizeTree(bt, oFile),13, size_tree);
 
-    unsigned char size_tree = sizeTree(bt, oFile);
-    unsigned char trash = (unsigned char)(8 - rest) << 5;
-    unsigned char fByte = trash | (size_tree >> 8);
+    unsigned char byteTS = 0;
 
-
-    fprintf(oFile,"%c", fByte);
-    fprintf(oFile,"%c", size_tree);
+    while(count < 17){
+        if(bits < 0){
+            fprintf(oFile,"%c", byteTS);
+            bits = 7;
+            byteTS = 0;
+        }
+        if(count < 3){
+            if(trash[count] == 1) byteTS = setBit(byteTS, bits);
+        } else {
+            if(size_tree[count-3] == 1) byteTS = setBit(byteTS, bits);
+        }
+        bits--;
+        count++;
+    }
     printPreOrder(bt, oFile);
+    //-------------------------------------------------------------------------------
 
-    unsigned char b = 0;
-    pos = 0;
+    unsigned char oByte = 0;
+    pos = 0, bits = 7;
 
     while((c = fgetc(iFile)) != EOF){
         while(table[c][pos] != '\0'){
             if(bits < 0){
-                fprintf(oFile,"%c", b);
+                fprintf(oFile,"%c", oByte);
                 bits = 7;
-                b = 0;
+                oByte = 0;
             }
             if(table[c][pos] == '1'){
-                b = setBit(b, bits);
+                oByte = setBit(oByte, bits);
             }
             bits--;
             pos++;
         }
         pos = 0;
     }
-
-    //---------- TESTE --------
-    printf("- trash/size_tree: %c%c", fByte, size_tree);
-    printOrder(bt);
-    for(i = 0; i < 256; i++){
-        if(ch[i] > 0){
-                printf("%c: %s\n", i,table[i]);
-        }
-    }
-    //----------
+    //-------------------------------------------------------------------------------
 
     fclose(iFile);
     fclose(oFile);
@@ -109,10 +119,10 @@ void createTable(BinaryTree *bt, unsigned char table[][256], int pos, unsigned c
     pos--;
 }
 
-BinaryTree* huff(BinaryTree *bt){                                           //Começa o merge
-    while(getNext(bt)) {                                                             //Enquanto ouver mais de um nó
-        BinaryTree *A, *B;                     //Cria dois nós auxiliares
-        A = getNode(bt);                                                    //A recebe o nó de menor frequência
+BinaryTree* huff(BinaryTree *bt){
+    while(getNext(bt)) {
+        BinaryTree *A, *B;
+        A = getNode(bt);
         B = getNode(getNext(bt));
         int freq = (getFreq(A)) + (getFreq(B));
 
@@ -122,13 +132,3 @@ BinaryTree* huff(BinaryTree *bt){                                           //Co
     }
     return bt;
 }
-
-int isBit_i_set(unsigned char c, int i){
-    unsigned char mask = 1 << i;
-    return mask & c;
-}           //Talvez criar um arquivo helpful.c para guardar essa funçoes
-                                                       //Para reduzir o tamanho desse arquivo e para ficar acessivel
-unsigned char setBit(unsigned char c, int i){
-    unsigned char mask = 1 << i;
-    return c | mask;
-}      //No decompress.c

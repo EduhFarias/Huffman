@@ -82,7 +82,7 @@ BinaryTree* removeNode(BinaryTree *bt){
 
 unsigned char size = 0;
 
-unsigned char sizeTree(BinaryTree *bt, FILE *file)  {
+int sizeTree(BinaryTree *bt, FILE *file)  {
     if(isEmpty(bt)){
         size++;
         sizeTree(bt->left,file);
@@ -105,14 +105,6 @@ void printPreOrder(BinaryTree *bt, FILE *file)  {
 
         printPreOrder(bt->left,file);
         printPreOrder(bt->right,file);
-    }
-}
-
-void printOrder(BinaryTree *bt)  {
-    if(isEmpty(bt)){size++;
-        printf("%c", bt->c);
-        printOrder(bt->left);
-        printOrder(bt->right);
     }
 }
 
