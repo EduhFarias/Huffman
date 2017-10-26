@@ -80,7 +80,7 @@ BinaryTree* removeNode(BinaryTree *bt){
     return bt;
 }
 
-short int size = 0;
+unsigned char size = 0;
 
 unsigned char sizeTree(BinaryTree *bt, FILE *file)  {
     if(isEmpty(bt)){
@@ -93,7 +93,16 @@ unsigned char sizeTree(BinaryTree *bt, FILE *file)  {
 
 void printPreOrder(BinaryTree *bt, FILE *file)  {
     if(isEmpty(bt)){
-        fprintf(file,"%c", bt->c);        //Colocar um condicional, se bt->c for '*' imprimir '\*', se for '\' imprimir '\\'
+        if(bt->right == NULL && bt->left == NULL){
+            if(bt->c == '*'){
+                fprintf(file,"\\%c", bt->c);
+            }
+            else if(bt->c == '\\') {
+                fprintf(file, "\\%c", bt->c);
+            } else fprintf(file, "%c", bt->c);
+
+        } else fprintf(file, "%c", bt->c);
+
         printPreOrder(bt->left,file);
         printPreOrder(bt->right,file);
     }

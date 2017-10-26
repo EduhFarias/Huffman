@@ -62,11 +62,12 @@ void compress(FILE *iFile){
     printPreOrder(bt, oFile);
 
     unsigned char b = 0;
+    pos = 0;
+
     while((c = fgetc(iFile)) != EOF){
         while(table[c][pos] != '\0'){
             if(bits < 0){
                 fprintf(oFile,"%c", b);
-                //printf("%c",b);
                 bits = 7;
                 b = 0;
             }
@@ -75,17 +76,16 @@ void compress(FILE *iFile){
             }
             bits--;
             pos++;
-            bit++;
         }
         pos = 0;
     }
 
     //---------- TESTE --------
-    printf("- trash/size_tree: %d%d", fByte, size_tree);
+    printf("- trash/size_tree: %c%c", fByte, size_tree);
     printOrder(bt);
     for(i = 0; i < 256; i++){
         if(ch[i] > 0){
-                //printf("%c: %s\n", i,table[i]);
+                printf("%c: %s\n", i,table[i]);
         }
     }
     //----------
