@@ -38,6 +38,8 @@ int dec_converter(int *aux, int size){
                     x++;
                 }
                 value += add;
+                add = 1;
+                x = 0;
             }
         }
     }
