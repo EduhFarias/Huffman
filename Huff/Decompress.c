@@ -43,6 +43,32 @@ void decompress(FILE *iFile){
     printf("lixo %d size %d", lixo, size);
     //-------------------------------------------------------------------------------
 
+   char tree[size];
+    int i = 0, c, aux;
+
+    while(i < size){
+        c = fgetc(iFile);
+        if((char)c == '\\') {
+            aux = fgetc(iFile);
+            tree[i] = (char)aux;
+        }   else tree[i] = (char)c;
+        i++;
+    }
+
+    BinaryTree *bt = createEmpty();
+    rebuildTree(bt, tree, size, 0);
+
     fclose(iFile);
     fclose(oFile);
+}
+
+BinaryTree* rebuildTree(BinaryTree *bt, char *tree, int size, int pos){
+    if(tree[pos] != '*'){
+
+        return;
+    } else{
+        rebuildTree(getLeft(bt), tree, size, pos + 1);
+        rebuildTree(getRight(bt), tree, size, pos + 1);
+
+    }
 }
