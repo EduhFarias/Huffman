@@ -14,7 +14,8 @@ unsigned char setBit(unsigned char c, int i){
     return c | mask;
 }
 
-void converter(int item, int size, int *aux){
+
+void bin_converter(int item, int size, int *aux){
     int i = 0, j = 0;
     while(item != 0){
 
@@ -23,5 +24,23 @@ void converter(int item, int size, int *aux){
         i++;
         item = item / 2;
     }
+}
+
+int dec_converter(int *aux, int size){
+    int value = 0, i, x = 0, add = 1;
+    for(i = 0; i < size; i++){
+        if(aux[i]){
+            if((size-1) - i == 0){
+                value += 1;
+            } else{
+                while(x < ((size-1) - i) ){
+                    add *= 2;
+                    x++;
+                }
+                value += add;
+            }
+        }
+    }
+    return value;
 }
 
