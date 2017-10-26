@@ -24,6 +24,7 @@ int main(void){
         //decompress(file);
     } else{
         printf("Comando inválido, programa está sendo encerrado\n");
+        system("pause");
         exit(1);
     }
 

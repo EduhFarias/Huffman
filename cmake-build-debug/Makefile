@@ -216,6 +216,33 @@ Huff/Decompress.c.s:
 	$(MAKE) -f CMakeFiles\Huffman.dir\build.make CMakeFiles/Huffman.dir/Huff/Decompress.c.s
 .PHONY : Huff/Decompress.c.s
 
+Huff/Helpful.obj: Huff/Helpful.c.obj
+
+.PHONY : Huff/Helpful.obj
+
+# target to build an object file
+Huff/Helpful.c.obj:
+	$(MAKE) -f CMakeFiles\Huffman.dir\build.make CMakeFiles/Huffman.dir/Huff/Helpful.c.obj
+.PHONY : Huff/Helpful.c.obj
+
+Huff/Helpful.i: Huff/Helpful.c.i
+
+.PHONY : Huff/Helpful.i
+
+# target to preprocess a source file
+Huff/Helpful.c.i:
+	$(MAKE) -f CMakeFiles\Huffman.dir\build.make CMakeFiles/Huffman.dir/Huff/Helpful.c.i
+.PHONY : Huff/Helpful.c.i
+
+Huff/Helpful.s: Huff/Helpful.c.s
+
+.PHONY : Huff/Helpful.s
+
+# target to generate assembly for a file
+Huff/Helpful.c.s:
+	$(MAKE) -f CMakeFiles\Huffman.dir\build.make CMakeFiles/Huffman.dir/Huff/Helpful.c.s
+.PHONY : Huff/Helpful.c.s
+
 Huff/mainHuff.obj: Huff/mainHuff.c.obj
 
 .PHONY : Huff/mainHuff.obj
@@ -343,6 +370,9 @@ help:
 	@echo ... Huff/Decompress.obj
 	@echo ... Huff/Decompress.i
 	@echo ... Huff/Decompress.s
+	@echo ... Huff/Helpful.obj
+	@echo ... Huff/Helpful.i
+	@echo ... Huff/Helpful.s
 	@echo ... Huff/mainHuff.obj
 	@echo ... Huff/mainHuff.i
 	@echo ... Huff/mainHuff.s
