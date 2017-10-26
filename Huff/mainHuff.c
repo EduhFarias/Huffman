@@ -3,8 +3,8 @@
 //
 #include <stdlib.h>
 #include <stdio.h>
-#include "BinaryTree.h"
 #include "Compress.h"
+#include "Decompress.h"
 
 int main(void){
     printf("Deseja (C)omprimir ou (D)escomprimir ?\n");
@@ -21,7 +21,7 @@ int main(void){
     if(c == 'C'){
         compress(file);
     } else if(c == 'D'){
-        //decompress(file);
+        decompress(file);
     } else{
         printf("Comando inválido, programa está sendo encerrado\n");
         system("pause");
