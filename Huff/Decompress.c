@@ -5,10 +5,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "Decompress.h"
+#include "Helpful.h"
 
 void decompress(FILE *iFile){
 
-    FILE *oFile  = fopen("C:\\Users\\Cabral\\Documents\\Prog\\saida.huff", "wb");
+    FILE *oFile  = fopen("C:\\Users\\Cabral\\Documents\\Prog\\saida.txt", "wb");
     //-------------------------------------------------------------------------------
 
     unsigned char fByte, sByte, b;
@@ -18,7 +19,7 @@ void decompress(FILE *iFile){
 
     int trash[3], size_tree[13];
 
-    int i = 0, count = 0;
+    int count = 0;
     int bits = 7;
     while(count < 16){
         if(bits < 0) {
@@ -40,7 +41,7 @@ void decompress(FILE *iFile){
 
     int lixo = dec_converter(trash,3);
     int size = dec_converter(size_tree,13);
-    printf("lixo %d size %d", lixo, size);
+    printf("lixo %d size %d\n", lixo, size);
     //-------------------------------------------------------------------------------
 
    char tree[size];
@@ -56,19 +57,11 @@ void decompress(FILE *iFile){
     }
 
     BinaryTree *bt = createEmpty();
-    rebuildTree(bt, tree, size, 0);
+    bt = rebuildTree(bt, tree, size);
+    printOrder(bt);
+
 
     fclose(iFile);
     fclose(oFile);
 }
 
-BinaryTree* rebuildTree(BinaryTree *bt, char *tree, int size, int pos){
-    if(tree[pos] != '*'){
-
-        return;
-    } else{
-        rebuildTree(getLeft(bt), tree, size, pos + 1);
-        rebuildTree(getRight(bt), tree, size, pos + 1);
-
-    }
-}

@@ -10,7 +10,7 @@ typedef struct b_tree BinaryTree;
 
 BinaryTree* createEmpty();
 
-BinaryTree* createBinaryTree(unsigned char c, int freq, BinaryTree *bt, BinaryTree *left, BinaryTree *right);
+BinaryTree* createQueue(unsigned char c, int freq, BinaryTree *bt, BinaryTree *left, BinaryTree *right);
 
 BinaryTree* removeNode(BinaryTree *bt);
 
@@ -31,5 +31,13 @@ unsigned char getValue(BinaryTree *bt);
 int getFreq(BinaryTree *bt);
 
 int isEmpty(BinaryTree *bt);
+
+BinaryTree* createBinaryTree(unsigned char item, BinaryTree *left, BinaryTree *right);
+
+BinaryTree* rebuildTree(BinaryTree *bt, char *tree, int size);
+
+
+// TESTE
+void printOrder(BinaryTree *bt);
 
 #endif //HUFFMAN_BINARYTREE_H
