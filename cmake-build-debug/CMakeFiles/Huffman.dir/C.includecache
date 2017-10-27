@@ -45,8 +45,12 @@ stdlib.h
 -
 Decompress.h
 C:/Users/Cabral/Documents/GitHub/Huffman/Huff/Decompress.h
+Helpful.h
+C:/Users/Cabral/Documents/GitHub/Huffman/Huff/Helpful.h
 
 C:/Users/Cabral/Documents/GitHub/Huffman/Huff/Decompress.h
+BinaryTree.h
+C:/Users/Cabral/Documents/GitHub/Huffman/Huff/BinaryTree.h
 
 C:/Users/Cabral/Documents/GitHub/Huffman/Huff/Helpful.c
 Helpful.h
@@ -59,8 +63,8 @@ stdlib.h
 -
 stdio.h
 -
-BinaryTree.h
-C:/Users/Cabral/Documents/GitHub/Huffman/Huff/BinaryTree.h
 Compress.h
 C:/Users/Cabral/Documents/GitHub/Huffman/Huff/Compress.h
+Decompress.h
+C:/Users/Cabral/Documents/GitHub/Huffman/Huff/Decompress.h
 

@@ -3,8 +3,8 @@
 //
 #include <stdlib.h>
 #include <stdio.h>
-#include "BinaryTree.h"
 #include "Compress.h"
+#include "Decompress.h"
 
 int main(void){
     printf("Deseja (C)omprimir ou (D)escomprimir ?\n");
@@ -12,7 +12,7 @@ int main(void){
     scanf("%c", &c);
 
     FILE *file;
-    file = fopen("C:\\Users\\Cabral\\Documents\\Prog\\comp.txt", "rb");
+    file = fopen("C:\\Users\\Cabral\\Documents\\Prog\\saida.huff", "rb");   //DEPOS MODIFICAR PARA LER O DIRETORIO DO ARQ
     if(file == NULL){
         printf("Arquivo nao pode ser aberto\n");
         exit(1);
@@ -21,7 +21,7 @@ int main(void){
     if(c == 'C'){
         compress(file);
     } else if(c == 'D'){
-        //decompress(file);
+        decompress(file);
     } else{
         printf("Comando inválido, programa está sendo encerrado\n");
         system("pause");

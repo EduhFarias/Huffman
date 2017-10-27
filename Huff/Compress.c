@@ -9,6 +9,8 @@
 #include <string.h>
 #include "Helpful.h"
 
+//PASSAR TODAS OS BAGULHOS CRIADOS PARA FUNÇOES SEPARADAS
+
 void compress(FILE *iFile){
 
     FILE *oFile = fopen("C:\\Users\\Cabral\\Documents\\Prog\\saida.huff", "wb");
@@ -24,7 +26,7 @@ void compress(FILE *iFile){
     }
     for(i = 0; i < 256; i++){        //Checa toda as 256 posições e cria um nó pra cara caracter
         if(ch[i] > 0){
-            bt = createBinaryTree((unsigned char)i,ch[i],bt, NULL, NULL);
+            bt = createQueue((unsigned char) i, ch[i], bt, NULL, NULL);
         }
     }
     bt = huff(bt);
@@ -57,9 +59,9 @@ void compress(FILE *iFile){
     //-------------------------------------------------------------------------------
 
     int trash[3], count = 0;
-    converter((8-rest),3, trash);
+    bin_converter((8-rest),3, trash);
     int size_tree[13];
-    converter(sizeTree(bt, oFile),13, size_tree);
+    bin_converter(sizeTree(bt, oFile),13, size_tree);
 
     unsigned char byteTS = 0;
 
@@ -128,7 +130,7 @@ BinaryTree* huff(BinaryTree *bt){
 
         bt = removeNode(bt);
         bt = removeNode(bt);
-        bt = createBinaryTree('*', freq, bt, A, B);
+        bt = createQueue('*', freq, bt, A, B);
     }
     return bt;
 }

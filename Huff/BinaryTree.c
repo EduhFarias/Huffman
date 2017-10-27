@@ -20,7 +20,7 @@ BinaryTree* createEmpty(){
     return NULL;
 }
 
-BinaryTree* createBinaryTree(unsigned char c, int freq, BinaryTree *bt, BinaryTree *left, BinaryTree *right){ //Cria um novo nó
+BinaryTree* createQueue(unsigned char c, int freq, BinaryTree *bt, BinaryTree *left, BinaryTree *right){ //Cria um novo nó
     BinaryTree *new_bt = (BinaryTree*) malloc(sizeof(BinaryTree));
     new_bt->c = c;
     new_bt->freq = freq;
@@ -112,3 +112,39 @@ int isEmpty(BinaryTree *bt){
     return (bt != NULL);
 }
 
+BinaryTree* createBinaryTree(unsigned char item, BinaryTree *left, BinaryTree *right){
+    BinaryTree *new_bt = (BinaryTree*) malloc(sizeof(BinaryTree));
+    new_bt->c = item;
+    new_bt->left = left;
+    new_bt->right = right;
+    return new_bt;
+}
+
+int pos = 0;
+
+BinaryTree* rebuildTree(BinaryTree *bt, char *tree, int size){
+    if(tree[pos] != '*'){
+        if(tree[pos] == '\\') pos++;
+        bt = createBinaryTree((unsigned char) tree[pos], NULL, NULL);
+        return bt;
+    }
+        bt = createBinaryTree((unsigned char) tree[pos], NULL, NULL);
+        pos++;
+
+        bt->left = rebuildTree(bt->left, tree, size);
+        pos++;
+        bt->right = rebuildTree(bt->right, tree, size);
+
+    return bt;
+}
+
+
+
+//teste
+void printOrder(BinaryTree *bt)  {
+    if(isEmpty(bt)){
+        printf("%c", bt->c);
+        printOrder(bt->left);
+        printOrder(bt->right);
+    }
+}
