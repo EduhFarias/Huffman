@@ -46,7 +46,6 @@ void decompress(FILE *iFile){
 
    char tree[size];
     int i = 0, c, aux;
-
     while(i < size){
         c = fgetc(iFile);
         if((char)c == '\\') {
@@ -56,7 +55,8 @@ void decompress(FILE *iFile){
         i++;
     }
     //-------------------------------------------------------------------------------
-    
+
+
     BinaryTree *bt = createEmpty();
     bt = rebuildTree(bt, tree, size);
     printOrder(bt);
@@ -70,16 +70,16 @@ void decompress(FILE *iFile){
 
 void converter(BinaryTree* bt, FILE *file){
     BinaryTree *current = bt;
-    unsigned char c;
+    int c;
     int bit = 7;
 
-    while((c = (unsigned char)fgetc(file)) != EOF ){
+    while((c = fgetc(file)) != EOF ){
         while(bit >= 0){
             if( (getLeft(current) == NULL) && (getRight(current) == NULL) ){
                 printf("%c", getValue(current));
                 current = bt;
             }
-            if(isBit_i_set(c, bit)){
+            if(isBit_i_set((unsigned char)c, bit)){
                 current = getRight(current);
             } else current = getLeft(current);
             bit--;
