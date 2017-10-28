@@ -55,13 +55,35 @@ void decompress(FILE *iFile){
         }   else tree[i] = (char)c;
         i++;
     }
-
+    //-------------------------------------------------------------------------------
+    
     BinaryTree *bt = createEmpty();
     bt = rebuildTree(bt, tree, size);
     printOrder(bt);
+    printf("\n");
 
+    converter(bt, iFile);
 
     fclose(iFile);
     fclose(oFile);
 }
 
+void converter(BinaryTree* bt, FILE *file){
+    BinaryTree *current = bt;
+    unsigned char c;
+    int bit = 7;
+
+    while((c = (unsigned char)fgetc(file)) != EOF ){
+        while(bit >= 0){
+            if( (getLeft(current) == NULL) && (getRight(current) == NULL) ){
+                printf("%c", getValue(current));
+                current = bt;
+            }
+            if(isBit_i_set(c, bit)){
+                current = getRight(current);
+            } else current = getLeft(current);
+            bit--;
+        }
+        bit = 7;
+    }
+}

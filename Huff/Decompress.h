@@ -9,5 +9,5 @@
 
 void decompress(FILE *iFile);
 
-
+void converter(BinaryTree *bt, FILE *file);
 #endif //HUFFMAN_DECOMPRESS_H
