@@ -55,16 +55,14 @@ void decompress(FILE *iFile){
         }   else tree[i] = (char)c;
         i++;
     }
-
+    //-------------------------------------------------------------------------------
+    
     BinaryTree *bt = createEmpty();
     bt = rebuildTree(bt, tree, size);
     printOrder(bt);
     printf("\n");
-    fseek(iFile, NULL, SEEK_END);
-    int x = ftell(iFile);
-    int a = x - ((2 + size) - lixo);
-    printf("%d", a*8);
-    //converter(bt, iFile);
+
+    converter(bt, iFile);
 
     fclose(iFile);
     fclose(oFile);
@@ -72,9 +70,8 @@ void decompress(FILE *iFile){
 
 void converter(BinaryTree* bt, FILE *file){
     BinaryTree *current = bt;
-    BinaryTree *head = bt;
     unsigned char c;
-    int bit = 7, i;
+    int bit = 7;
 
     while((c = (unsigned char)fgetc(file)) != EOF ){
         while(bit >= 0){
