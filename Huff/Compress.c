@@ -19,11 +19,13 @@ void compress(FILE *iFile, FILE *oFile){
     bt = huff(bt);
     unsigned char table[256][256], aux[256];
     initialize(table, aux);
+    createTable(bt, table, 0, aux);
+    rewind(iFile);
     int trash = sizeTrash(iFile, table);
     rewind(iFile);
     writeTrash_sizeTree(oFile, trash, bt);
     printPreOrder(bt, oFile);
-    Aconverter(iFile, oFile, table);
+    converterComp(iFile, oFile, table);
 
     fclose(iFile);
     fclose(oFile);
@@ -31,7 +33,9 @@ void compress(FILE *iFile, FILE *oFile){
 
 void frequency(FILE *iFile, long long int *ch){
     int c;
-    while((c = fgetc(iFile)) != EOF) ch[c]++;
+    while((c = fgetc(iFile)) != EOF){
+        ch[c]++;
+    }
 }
 
 BinaryTree* createNode(long long int *ch, BinaryTree *bt){
@@ -47,7 +51,6 @@ BinaryTree* createNode(long long int *ch, BinaryTree *bt){
 int sizeTrash(FILE *iFile, unsigned char table[][256]){
     int pos = 0, bits = 0, c;
 
-    rewind(iFile);
     while((c = fgetc(iFile)) != EOF){
         while(table[c][pos] != '\0'){
             bits++;
@@ -84,7 +87,7 @@ void writeTrash_sizeTree(FILE *oFile, int lixo, BinaryTree *bt){
     }
 }
 
-void Aconverter(FILE *iFile, FILE *oFile, unsigned char table[][256]){
+void converterComp(FILE *iFile, FILE *oFile, unsigned char table[][256]){
     unsigned char oByte = 0;
     int pos = 0, bits = 7, c;
 

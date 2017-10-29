@@ -9,12 +9,29 @@
 
 void decompress(FILE *iFile, FILE *oFile){
 
+    int size_trash[3], size_tree[13];
+    getTrash_Tree(iFile, size_trash, size_tree);
+    int trash = dec_converter(size_trash,3);
+    int size = dec_converter(size_tree,13);
+    printf("lixo %d size %d\n", trash, size);   //TESTE
+    char tree[size];
+    getTree(iFile, tree, size);
+    BinaryTree *bt = createEmpty();
+    bt = rebuildTree(bt, tree, size);
+    printOrder(bt); //TESTE
+    printf("\n");   //TESTE
+    converterDecomp(bt, iFile, trash, size, oFile);
+
+    fclose(iFile);
+    fclose(oFile);
+}
+
+void getTrash_Tree(FILE *iFile, int *trash, int*size_tree){
+
     unsigned char fByte, sByte, b;
     fByte = (unsigned char)fgetc(iFile);
     sByte = (unsigned char)fgetc(iFile);
     b = fByte;
-
-    int trash[3], size_tree[13];
 
     int count = 0;
     int bits = 7;
@@ -35,13 +52,9 @@ void decompress(FILE *iFile, FILE *oFile){
         bits--;
         count++;
     }
+}
 
-    int lixo = dec_converter(trash,3);
-    int size = dec_converter(size_tree,13);
-    printf("lixo %d size %d\n", lixo, size);
-    //-------------------------------------------------------------------------------
-
-   char tree[size];
+void getTree(FILE *iFile, char *tree, int size){
     int i = 0, c, aux;
     while(i < size){
         c = fgetc(iFile);
@@ -51,20 +64,9 @@ void decompress(FILE *iFile, FILE *oFile){
         }   else tree[i] = (char)c;
         i++;
     }
-    //-------------------------------------------------------------------------------
-
-    BinaryTree *bt = createEmpty();
-    bt = rebuildTree(bt, tree, size);
-    printOrder(bt);
-    printf("\n");
-
-    converter(bt, iFile, lixo, size, oFile);
-
-    fclose(iFile);
-    fclose(oFile);
 }
 
-void converter(BinaryTree* bt, FILE *iFile, int trash, int size_tree, FILE *oFile){
+void converterDecomp(BinaryTree *bt, FILE *iFile, int trash, int size_tree, FILE *oFile){
     fseek(iFile, 0, SEEK_END);
     int k = ftell(iFile);
     k = k - (size_tree + 2);

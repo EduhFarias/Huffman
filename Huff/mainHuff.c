@@ -12,7 +12,7 @@ int main(void){
     scanf("%c", &c);
 
     FILE *iFile;
-    iFile = fopen("C:\\Users\\Cabral\\Documents\\Prog\\teste.txt", "rb");   //DEPOS MODIFICAR PARA LER O DIRETORIO DO ARQ
+    iFile = fopen("C:\\Users\\Cabral\\Documents\\Prog\\saida.huff", "rb");   //DEPOS MODIFICAR PARA LER O DIRETORIO DO ARQ
     if(iFile == NULL){
         printf("Arquivo nao pode ser aberto\n");
         exit(1);
