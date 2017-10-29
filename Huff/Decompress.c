@@ -7,10 +7,7 @@
 #include "Decompress.h"
 #include "Helpful.h"
 
-void decompress(FILE *iFile){
-
-    FILE *oFile  = fopen("C:\\Users\\Cabral\\Documents\\Prog\\saida.txt", "wb");
-    //-------------------------------------------------------------------------------
+void decompress(FILE *iFile, FILE *oFile){
 
     unsigned char fByte, sByte, b;
     fByte = (unsigned char)fgetc(iFile);
@@ -56,27 +53,32 @@ void decompress(FILE *iFile){
     }
     //-------------------------------------------------------------------------------
 
-
     BinaryTree *bt = createEmpty();
     bt = rebuildTree(bt, tree, size);
     printOrder(bt);
     printf("\n");
 
-    converter(bt, iFile);
+    converter(bt, iFile, lixo, size, oFile);
 
     fclose(iFile);
     fclose(oFile);
 }
 
-void converter(BinaryTree* bt, FILE *file){
+void converter(BinaryTree* bt, FILE *iFile, int trash, int size_tree, FILE *oFile){
+    fseek(iFile, 0, SEEK_END);
+    int k = ftell(iFile);
+    k = k - (size_tree + 2);
+    fseek(iFile, (size_tree + 2), SEEK_SET);
+
     BinaryTree *current = bt;
     int c;
-    int bit = 7;
+    int bit = 7, i = 0;
 
-    while((c = fgetc(file)) != EOF ){
+    while( i < (k - 1) ){
+        c = fgetc(iFile);
         while(bit >= 0){
             if( (getLeft(current) == NULL) && (getRight(current) == NULL) ){
-                printf("%c", getValue(current));
+                fprintf(oFile,"%c", getValue(current));
                 current = bt;
             }
             if(isBit_i_set((unsigned char)c, bit)){
@@ -85,5 +87,19 @@ void converter(BinaryTree* bt, FILE *file){
             bit--;
         }
         bit = 7;
+        i++;
+    }
+
+    c = fgetc(iFile);
+    bit = 7;
+    while(bit >= (trash-1)){
+        if( (getLeft(current) == NULL) && (getRight(current) == NULL) ){
+            fprintf(oFile,"%c", getValue(current));
+            current = bt;
+        }
+        if(isBit_i_set((unsigned char)c, bit)){
+            current = getRight(current);
+        } else current = getLeft(current);
+        bit--;
     }
 }

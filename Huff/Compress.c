@@ -9,61 +9,64 @@
 #include <string.h>
 #include "Helpful.h"
 
-//PASSAR TODAS OS BAGULHOS CRIADOS PARA FUNÇOES SEPARADAS
 
-void compress(FILE *iFile){
+void compress(FILE *iFile, FILE *oFile){
 
-    FILE *oFile = fopen("C:\\Users\\Cabral\\Documents\\Prog\\saida.huff", "wb");
-
-    int c, i, j;
     BinaryTree *bt = createEmpty();
-    unsigned char ch[256] = {0};
+    long long int ch[256] = {0};
+    frequency(iFile, ch);
+    bt = createNode(ch, bt);
+    bt = huff(bt);
+    unsigned char table[256][256], aux[256];
+    initialize(table, aux);
+    int trash = sizeTrash(iFile, table);
+    rewind(iFile);
+    writeTrash_sizeTree(oFile, trash, bt);
+    printPreOrder(bt, oFile);
+    Aconverter(iFile, oFile, table);
 
-    //-------------------------------------------------------------------------------
+    fclose(iFile);
+    fclose(oFile);
+}
 
-    while((c = fgetc(iFile)) != EOF){ //Percorre o arquivo e soma +1 em toda posição referente ao caracter
-        ch[c]++;
-    }
-    for(i = 0; i < 256; i++){        //Checa toda as 256 posições e cria um nó pra cara caracter
+void frequency(FILE *iFile, long long int *ch){
+    int c;
+    while((c = fgetc(iFile)) != EOF) ch[c]++;
+}
+
+BinaryTree* createNode(long long int *ch, BinaryTree *bt){
+    int i;
+    for(i = 0; i < 256; i++){
         if(ch[i] > 0){
-            bt = createQueue((unsigned char) i, ch[i], bt, NULL, NULL);
+            bt = createQueue((unsigned char) i, (unsigned char)ch[i], bt, NULL, NULL);
         }
     }
-    bt = huff(bt);
-    //-------------------------------------------------------------------------------
+    return bt;
+}
 
-    unsigned char aux[256];
-    unsigned char table[256][256];
-
-    for(i = 0; i < 256; i++){
-        memset(table[i],'\0',256);
-    }
-    memset(aux,NULL,256);
-
-    createTable(bt, table, 0, aux);
-    //-------------------------------------------------------------------------------
-
-    int bits = 7, pos = 0, bit = 0;
+int sizeTrash(FILE *iFile, unsigned char table[][256]){
+    int pos = 0, bits = 0, c;
 
     rewind(iFile);
     while((c = fgetc(iFile)) != EOF){
         while(table[c][pos] != '\0'){
-            bit++;
+            bits++;
             pos++;
         }
         pos = 0;
     }
-    rewind(iFile);
+    int rest = bits % 8;
+    return (8 - rest);
+}
 
-    int rest = bit % 8;
-    //-------------------------------------------------------------------------------
-
+void writeTrash_sizeTree(FILE *oFile, int lixo, BinaryTree *bt){
     int trash[3], count = 0;
-    bin_converter((8-rest),3, trash);
+    bin_converter((lixo),3, trash);
     int size_tree[13];
     bin_converter(sizeTree(bt, oFile),13, size_tree);
 
     unsigned char byteTS = 0;
+    int bits = 7;
 
     while(count < 17){
         if(bits < 0){
@@ -79,11 +82,11 @@ void compress(FILE *iFile){
         bits--;
         count++;
     }
-    printPreOrder(bt, oFile);
-    //-------------------------------------------------------------------------------
+}
 
+void Aconverter(FILE *iFile, FILE *oFile, unsigned char table[][256]){
     unsigned char oByte = 0;
-    pos = 0, bits = 7;
+    int pos = 0, bits = 7, c;
 
     while((c = fgetc(iFile)) != EOF){
         while(table[c][pos] != '\0'){
@@ -99,11 +102,8 @@ void compress(FILE *iFile){
             pos++;
         }
         pos = 0;
-    }
-    //-------------------------------------------------------------------------------
-
-    fclose(iFile);
-    fclose(oFile);
+    }printf("%d", bits);
+    if(bits != 7) fprintf(oFile, "%c", oByte);
 }
 
 void createTable(BinaryTree *bt, unsigned char table[][256], int pos, unsigned char *aux) {
