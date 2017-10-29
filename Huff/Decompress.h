@@ -9,5 +9,10 @@
 
 void decompress(FILE *iFile, FILE *oFile);
 
-void converter(BinaryTree *bt, FILE *file, int trash, int size_tree, FILE *oFile);
+void converterDecomp(BinaryTree *bt, FILE *file, int trash, int size_tree, FILE *oFile);
+
+void getTree(FILE *iFile, char *tree, int size);
+
+void getTrash_Tree(FILE *iFile, int *trash, int*size_tree);
+
 #endif //HUFFMAN_DECOMPRESS_H

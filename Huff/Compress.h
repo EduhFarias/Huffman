@@ -22,7 +22,7 @@ int sizeTrash(FILE *iFile, unsigned char table[][256]);
 
 void writeTrash_sizeTree(FILE *oFile, int lixo, BinaryTree *bt);
 
-void Aconverter(FILE *iFile, FILE *oFile, unsigned char table[][256]);
+void converterComp(FILE *iFile, FILE *oFile, unsigned char table[][256]);
 
 #endif //HUFFMAN_COMPRESS_H
 
