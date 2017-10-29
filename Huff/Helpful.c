@@ -3,6 +3,8 @@
 //
 
 #include "Helpful.h"
+#include <stdlib.h>
+#include <string.h>
 
 int isBit_i_set(unsigned char c, int i){
     unsigned char mask = 1 << i;
@@ -14,6 +16,13 @@ unsigned char setBit(unsigned char c, int i){
     return c | mask;
 }
 
+void initialize(unsigned char table[][256], unsigned char *aux){
+    int i;
+    for(i = 0; i < 256; i++){
+        memset(table[i],'\0',256);
+    }
+    memset(aux,NULL,256);
+}
 
 void bin_converter(int item, int size, int *aux){
     int i = 0, j = 0;
