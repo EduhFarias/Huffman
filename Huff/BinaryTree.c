@@ -82,18 +82,23 @@ BinaryTree* removeNode(BinaryTree *bt){
 
 unsigned char size = 0;
 
-int sizeTree(BinaryTree *bt, FILE *file)  {
+int sizeTree(BinaryTree *bt)  {
     if(isEmpty(bt)){
+        if(bt->left == NULL && bt->right == NULL){
+            if( (bt->c == '*') || (bt->c == '\\') ){
+                size++;
+            }
+        }
         size++;
-        sizeTree(bt->left,file);
-        sizeTree(bt->right,file);
+        sizeTree(bt->left);
+        sizeTree(bt->right);
     }
     return size;
 }
 
 void printPreOrder(BinaryTree *bt, FILE *file)  {
     if(isEmpty(bt)){
-        if(bt->right == NULL && bt->left == NULL){
+        if(bt->left == NULL && bt->right == NULL){
             if(bt->c == '*'){
                 fprintf(file,"\\%c", bt->c);
             }

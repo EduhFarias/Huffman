@@ -55,13 +55,10 @@ void getTrash_Tree(FILE *iFile, int *trash, int*size_tree){
 }
 
 void getTree(FILE *iFile, char *tree, int size){
-    int i = 0, c, aux;
+    int i = 0, c;
     while(i < size){
         c = fgetc(iFile);
-        if((char)c == '\\') {
-            aux = fgetc(iFile);
-            tree[i] = (char)aux;
-        }   else tree[i] = (char)c;
+        tree[i] = (char)c;
         i++;
     }
 }
