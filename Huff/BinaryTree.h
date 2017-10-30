@@ -16,7 +16,7 @@ BinaryTree* removeNode(BinaryTree *bt);
 
 BinaryTree* getNode(BinaryTree *bt);
 
-int sizeTree(BinaryTree *bt, FILE *file);
+int sizeTree(BinaryTree *bt);
 
 void printPreOrder(BinaryTree *bt, FILE *file);
 

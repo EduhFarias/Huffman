@@ -66,7 +66,7 @@ void writeTrash_sizeTree(FILE *oFile, int lixo, BinaryTree *bt){
     int trash[3], count = 0;
     bin_converter((lixo),3, trash);
     int size_tree[13];
-    bin_converter(sizeTree(bt, oFile),13, size_tree);
+    bin_converter(sizeTree(bt),13, size_tree);
 
     unsigned char byteTS = 0;
     int bits = 7;
@@ -105,7 +105,7 @@ void converterComp(FILE *iFile, FILE *oFile, unsigned char table[][256]){
             pos++;
         }
         pos = 0;
-    }printf("%d", bits);
+    }
     if(bits != 7) fprintf(oFile, "%c", oByte);
 }
 
