@@ -10,7 +10,7 @@ typedef struct b_tree BinaryTree;
 
 BinaryTree* createEmpty();
 
-BinaryTree* createQueue(unsigned char c, int freq, BinaryTree *bt, BinaryTree *left, BinaryTree *right);
+BinaryTree* createQueue(unsigned char c, long long int freq, BinaryTree *bt, BinaryTree *left, BinaryTree *right);
 
 BinaryTree* removeNode(BinaryTree *bt);
 
