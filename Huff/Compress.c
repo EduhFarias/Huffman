@@ -42,7 +42,7 @@ BinaryTree* createNode(long long int *ch, BinaryTree *bt){
     int i;
     for(i = 0; i < 256; i++){
         if(ch[i] > 0){
-            bt = createQueue((unsigned char) i, (unsigned char)ch[i], bt, NULL, NULL);
+            bt = createQueue((unsigned char) i, ch[i], bt, NULL, NULL);
         }
     }
     return bt;
