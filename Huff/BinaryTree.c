@@ -80,9 +80,9 @@ BinaryTree* removeNode(BinaryTree *bt){
     return bt;
 }
 
-unsigned char size = 0;
+long long size = 0;
 
-int sizeTree(BinaryTree *bt)  {
+long long int sizeTree(BinaryTree *bt)  {
     if(isEmpty(bt)){
         if(bt->left == NULL && bt->right == NULL){
             if( (bt->c == '*') || (bt->c == '\\') ){
