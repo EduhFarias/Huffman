@@ -16,7 +16,7 @@ BinaryTree* removeNode(BinaryTree *bt);
 
 BinaryTree* getNode(BinaryTree *bt);
 
-int sizeTree(BinaryTree *bt);
+long long int sizeTree(BinaryTree *bt);
 
 void printPreOrder(BinaryTree *bt, FILE *file);
 
@@ -28,7 +28,7 @@ BinaryTree* getNext(BinaryTree *bt);
 
 unsigned char getValue(BinaryTree *bt);
 
-int getFreq(BinaryTree *bt);
+long long int getFreq(BinaryTree *bt);
 
 int isEmpty(BinaryTree *bt);
 
