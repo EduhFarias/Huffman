@@ -8,7 +8,7 @@
 
 typedef struct b_tree{
     unsigned char c;
-    int freq;
+    long long int freq;
     struct b_tree *next;
     struct b_tree *left;
     struct b_tree *right;
@@ -20,7 +20,7 @@ BinaryTree* createEmpty(){
     return NULL;
 }
 
-BinaryTree* createQueue(unsigned char c, int freq, BinaryTree *bt, BinaryTree *left, BinaryTree *right){ //Cria um novo nó
+BinaryTree* createQueue(unsigned char c, long long int freq, BinaryTree *bt, BinaryTree *left, BinaryTree *right){ //Cria um novo nó
     BinaryTree *new_bt = (BinaryTree*) malloc(sizeof(BinaryTree));
     new_bt->c = c;
     new_bt->freq = freq;
@@ -68,7 +68,7 @@ BinaryTree* getNext(BinaryTree *bt){
     return bt->next;
 }
 
-int getFreq(BinaryTree *bt){
+long long int getFreq(BinaryTree *bt){
     return bt->freq;
 }
 
@@ -80,7 +80,7 @@ BinaryTree* removeNode(BinaryTree *bt){
     return bt;
 }
 
-unsigned char size = 0;
+int size = 0;
 
 int sizeTree(BinaryTree *bt)  {
     if(isEmpty(bt)){
@@ -141,15 +141,4 @@ BinaryTree* rebuildTree(BinaryTree *bt, char *tree, int size){
         bt->right = rebuildTree(bt->right, tree, size);
 
     return bt;
-}
-
-
-
-//teste
-void printOrder(BinaryTree *bt)  {
-    if(isEmpty(bt)){
-        printf("%c", bt->c);
-        printOrder(bt->left);
-        printOrder(bt->right);
-    }
 }

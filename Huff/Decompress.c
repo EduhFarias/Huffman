@@ -13,13 +13,10 @@ void decompress(FILE *iFile, FILE *oFile){
     getTrash_Tree(iFile, size_trash, size_tree);
     int trash = dec_converter(size_trash,3);
     int size = dec_converter(size_tree,13);
-    printf("lixo %d size %d\n", trash, size);   //TESTE
     char tree[size];
     getTree(iFile, tree, size);
     BinaryTree *bt = createEmpty();
     bt = rebuildTree(bt, tree, size);
-    printOrder(bt); //TESTE
-    printf("\n");   //TESTE
     converterDecomp(bt, iFile, trash, size, oFile);
 
     fclose(iFile);

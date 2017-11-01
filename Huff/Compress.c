@@ -42,7 +42,7 @@ BinaryTree* createNode(long long int *ch, BinaryTree *bt){
     int i;
     for(i = 0; i < 256; i++){
         if(ch[i] > 0){
-            bt = createQueue((unsigned char) i, (unsigned char)ch[i], bt, NULL, NULL);
+            bt = createQueue((unsigned char) i, ch[i], bt, NULL, NULL);
         }
     }
     return bt;
@@ -62,9 +62,9 @@ int sizeTrash(FILE *iFile, unsigned char table[][256]){
     return (8 - rest);
 }
 
-void writeTrash_sizeTree(FILE *oFile, int lixo, BinaryTree *bt){
+void writeTrash_sizeTree(FILE *oFile, int sizeTrash, BinaryTree *bt){
     int trash[3], count = 0;
-    bin_converter((lixo),3, trash);
+    bin_converter((sizeTrash),3, trash);
     int size_tree[13];
     bin_converter(sizeTree(bt),13, size_tree);
 
@@ -129,7 +129,7 @@ BinaryTree* huff(BinaryTree *bt){
         BinaryTree *A, *B;
         A = getNode(bt);
         B = getNode(getNext(bt));
-        int freq = (getFreq(A)) + (getFreq(B));
+        long long int freq = (getFreq(A)) + (getFreq(B));
 
         bt = removeNode(bt);
         bt = removeNode(bt);

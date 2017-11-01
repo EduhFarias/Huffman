@@ -12,7 +12,7 @@ int main(void){
     scanf("%c", &c);
 
     FILE *iFile;
-    iFile = fopen("C:\\Users\\Cabral\\Documents\\Prog\\saida.huff", "rb");   //DEPOS MODIFICAR PARA LER O DIRETORIO DO ARQ
+    iFile = fopen("C:\\Users\\Cabral\\Documents\\Prog\\saida.huff", "rb");
     if(iFile == NULL){
         printf("Arquivo nao pode ser aberto\n");
         exit(1);
@@ -22,11 +22,10 @@ int main(void){
         FILE *oFile = fopen("C:\\Users\\Cabral\\Documents\\Prog\\saida.huff", "wb");
         compress(iFile, oFile);
     } else if(c == 'D'){
-        FILE *oFile = fopen("C:\\Users\\Cabral\\Documents\\Prog\\saida.txt", "wb");
+        FILE *oFile = fopen("C:\\Users\\Cabral\\Documents\\Prog\\saida.jpg", "wb");
         decompress(iFile, oFile);
     } else{
         printf("Comando inválido, programa está sendo encerrado\n");
-        system("pause");
         exit(1);
     }
 
