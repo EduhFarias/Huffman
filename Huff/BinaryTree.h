@@ -16,7 +16,7 @@ BinaryTree* removeNode(BinaryTree *bt);
 
 BinaryTree* getNode(BinaryTree *bt);
 
-long long int sizeTree(BinaryTree *bt);
+int sizeTree(BinaryTree *bt);
 
 void printPreOrder(BinaryTree *bt, FILE *file);
 
@@ -35,9 +35,5 @@ int isEmpty(BinaryTree *bt);
 BinaryTree* createBinaryTree(unsigned char item, BinaryTree *left, BinaryTree *right);
 
 BinaryTree* rebuildTree(BinaryTree *bt, char *tree, int size);
-
-
-// TESTE
-void printOrder(BinaryTree *bt);
 
 #endif //HUFFMAN_BINARYTREE_H

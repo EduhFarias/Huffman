@@ -20,7 +20,7 @@ BinaryTree* createNode(long long int *ch, BinaryTree *bt);
 
 int sizeTrash(FILE *iFile, unsigned char table[][256]);
 
-void writeTrash_sizeTree(FILE *oFile, int lixo, BinaryTree *bt);
+void writeTrash_sizeTree(FILE *oFile, int sizeTrash, BinaryTree *bt);
 
 void converterComp(FILE *iFile, FILE *oFile, unsigned char table[][256]);
 

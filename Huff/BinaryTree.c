@@ -80,9 +80,9 @@ BinaryTree* removeNode(BinaryTree *bt){
     return bt;
 }
 
-long long size = 0;
+int size = 0;
 
-long long int sizeTree(BinaryTree *bt)  {
+int sizeTree(BinaryTree *bt)  {
     if(isEmpty(bt)){
         if(bt->left == NULL && bt->right == NULL){
             if( (bt->c == '*') || (bt->c == '\\') ){
@@ -141,15 +141,4 @@ BinaryTree* rebuildTree(BinaryTree *bt, char *tree, int size){
         bt->right = rebuildTree(bt->right, tree, size);
 
     return bt;
-}
-
-
-
-//teste
-void printOrder(BinaryTree *bt)  {
-    if(isEmpty(bt)){
-        printf("%c", bt->c);
-        printOrder(bt->left);
-        printOrder(bt->right);
-    }
 }
