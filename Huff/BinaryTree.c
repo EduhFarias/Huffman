@@ -47,11 +47,6 @@ BinaryTree* createQueue(unsigned char c, long long int freq, BinaryTree *bt, Bin
     return head;
 }
 
-BinaryTree* getNode(BinaryTree *bt){
-    BinaryTree *tmp = bt;
-    return tmp;
-}
-
 BinaryTree* getLeft(BinaryTree *bt){
     return bt->left;
 }

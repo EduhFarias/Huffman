@@ -16,7 +16,7 @@ unsigned char setBit(unsigned char c, int i){
     return c | mask;
 }
 
-void initialize(unsigned char table[][256], unsigned char *aux){
+void initialize(char table[][256],  char *aux){
     int i;
     for(i = 0; i < 256; i++){
         memset(table[i],'\0',256);

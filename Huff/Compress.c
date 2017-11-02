@@ -17,7 +17,7 @@ void compress(FILE *iFile, FILE *oFile){
     frequency(iFile, ch);
     bt = createNode(ch, bt);
     bt = huff(bt);
-    unsigned char table[256][256], aux[256];
+    char table[256][256], aux[256];
     initialize(table, aux);
     createTable(bt, table, 0, aux);
     rewind(iFile);
@@ -48,7 +48,7 @@ BinaryTree* createNode(long long int *ch, BinaryTree *bt){
     return bt;
 }
 
-int sizeTrash(FILE *iFile, unsigned char table[][256]){
+int sizeTrash(FILE *iFile, char table[][256]){
     int pos = 0, bits = 0, c;
 
     while((c = fgetc(iFile)) != EOF){
@@ -87,7 +87,7 @@ void writeTrash_sizeTree(FILE *oFile, int sizeTrash, BinaryTree *bt){
     }
 }
 
-void converterComp(FILE *iFile, FILE *oFile, unsigned char table[][256]){
+void converterComp(FILE *iFile, FILE *oFile, char table[][256]){
     unsigned char oByte = 0;
     int pos = 0, bits = 7, c;
 
@@ -109,7 +109,7 @@ void converterComp(FILE *iFile, FILE *oFile, unsigned char table[][256]){
     if(bits != 7) fprintf(oFile, "%c", oByte);
 }
 
-void createTable(BinaryTree *bt, unsigned char table[][256], int pos, unsigned char *aux) {
+void createTable(BinaryTree *bt, char table[][256], int pos, char *aux) {
     if ( (getLeft(bt) == NULL) && (getRight(bt) == NULL) ){
         aux[pos] = '\0';
         strcpy(table[getValue(bt)], aux);
@@ -127,8 +127,8 @@ void createTable(BinaryTree *bt, unsigned char table[][256], int pos, unsigned c
 BinaryTree* huff(BinaryTree *bt){
     while(getNext(bt)) {
         BinaryTree *A, *B;
-        A = getNode(bt);
-        B = getNode(getNext(bt));
+        A = bt;
+        B = getNext(bt);
         long long int freq = (getFreq(A)) + (getFreq(B));
 
         bt = removeNode(bt);

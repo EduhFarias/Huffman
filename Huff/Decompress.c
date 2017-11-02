@@ -23,7 +23,7 @@ void decompress(FILE *iFile, FILE *oFile){
     fclose(oFile);
 }
 
-void getTrash_Tree(FILE *iFile, int *trash, int*size_tree){
+void getTrash_Tree(FILE *iFile, int *trash, int *size_tree){
 
     unsigned char fByte, sByte, b;
     fByte = (unsigned char)fgetc(iFile);
@@ -51,9 +51,9 @@ void getTrash_Tree(FILE *iFile, int *trash, int*size_tree){
     }
 }
 
-void getTree(FILE *iFile, char *tree, int size){
+void getTree(FILE *iFile, char *tree, int size_tree){
     int i = 0, c;
-    while(i < size){
+    while(i < size_tree){
         c = fgetc(iFile);
         tree[i] = (char)c;
         i++;
