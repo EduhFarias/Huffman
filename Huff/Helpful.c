@@ -5,6 +5,7 @@
 #include "Helpful.h"
 #include <stdlib.h>
 #include <string.h>
+#include <math.h>
 
 int isBit_i_set(unsigned char c, int i){
     unsigned char mask = 1 << i;
@@ -35,19 +36,13 @@ void bin_converter(int item, int size, int *aux){
 }
 
 int dec_converter(int *aux, int size){
-    int value = 0, i, x = 0, add = 1;
+    int value = 0, i;
     for(i = 0; i < size; i++){
         if(aux[i]){
             if((size-1) - i == 0){
                 value += 1;
             } else{
-                while(x < ((size-1) - i) ){     //Tentar usar a função pow() math.h
-                    add *= 2;
-                    x++;
-                }
-                value += add;
-                add = 1;
-                x = 0;
+                value += pow(2,(size-1) - i);
             }
         }
     }
