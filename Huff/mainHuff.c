@@ -22,7 +22,7 @@ int main(void){
         FILE *oFile = fopen("C:\\Users\\Cabral\\Documents\\Prog\\saida.huff", "wb");
         compress(iFile, oFile);
     } else if(c == 'D'){
-        FILE *oFile = fopen("C:\\Users\\Cabral\\Documents\\Prog\\saida.jpg", "wb");
+        FILE *oFile = fopen("C:\\Users\\Cabral\\Documents\\Prog\\saida.3gp", "wb");
         decompress(iFile, oFile);
     } else{
         printf("Comando inválido, programa está sendo encerrado\n");
