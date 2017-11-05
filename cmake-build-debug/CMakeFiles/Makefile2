@@ -133,6 +133,43 @@ clean: CMakeFiles/Huffman.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/Testes.dir
+
+# All Build rule for target.
+CMakeFiles/Testes.dir/all:
+	$(MAKE) -f CMakeFiles\Testes.dir\build.make CMakeFiles/Testes.dir/depend
+	$(MAKE) -f CMakeFiles\Testes.dir\build.make CMakeFiles/Testes.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\Cabral\Documents\GitHub\Huffman\cmake-build-debug\CMakeFiles --progress-num=11,12,13,14 "Built target Testes"
+.PHONY : CMakeFiles/Testes.dir/all
+
+# Include target in all.
+all: CMakeFiles/Testes.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/Testes.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Cabral\Documents\GitHub\Huffman\cmake-build-debug\CMakeFiles 4
+	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/Testes.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Cabral\Documents\GitHub\Huffman\cmake-build-debug\CMakeFiles 0
+.PHONY : CMakeFiles/Testes.dir/rule
+
+# Convenience name for target.
+Testes: CMakeFiles/Testes.dir/rule
+
+.PHONY : Testes
+
+# clean rule for target.
+CMakeFiles/Testes.dir/clean:
+	$(MAKE) -f CMakeFiles\Testes.dir\build.make CMakeFiles/Testes.dir/clean
+.PHONY : CMakeFiles/Testes.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/Testes.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Special targets to cleanup operation of make.
 
 # Special rule to run CMake to check the build system integrity.

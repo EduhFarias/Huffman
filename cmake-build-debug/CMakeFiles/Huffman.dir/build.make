@@ -57,6 +57,7 @@ include CMakeFiles/Huffman.dir/progress.make
 include CMakeFiles/Huffman.dir/flags.make
 
 CMakeFiles/Huffman.dir/Huff/BinaryTree.c.obj: CMakeFiles/Huffman.dir/flags.make
+CMakeFiles/Huffman.dir/Huff/BinaryTree.c.obj: CMakeFiles/Huffman.dir/includes_C.rsp
 CMakeFiles/Huffman.dir/Huff/BinaryTree.c.obj: ../Huff/BinaryTree.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Cabral\Documents\GitHub\Huffman\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Huffman.dir/Huff/BinaryTree.c.obj"
 	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Huffman.dir\Huff\BinaryTree.c.obj   -c C:\Users\Cabral\Documents\GitHub\Huffman\Huff\BinaryTree.c
@@ -81,6 +82,7 @@ CMakeFiles/Huffman.dir/Huff/BinaryTree.c.obj.provides.build: CMakeFiles/Huffman.
 
 
 CMakeFiles/Huffman.dir/Huff/mainHuff.c.obj: CMakeFiles/Huffman.dir/flags.make
+CMakeFiles/Huffman.dir/Huff/mainHuff.c.obj: CMakeFiles/Huffman.dir/includes_C.rsp
 CMakeFiles/Huffman.dir/Huff/mainHuff.c.obj: ../Huff/mainHuff.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Cabral\Documents\GitHub\Huffman\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/Huffman.dir/Huff/mainHuff.c.obj"
 	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Huffman.dir\Huff\mainHuff.c.obj   -c C:\Users\Cabral\Documents\GitHub\Huffman\Huff\mainHuff.c
@@ -105,6 +107,7 @@ CMakeFiles/Huffman.dir/Huff/mainHuff.c.obj.provides.build: CMakeFiles/Huffman.di
 
 
 CMakeFiles/Huffman.dir/Huff/Compress.c.obj: CMakeFiles/Huffman.dir/flags.make
+CMakeFiles/Huffman.dir/Huff/Compress.c.obj: CMakeFiles/Huffman.dir/includes_C.rsp
 CMakeFiles/Huffman.dir/Huff/Compress.c.obj: ../Huff/Compress.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Cabral\Documents\GitHub\Huffman\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/Huffman.dir/Huff/Compress.c.obj"
 	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Huffman.dir\Huff\Compress.c.obj   -c C:\Users\Cabral\Documents\GitHub\Huffman\Huff\Compress.c
@@ -129,6 +132,7 @@ CMakeFiles/Huffman.dir/Huff/Compress.c.obj.provides.build: CMakeFiles/Huffman.di
 
 
 CMakeFiles/Huffman.dir/Huff/Decompress.c.obj: CMakeFiles/Huffman.dir/flags.make
+CMakeFiles/Huffman.dir/Huff/Decompress.c.obj: CMakeFiles/Huffman.dir/includes_C.rsp
 CMakeFiles/Huffman.dir/Huff/Decompress.c.obj: ../Huff/Decompress.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Cabral\Documents\GitHub\Huffman\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/Huffman.dir/Huff/Decompress.c.obj"
 	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Huffman.dir\Huff\Decompress.c.obj   -c C:\Users\Cabral\Documents\GitHub\Huffman\Huff\Decompress.c
@@ -153,6 +157,7 @@ CMakeFiles/Huffman.dir/Huff/Decompress.c.obj.provides.build: CMakeFiles/Huffman.
 
 
 CMakeFiles/Huffman.dir/Huff/Helpful.c.obj: CMakeFiles/Huffman.dir/flags.make
+CMakeFiles/Huffman.dir/Huff/Helpful.c.obj: CMakeFiles/Huffman.dir/includes_C.rsp
 CMakeFiles/Huffman.dir/Huff/Helpful.c.obj: ../Huff/Helpful.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Cabral\Documents\GitHub\Huffman\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/Huffman.dir/Huff/Helpful.c.obj"
 	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Huffman.dir\Huff\Helpful.c.obj   -c C:\Users\Cabral\Documents\GitHub\Huffman\Huff\Helpful.c

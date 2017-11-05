@@ -135,6 +135,19 @@ Huffman/fast:
 	$(MAKE) -f CMakeFiles\Huffman.dir\build.make CMakeFiles/Huffman.dir/build
 .PHONY : Huffman/fast
 
+#=============================================================================
+# Target rules for targets named Testes
+
+# Build rule for target.
+Testes: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 Testes
+.PHONY : Testes
+
+# fast build rule for target.
+Testes/fast:
+	$(MAKE) -f CMakeFiles\Testes.dir\build.make CMakeFiles/Testes.dir/build
+.PHONY : Testes/fast
+
 Huff/BinaryTree.obj: Huff/BinaryTree.c.obj
 
 .PHONY : Huff/BinaryTree.obj
@@ -351,6 +364,87 @@ Plot/mainPlot.c.s:
 	$(MAKE) -f CMakeFiles\Plotagem.dir\build.make CMakeFiles/Plotagem.dir/Plot/mainPlot.c.s
 .PHONY : Plot/mainPlot.c.s
 
+Test_-_CUnit/BinaryTree.obj: Test_-_CUnit/BinaryTree.c.obj
+
+.PHONY : Test_-_CUnit/BinaryTree.obj
+
+# target to build an object file
+Test_-_CUnit/BinaryTree.c.obj:
+	$(MAKE) -f CMakeFiles\Testes.dir\build.make CMakeFiles/Testes.dir/Test_-_CUnit/BinaryTree.c.obj
+.PHONY : Test_-_CUnit/BinaryTree.c.obj
+
+Test_-_CUnit/BinaryTree.i: Test_-_CUnit/BinaryTree.c.i
+
+.PHONY : Test_-_CUnit/BinaryTree.i
+
+# target to preprocess a source file
+Test_-_CUnit/BinaryTree.c.i:
+	$(MAKE) -f CMakeFiles\Testes.dir\build.make CMakeFiles/Testes.dir/Test_-_CUnit/BinaryTree.c.i
+.PHONY : Test_-_CUnit/BinaryTree.c.i
+
+Test_-_CUnit/BinaryTree.s: Test_-_CUnit/BinaryTree.c.s
+
+.PHONY : Test_-_CUnit/BinaryTree.s
+
+# target to generate assembly for a file
+Test_-_CUnit/BinaryTree.c.s:
+	$(MAKE) -f CMakeFiles\Testes.dir\build.make CMakeFiles/Testes.dir/Test_-_CUnit/BinaryTree.c.s
+.PHONY : Test_-_CUnit/BinaryTree.c.s
+
+Test_-_CUnit/Test-1.obj: Test_-_CUnit/Test-1.c.obj
+
+.PHONY : Test_-_CUnit/Test-1.obj
+
+# target to build an object file
+Test_-_CUnit/Test-1.c.obj:
+	$(MAKE) -f CMakeFiles\Testes.dir\build.make CMakeFiles/Testes.dir/Test_-_CUnit/Test-1.c.obj
+.PHONY : Test_-_CUnit/Test-1.c.obj
+
+Test_-_CUnit/Test-1.i: Test_-_CUnit/Test-1.c.i
+
+.PHONY : Test_-_CUnit/Test-1.i
+
+# target to preprocess a source file
+Test_-_CUnit/Test-1.c.i:
+	$(MAKE) -f CMakeFiles\Testes.dir\build.make CMakeFiles/Testes.dir/Test_-_CUnit/Test-1.c.i
+.PHONY : Test_-_CUnit/Test-1.c.i
+
+Test_-_CUnit/Test-1.s: Test_-_CUnit/Test-1.c.s
+
+.PHONY : Test_-_CUnit/Test-1.s
+
+# target to generate assembly for a file
+Test_-_CUnit/Test-1.c.s:
+	$(MAKE) -f CMakeFiles\Testes.dir\build.make CMakeFiles/Testes.dir/Test_-_CUnit/Test-1.c.s
+.PHONY : Test_-_CUnit/Test-1.c.s
+
+Test_-_CUnit/test.obj: Test_-_CUnit/test.c.obj
+
+.PHONY : Test_-_CUnit/test.obj
+
+# target to build an object file
+Test_-_CUnit/test.c.obj:
+	$(MAKE) -f CMakeFiles\Testes.dir\build.make CMakeFiles/Testes.dir/Test_-_CUnit/test.c.obj
+.PHONY : Test_-_CUnit/test.c.obj
+
+Test_-_CUnit/test.i: Test_-_CUnit/test.c.i
+
+.PHONY : Test_-_CUnit/test.i
+
+# target to preprocess a source file
+Test_-_CUnit/test.c.i:
+	$(MAKE) -f CMakeFiles\Testes.dir\build.make CMakeFiles/Testes.dir/Test_-_CUnit/test.c.i
+.PHONY : Test_-_CUnit/test.c.i
+
+Test_-_CUnit/test.s: Test_-_CUnit/test.c.s
+
+.PHONY : Test_-_CUnit/test.s
+
+# target to generate assembly for a file
+Test_-_CUnit/test.c.s:
+	$(MAKE) -f CMakeFiles\Testes.dir\build.make CMakeFiles/Testes.dir/Test_-_CUnit/test.c.s
+.PHONY : Test_-_CUnit/test.c.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -360,6 +454,7 @@ help:
 	@echo ... edit_cache
 	@echo ... Plotagem
 	@echo ... Huffman
+	@echo ... Testes
 	@echo ... rebuild_cache
 	@echo ... Huff/BinaryTree.obj
 	@echo ... Huff/BinaryTree.i
@@ -385,6 +480,15 @@ help:
 	@echo ... Plot/mainPlot.obj
 	@echo ... Plot/mainPlot.i
 	@echo ... Plot/mainPlot.s
+	@echo ... Test_-_CUnit/BinaryTree.obj
+	@echo ... Test_-_CUnit/BinaryTree.i
+	@echo ... Test_-_CUnit/BinaryTree.s
+	@echo ... Test_-_CUnit/Test-1.obj
+	@echo ... Test_-_CUnit/Test-1.i
+	@echo ... Test_-_CUnit/Test-1.s
+	@echo ... Test_-_CUnit/test.obj
+	@echo ... Test_-_CUnit/test.i
+	@echo ... Test_-_CUnit/test.s
 .PHONY : help
 
 

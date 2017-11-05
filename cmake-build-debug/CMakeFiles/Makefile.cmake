@@ -51,4 +51,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/Plotagem.dir/DependInfo.cmake"
   "CMakeFiles/Huffman.dir/DependInfo.cmake"
+  "CMakeFiles/Testes.dir/DependInfo.cmake"
   )
