@@ -5,8 +5,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
   "C:/Users/Cabral/Documents/GitHub/Huffman/Test - CUnit/BinaryTree.c" "C:/Users/Cabral/Documents/GitHub/Huffman/cmake-build-debug/CMakeFiles/Testes.dir/Test_-_CUnit/BinaryTree.c.obj"
-  "C:/Users/Cabral/Documents/GitHub/Huffman/Test - CUnit/Test-1.c" "C:/Users/Cabral/Documents/GitHub/Huffman/cmake-build-debug/CMakeFiles/Testes.dir/Test_-_CUnit/Test-1.c.obj"
-  "C:/Users/Cabral/Documents/GitHub/Huffman/Test - CUnit/test.c" "C:/Users/Cabral/Documents/GitHub/Huffman/cmake-build-debug/CMakeFiles/Testes.dir/Test_-_CUnit/test.c.obj"
+  "C:/Users/Cabral/Documents/GitHub/Huffman/Test - CUnit/Teste.c" "C:/Users/Cabral/Documents/GitHub/Huffman/cmake-build-debug/CMakeFiles/Testes.dir/Test_-_CUnit/Teste.c.obj"
+  "C:/Users/Cabral/Documents/GitHub/Huffman/Test - CUnit/test1.c" "C:/Users/Cabral/Documents/GitHub/Huffman/cmake-build-debug/CMakeFiles/Testes.dir/Test_-_CUnit/test1.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

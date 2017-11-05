@@ -224,10 +224,10 @@
 		<Unit filename="C:/Users/Cabral/Documents/GitHub/Huffman/Test - CUnit/BinaryTree.h">
 			<Option target="Testes"/>
 		</Unit>
-		<Unit filename="C:/Users/Cabral/Documents/GitHub/Huffman/Test - CUnit/Test-1.c">
+		<Unit filename="C:/Users/Cabral/Documents/GitHub/Huffman/Test - CUnit/Teste.c">
 			<Option target="Testes"/>
 		</Unit>
-		<Unit filename="C:/Users/Cabral/Documents/GitHub/Huffman/Test - CUnit/test.c">
+		<Unit filename="C:/Users/Cabral/Documents/GitHub/Huffman/Test - CUnit/test1.c">
 			<Option target="Testes"/>
 		</Unit>
 		<Unit filename="C:/Users/Cabral/Documents/GitHub/Huffman/CMakeLists.txt">

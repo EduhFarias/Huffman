@@ -391,59 +391,59 @@ Test_-_CUnit/BinaryTree.c.s:
 	$(MAKE) -f CMakeFiles\Testes.dir\build.make CMakeFiles/Testes.dir/Test_-_CUnit/BinaryTree.c.s
 .PHONY : Test_-_CUnit/BinaryTree.c.s
 
-Test_-_CUnit/Test-1.obj: Test_-_CUnit/Test-1.c.obj
+Test_-_CUnit/Teste.obj: Test_-_CUnit/Teste.c.obj
 
-.PHONY : Test_-_CUnit/Test-1.obj
-
-# target to build an object file
-Test_-_CUnit/Test-1.c.obj:
-	$(MAKE) -f CMakeFiles\Testes.dir\build.make CMakeFiles/Testes.dir/Test_-_CUnit/Test-1.c.obj
-.PHONY : Test_-_CUnit/Test-1.c.obj
-
-Test_-_CUnit/Test-1.i: Test_-_CUnit/Test-1.c.i
-
-.PHONY : Test_-_CUnit/Test-1.i
-
-# target to preprocess a source file
-Test_-_CUnit/Test-1.c.i:
-	$(MAKE) -f CMakeFiles\Testes.dir\build.make CMakeFiles/Testes.dir/Test_-_CUnit/Test-1.c.i
-.PHONY : Test_-_CUnit/Test-1.c.i
-
-Test_-_CUnit/Test-1.s: Test_-_CUnit/Test-1.c.s
-
-.PHONY : Test_-_CUnit/Test-1.s
-
-# target to generate assembly for a file
-Test_-_CUnit/Test-1.c.s:
-	$(MAKE) -f CMakeFiles\Testes.dir\build.make CMakeFiles/Testes.dir/Test_-_CUnit/Test-1.c.s
-.PHONY : Test_-_CUnit/Test-1.c.s
-
-Test_-_CUnit/test.obj: Test_-_CUnit/test.c.obj
-
-.PHONY : Test_-_CUnit/test.obj
+.PHONY : Test_-_CUnit/Teste.obj
 
 # target to build an object file
-Test_-_CUnit/test.c.obj:
-	$(MAKE) -f CMakeFiles\Testes.dir\build.make CMakeFiles/Testes.dir/Test_-_CUnit/test.c.obj
-.PHONY : Test_-_CUnit/test.c.obj
+Test_-_CUnit/Teste.c.obj:
+	$(MAKE) -f CMakeFiles\Testes.dir\build.make CMakeFiles/Testes.dir/Test_-_CUnit/Teste.c.obj
+.PHONY : Test_-_CUnit/Teste.c.obj
 
-Test_-_CUnit/test.i: Test_-_CUnit/test.c.i
+Test_-_CUnit/Teste.i: Test_-_CUnit/Teste.c.i
 
-.PHONY : Test_-_CUnit/test.i
+.PHONY : Test_-_CUnit/Teste.i
 
 # target to preprocess a source file
-Test_-_CUnit/test.c.i:
-	$(MAKE) -f CMakeFiles\Testes.dir\build.make CMakeFiles/Testes.dir/Test_-_CUnit/test.c.i
-.PHONY : Test_-_CUnit/test.c.i
+Test_-_CUnit/Teste.c.i:
+	$(MAKE) -f CMakeFiles\Testes.dir\build.make CMakeFiles/Testes.dir/Test_-_CUnit/Teste.c.i
+.PHONY : Test_-_CUnit/Teste.c.i
 
-Test_-_CUnit/test.s: Test_-_CUnit/test.c.s
+Test_-_CUnit/Teste.s: Test_-_CUnit/Teste.c.s
 
-.PHONY : Test_-_CUnit/test.s
+.PHONY : Test_-_CUnit/Teste.s
 
 # target to generate assembly for a file
-Test_-_CUnit/test.c.s:
-	$(MAKE) -f CMakeFiles\Testes.dir\build.make CMakeFiles/Testes.dir/Test_-_CUnit/test.c.s
-.PHONY : Test_-_CUnit/test.c.s
+Test_-_CUnit/Teste.c.s:
+	$(MAKE) -f CMakeFiles\Testes.dir\build.make CMakeFiles/Testes.dir/Test_-_CUnit/Teste.c.s
+.PHONY : Test_-_CUnit/Teste.c.s
+
+Test_-_CUnit/test1.obj: Test_-_CUnit/test1.c.obj
+
+.PHONY : Test_-_CUnit/test1.obj
+
+# target to build an object file
+Test_-_CUnit/test1.c.obj:
+	$(MAKE) -f CMakeFiles\Testes.dir\build.make CMakeFiles/Testes.dir/Test_-_CUnit/test1.c.obj
+.PHONY : Test_-_CUnit/test1.c.obj
+
+Test_-_CUnit/test1.i: Test_-_CUnit/test1.c.i
+
+.PHONY : Test_-_CUnit/test1.i
+
+# target to preprocess a source file
+Test_-_CUnit/test1.c.i:
+	$(MAKE) -f CMakeFiles\Testes.dir\build.make CMakeFiles/Testes.dir/Test_-_CUnit/test1.c.i
+.PHONY : Test_-_CUnit/test1.c.i
+
+Test_-_CUnit/test1.s: Test_-_CUnit/test1.c.s
+
+.PHONY : Test_-_CUnit/test1.s
+
+# target to generate assembly for a file
+Test_-_CUnit/test1.c.s:
+	$(MAKE) -f CMakeFiles\Testes.dir\build.make CMakeFiles/Testes.dir/Test_-_CUnit/test1.c.s
+.PHONY : Test_-_CUnit/test1.c.s
 
 # Help Target
 help:
@@ -483,12 +483,12 @@ help:
 	@echo ... Test_-_CUnit/BinaryTree.obj
 	@echo ... Test_-_CUnit/BinaryTree.i
 	@echo ... Test_-_CUnit/BinaryTree.s
-	@echo ... Test_-_CUnit/Test-1.obj
-	@echo ... Test_-_CUnit/Test-1.i
-	@echo ... Test_-_CUnit/Test-1.s
-	@echo ... Test_-_CUnit/test.obj
-	@echo ... Test_-_CUnit/test.i
-	@echo ... Test_-_CUnit/test.s
+	@echo ... Test_-_CUnit/Teste.obj
+	@echo ... Test_-_CUnit/Teste.i
+	@echo ... Test_-_CUnit/Teste.s
+	@echo ... Test_-_CUnit/test1.obj
+	@echo ... Test_-_CUnit/test1.i
+	@echo ... Test_-_CUnit/test1.s
 .PHONY : help
 
 

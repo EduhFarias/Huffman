@@ -7,7 +7,7 @@ LINK_DIRECTORIES(C:/cunit/lib)
 
 set(PLOT Plot/mainPlot.c Plot/LinkedList.c Plot/LinkedList.h Plot/BST.c Plot/BST.h)
 set(HUFF Huff/BinaryTree.c Huff/BinaryTree.h Huff/mainHuff.c Huff/Compress.c Huff/Compress.h Huff/Compress.c Huff/Compress.h Huff/Decompress.c Huff/Decompress.h Huff/Helpful.c Huff/Helpful.h)
-set(TEST "Test - CUnit/test.c" "Test - CUnit/Test-1.c" "Test - CUnit/BinaryTree.h" "Test - CUnit/BinaryTree.c")
+set(TEST "Test - CUnit/test1.c" "Test - CUnit/Teste.c" "Test - CUnit/BinaryTree.h" "Test - CUnit/BinaryTree.c")
 
 add_executable(Plotagem ${PLOT})
 add_executable(Huffman ${HUFF})
