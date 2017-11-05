@@ -1,7 +1,3 @@
-//
-// Created by Eduardo on 04/10/2017.
-//
-
 #include "Compress.h"
 #include "BinaryTree.h"
 #include <stdio.h>

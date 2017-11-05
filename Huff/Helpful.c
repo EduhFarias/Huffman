@@ -1,7 +1,3 @@
-//
-// Created by Eduardo on 25/10/2017.
-//
-
 #include "Helpful.h"
 #include <stdlib.h>
 #include <string.h>

@@ -6,5 +6,5 @@ C_FLAGS = -g   -std=gnu99
 
 C_DEFINES = 
 
-C_INCLUDES = @CMakeFiles/Plotagem.dir/includes_C.rsp
+C_INCLUDES = @CMakeFiles/Testes.dir/includes_C.rsp
 

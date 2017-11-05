@@ -57,6 +57,7 @@ include CMakeFiles/Plotagem.dir/progress.make
 include CMakeFiles/Plotagem.dir/flags.make
 
 CMakeFiles/Plotagem.dir/Plot/mainPlot.c.obj: CMakeFiles/Plotagem.dir/flags.make
+CMakeFiles/Plotagem.dir/Plot/mainPlot.c.obj: CMakeFiles/Plotagem.dir/includes_C.rsp
 CMakeFiles/Plotagem.dir/Plot/mainPlot.c.obj: ../Plot/mainPlot.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Cabral\Documents\GitHub\Huffman\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Plotagem.dir/Plot/mainPlot.c.obj"
 	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Plotagem.dir\Plot\mainPlot.c.obj   -c C:\Users\Cabral\Documents\GitHub\Huffman\Plot\mainPlot.c
@@ -81,6 +82,7 @@ CMakeFiles/Plotagem.dir/Plot/mainPlot.c.obj.provides.build: CMakeFiles/Plotagem.
 
 
 CMakeFiles/Plotagem.dir/Plot/LinkedList.c.obj: CMakeFiles/Plotagem.dir/flags.make
+CMakeFiles/Plotagem.dir/Plot/LinkedList.c.obj: CMakeFiles/Plotagem.dir/includes_C.rsp
 CMakeFiles/Plotagem.dir/Plot/LinkedList.c.obj: ../Plot/LinkedList.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Cabral\Documents\GitHub\Huffman\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/Plotagem.dir/Plot/LinkedList.c.obj"
 	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Plotagem.dir\Plot\LinkedList.c.obj   -c C:\Users\Cabral\Documents\GitHub\Huffman\Plot\LinkedList.c
@@ -105,6 +107,7 @@ CMakeFiles/Plotagem.dir/Plot/LinkedList.c.obj.provides.build: CMakeFiles/Plotage
 
 
 CMakeFiles/Plotagem.dir/Plot/BST.c.obj: CMakeFiles/Plotagem.dir/flags.make
+CMakeFiles/Plotagem.dir/Plot/BST.c.obj: CMakeFiles/Plotagem.dir/includes_C.rsp
 CMakeFiles/Plotagem.dir/Plot/BST.c.obj: ../Plot/BST.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Cabral\Documents\GitHub\Huffman\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/Plotagem.dir/Plot/BST.c.obj"
 	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Plotagem.dir\Plot\BST.c.obj   -c C:\Users\Cabral\Documents\GitHub\Huffman\Plot\BST.c

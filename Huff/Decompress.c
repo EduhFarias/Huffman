@@ -1,7 +1,3 @@
-//
-// Created by Eduardo on 24/10/17.
-//
-
 #include <stdio.h>
 #include <stdlib.h>
 #include "Decompress.h"
