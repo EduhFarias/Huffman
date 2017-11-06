@@ -7,9 +7,9 @@ int main(void){
     printf("Deseja (C)omprimir ou (D)escomprimir ?\n");
     char c;
     scanf("%c", &c);
-
+    //scanf("%[^\n]", inputFileName);
     FILE *iFile;
-    iFile = fopen("C:\\Users\\Cabral\\Documents\\Prog\\saida.huff", "rb");
+    iFile = fopen("C:\\Users\\Cabral\\Documents\\Prog\\teste.txt", "rb");
     if(iFile == NULL){
         printf("Arquivo nao pode ser aberto\n");
         exit(1);

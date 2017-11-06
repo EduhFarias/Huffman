@@ -70,7 +70,7 @@ void converterDecomp(BinaryTree *bt, FILE *iFile, int trash, int size_tree, FILE
         c = fgetc(iFile);
         while(bit >= 0){
             if( (getLeft(current) == NULL) && (getRight(current) == NULL) ){
-                fprintf(oFile,"%c", getValue(current));
+                fprintf(oFile,"%c", *(unsigned char*)(getValue(current)));
                 current = bt;
             }
             if(isBit_i_set((unsigned char)c, bit)){
@@ -86,7 +86,7 @@ void converterDecomp(BinaryTree *bt, FILE *iFile, int trash, int size_tree, FILE
     bit = 7;
     while(bit >= (trash-1)){
         if( (getLeft(current) == NULL) && (getRight(current) == NULL) ){
-            fprintf(oFile,"%c", getValue(current));
+            fprintf(oFile,"%c", *(unsigned char*)(getValue(current)));
             current = bt;
         }
         if(isBit_i_set((unsigned char)c, bit)){

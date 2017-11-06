@@ -1,33 +1,31 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "BinaryTree.h"
 #include "CUnit/Basic.h"
 
 BinaryTree *bt;
+
 int init_suite1(void) {
-    bt = createEmpty();
-    return 0; //sucesso
+    return 0;
 }
 
 int clean_suite1(void) {
-    clean(fila);
-    if (getSize(fila) == 0)
-    {
-        return 0; //sucesso
+    return 0;
+}
+
+void testCreateNode(){
+    bt = createEmpty();
+    if(bt == NULL){
+        CU_ASSERT(0);
     }
-    return -1;
 }
 
-void testSizeTree() {
-
+void testCreateQueue() {
+    void *c;
+    bt = createQueue(c, 1, bt, NULL, NULL);
 }
 
-void teste2() {
-
-}
-
-void teste3() {
-
+void testRemoveNode() {
+    bt = removeNode(bt);
 }
 
 int main(){
@@ -44,8 +42,9 @@ int main(){
        return CU_get_error();
    }
    /* add the tests to the suite */
-   if ((NULL == CU_add_test(pSuite, "test of sizeTree():", testSizeTree)) ||
-       (NULL == CU_add_test(pSuite, "teste legal pra krl 02", testSizeTree))) {
+   if ((NULL == CU_add_test(pSuite, "test of createNode: ", testCreateNode)) ||
+       (NULL == CU_add_test(pSuite, "test of createQueue: ", testCreateQueue)) ||
+       (NULL = CU_add_test(pSuite, "teste of removeNode: ", testRemoveNode))   ) {
        CU_cleanup_registry();
        return CU_get_error();
    }
@@ -67,7 +66,7 @@ int main(){
    }
 //FIM SUITE2
 */
-    
+
    /* Run all tests using the CUnit Basic interface */
    CU_basic_set_mode(CU_BRM_VERBOSE);
    CU_basic_run_tests();
