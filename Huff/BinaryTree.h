@@ -13,7 +13,7 @@ BinaryTree* createEmpty();
  *  para serem os filhos do novo nó. Retorna um novo nó que já está adequadamente
  *  inserido na fila de prioridade.
  */
-BinaryTree* createQueue(unsigned char c, long long int freq, BinaryTree *bt, BinaryTree *left, BinaryTree *right);
+BinaryTree* createQueue(void *c, long long int freq, BinaryTree *bt, BinaryTree *left, BinaryTree *right);
 
 // Recebe um nó da fila de prioridade e o elimina. Retorna o nó de menor frequência.
 BinaryTree* removeNode(BinaryTree *bt);
@@ -34,7 +34,7 @@ BinaryTree* getRight(BinaryTree *bt);
 BinaryTree* getNext(BinaryTree *bt);
 
 // Recebe um nó e retorna seu dado.
-unsigned char getValue(BinaryTree *bt);
+void* getValue(BinaryTree *bt);
 
 // Recebe um nó e retorna a frequência de seu dado.
 long long int getFreq(BinaryTree *bt);
@@ -46,7 +46,7 @@ int isEmpty(BinaryTree *bt);
  * Cria um novo nó para uma árvore. Recebe um item do tipo dado, e dois nós para
  * serem os filhos do novo nó criado
  */
-BinaryTree* createBinaryTree(unsigned char item, BinaryTree *left, BinaryTree *right);
+BinaryTree* createBinaryTree(void *item, BinaryTree *left, BinaryTree *right);
 
 /*
  * Reconstrói um árvore a partir de um nó raiz, um vetor de caracteres que contenha a

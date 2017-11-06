@@ -6,7 +6,19 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/Cabral/Documents/GitHub/Huffman/Test - CUnit/test.c
+C:/Users/Cabral/Documents/GitHub/Huffman/Test - CUnit/BinaryTree.c
+BinaryTree.h
+C:/Users/Cabral/Documents/GitHub/Huffman/Test - CUnit/BinaryTree.h
+stdio.h
+-
+stdlib.h
+-
+
+C:/Users/Cabral/Documents/GitHub/Huffman/Test - CUnit/BinaryTree.h
+stdio.h
+-
+
+C:/Users/Cabral/Documents/GitHub/Huffman/Test - CUnit/test1.c
 stdio.h
 -
 string.h

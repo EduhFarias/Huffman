@@ -3,8 +3,8 @@
 #include <stdlib.h>
 
 typedef struct b_tree{
-    unsigned char c;        //-> void* c
-    long long int freq;     //-> void* freq
+    void *c;        //-> void* c
+    long long int freq;
     struct b_tree *next;
     struct b_tree *left;
     struct b_tree *right;
@@ -16,7 +16,7 @@ BinaryTree* createEmpty(){
     return NULL;
 }
 
-BinaryTree* createQueue(unsigned char c, long long int freq, BinaryTree *bt, BinaryTree *left, BinaryTree *right){
+BinaryTree* createQueue(void *c, long long int freq, BinaryTree *bt, BinaryTree *left, BinaryTree *right){
     BinaryTree *new_bt = (BinaryTree*) malloc(sizeof(BinaryTree));
     new_bt->c = c;
     new_bt->freq = freq;
@@ -51,7 +51,7 @@ BinaryTree* getRight(BinaryTree *bt){
     return bt->right;
 }
 
-unsigned char getValue(BinaryTree *bt){
+void* getValue(BinaryTree *bt){
     return bt->c;
 }
 
@@ -76,7 +76,7 @@ int size = 0;
 int sizeTree(BinaryTree *bt)  {
     if(isEmpty(bt)){
         if(bt->left == NULL && bt->right == NULL){
-            if( (bt->c == '*') || (bt->c == '\\') ){
+            if( (*(char*)(bt->c) == '*') || (*(char*)(bt->c) == '\\') ){
                 size++;
             }
         }
@@ -90,14 +90,14 @@ int sizeTree(BinaryTree *bt)  {
 void printPreOrder(BinaryTree *bt, FILE *file)  {
     if(isEmpty(bt)){
         if(bt->left == NULL && bt->right == NULL){
-            if(bt->c == '*'){
-                fprintf(file,"\\%c", bt->c);
+            if(*(unsigned char*)(bt->c) == '*'){
+                fprintf(file,"\\%c", *(unsigned char*)(bt->c));
             }
-            else if(bt->c == '\\') {
-                fprintf(file, "\\%c", bt->c);
-            } else fprintf(file, "%c", bt->c);
+            else if(*(unsigned char*)(bt->c) == '\\') {
+                fprintf(file, "\\%c", *(unsigned char*)(bt->c));
+            } else fprintf(file, "%c", *(unsigned char*)(bt->c));
 
-        } else fprintf(file, "%c", bt->c);
+        } else fprintf(file, "%c", *(unsigned char*)(bt->c));
 
         printPreOrder(bt->left,file);
         printPreOrder(bt->right,file);
@@ -108,7 +108,7 @@ int isEmpty(BinaryTree *bt){
     return (bt != NULL);
 }
 
-BinaryTree* createBinaryTree(unsigned char item, BinaryTree *left, BinaryTree *right){
+BinaryTree* createBinaryTree(void *item, BinaryTree *left, BinaryTree *right){
     BinaryTree *new_bt = (BinaryTree*) malloc(sizeof(BinaryTree));
     new_bt->c = item;
     new_bt->left = left;
@@ -121,10 +121,12 @@ int pos = 0;
 BinaryTree* rebuildTree(BinaryTree *bt, char *tree, int size){
     if(tree[pos] != '*'){
         if(tree[pos] == '\\') pos++;
-        bt = createBinaryTree((unsigned char) tree[pos], NULL, NULL);
+        void *item = &tree[pos];
+        bt = createBinaryTree(item, NULL, NULL);
         return bt;
     }
-        bt = createBinaryTree((unsigned char) tree[pos], NULL, NULL);
+        void *item = &tree[pos];
+        bt = createBinaryTree(item, NULL, NULL);
         pos++;
 
         bt->left = rebuildTree(bt->left, tree, size);

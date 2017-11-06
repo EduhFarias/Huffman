@@ -16,6 +16,11 @@ void compress(FILE *iFile, FILE *oFile){
     char table[256][256], aux[256];
     initialize(table, aux);
     createTable(bt, table, 0, aux);
+    for(int k = 0; k < 256; k++){
+        if(ch[k] > 0){
+            printf("%c ->%s<-\n", k, table[k]);
+        }
+    }
     rewind(iFile);
     int trash = sizeTrash(iFile, table);
     rewind(iFile);
@@ -38,7 +43,8 @@ BinaryTree* createNode(long long int *ch, BinaryTree *bt){
     int i;
     for(i = 0; i < 256; i++){
         if(ch[i] > 0){
-            bt = createQueue((unsigned char) i, ch[i], bt, NULL, NULL);
+            void *item = &i;
+            bt = createQueue(item, ch[i], bt, NULL, NULL);
         }
     }
     return bt;
@@ -108,7 +114,9 @@ void converterComp(FILE *iFile, FILE *oFile, char table[][256]){
 void createTable(BinaryTree *bt, char table[][256], int pos, char *aux) {
     if ( (getLeft(bt) == NULL) && (getRight(bt) == NULL) ){
         aux[pos] = '\0';
-        strcpy(table[getValue(bt)], aux);
+        printf("%s - ", aux);
+        strcpy(table[(*(int*)(getValue(bt)))], aux);
+        printf("%s\n", table[(*(int*)(getValue(bt)))]);
         pos--;
         return;
     } else {
@@ -121,6 +129,9 @@ void createTable(BinaryTree *bt, char table[][256], int pos, char *aux) {
 }
 
 BinaryTree* huff(BinaryTree *bt){
+    unsigned char c = '*';
+    void *item = &c;
+
     while(getNext(bt)) {
         BinaryTree *A, *B;
         A = bt;
@@ -129,7 +140,7 @@ BinaryTree* huff(BinaryTree *bt){
 
         bt = removeNode(bt);
         bt = removeNode(bt);
-        bt = createQueue('*', freq, bt, A, B);
+        bt = createQueue(item, freq, bt, A, B);
     }
     return bt;
 }

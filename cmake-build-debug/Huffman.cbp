@@ -218,16 +218,13 @@
 		<Unit filename="C:/Users/Cabral/Documents/GitHub/Huffman/Plot/mainPlot.c">
 			<Option target="Plotagem"/>
 		</Unit>
-		<Unit filename="C:/Users/Cabral/Documents/GitHub/Huffman/Test - CUnit/BinaryTree.c">
+		<Unit filename="C:/Users/Cabral/Documents/GitHub/Huffman/Test - CUnit/TesteArvore.c">
 			<Option target="Testes"/>
 		</Unit>
-		<Unit filename="C:/Users/Cabral/Documents/GitHub/Huffman/Test - CUnit/BinaryTree.h">
+		<Unit filename="C:/Users/Cabral/Documents/GitHub/Huffman/Test - CUnit/TesteFila.c">
 			<Option target="Testes"/>
 		</Unit>
-		<Unit filename="C:/Users/Cabral/Documents/GitHub/Huffman/Test - CUnit/Test-1.c">
-			<Option target="Testes"/>
-		</Unit>
-		<Unit filename="C:/Users/Cabral/Documents/GitHub/Huffman/Test - CUnit/test.c">
+		<Unit filename="C:/Users/Cabral/Documents/GitHub/Huffman/Test - CUnit/test1.c">
 			<Option target="Testes"/>
 		</Unit>
 		<Unit filename="C:/Users/Cabral/Documents/GitHub/Huffman/CMakeLists.txt">
