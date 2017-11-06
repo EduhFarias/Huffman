@@ -18,7 +18,7 @@ void compress(FILE *iFile, FILE *oFile){
     createTable(bt, table, 0, aux);
     for(int k = 0; k < 256; k++){
         if(ch[k] > 0){
-            printf("%c -%s-\n", k, table[k]);
+            printf("%c ->%s<-\n", k, table[k]);
         }
     }
     rewind(iFile);
