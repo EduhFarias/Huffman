@@ -114,8 +114,8 @@ void converterComp(FILE *iFile, FILE *oFile, char table[][256]){
 void createTable(BinaryTree *bt, char table[][256], int pos, char *aux) {
     if ( (getLeft(bt) == NULL) && (getRight(bt) == NULL) ){
         aux[pos] = '\0';
-        printf("%s - ", aux);
-        strcpy(table[(*(int*)(getValue(bt)))], aux);
+        printf("%s - ", aux);                           //Botar int *x = (int) malloc(sizeof(int));
+        strcpy(table[(*(int*)(getValue(bt)))], aux);    //Substituir por *x e testar, testar tbm com um printf.
         printf("%s\n", table[(*(int*)(getValue(bt)))]);
         pos--;
         return;
