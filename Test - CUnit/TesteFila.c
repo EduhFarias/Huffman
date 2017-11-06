@@ -21,7 +21,21 @@ void testCreateNode(){
 
 void testCreateQueue() {
     void *c;
-    bt = createQueue(c, 1, bt, NULL, NULL);
+    char s[6] = {A,B,C,D,E};
+    int i;
+    for(i = 0; i < 6; i++){
+        c = &s[i];
+        bt = createQueue(c, i, bt, NULL, NULL);
+    }
+    if(bt != NULL){
+        CU_ASSERT(0);
+    }
+}
+
+void testGet(){
+    long long int freq;
+    char *c = (char) malloc(sizeof(char));
+    
 }
 
 void testRemoveNode() {
@@ -42,9 +56,10 @@ int main(){
        return CU_get_error();
    }
    /* add the tests to the suite */
-   if ((NULL == CU_add_test(pSuite, "test of createNode: ", testCreateNode)) ||
-       (NULL == CU_add_test(pSuite, "test of createQueue: ", testCreateQueue)) ||
-       (NULL = CU_add_test(pSuite, "teste of removeNode: ", testRemoveNode))   ) {
+   if ((NULL == CU_add_test(pSuite, "Test of createNode: ", testCreateNode)) ||
+       (NULL == CU_add_test(pSuite, "Test of createQueue: ", testCreateQueue)) ||
+       (NULL = CU_add_test(pSuite, "Test of get: ", testGet)) ||
+       (NULL = CU_add_test(pSuite, "Test of removeNode: ", testRemoveNode)) {
        CU_cleanup_registry();
        return CU_get_error();
    }
