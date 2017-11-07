@@ -21,11 +21,39 @@ void testCreateNode(){
 
 void testCreateQueue() {
     void *c;
-    bt = createQueue(c, 1, bt, NULL, NULL);
+    int s[6] = {1,4,3,6,5,2};
+    
+    int i;
+    for(i = 0; i < 6; i++){
+        c = &i;
+        bt = createQueue(c, s[i], bt, NULL, NULL);
+    }
+    if(bt != NULL){
+        CU_ASSERT(0);
+    }
+}
+
+void testGet(){
+    int s[6] = {1,4,3,6,5,2};
+    int i;
+    for(i = 0; i < 6; i++){
+        if(getFreq(bt) != (i+1)){
+            break;
+        }
+        bt = bt->next;
+    }
+    if(i == 5){
+        CU_ASSERT(0);
+    }
 }
 
 void testRemoveNode() {
-    bt = removeNode(bt);
+    while(bt != NULL){
+        bt = removeNode(bt);
+    }
+    if(bt == NULL){
+        CU_ASSERT(0);
+    }
 }
 
 int main(){
@@ -42,30 +70,14 @@ int main(){
        return CU_get_error();
    }
    /* add the tests to the suite */
-   if ((NULL == CU_add_test(pSuite, "test of createNode: ", testCreateNode)) ||
-       (NULL == CU_add_test(pSuite, "test of createQueue: ", testCreateQueue)) ||
-       (NULL = CU_add_test(pSuite, "teste of removeNode: ", testRemoveNode))   ) {
+   if ((NULL == CU_add_test(pSuite, "Test of createNode: ", testCreateNode)) ||
+       (NULL == CU_add_test(pSuite, "Test of createQueue: ", testCreateQueue)) ||
+       (NULL = CU_add_test(pSuite, "Test of get: ", testGet)) ||
+       (NULL = CU_add_test(pSuite, "Test of removeNode: ", testRemoveNode)) {
        CU_cleanup_registry();
        return CU_get_error();
    }
 //FIM SUITE1
-
-/*
-//INICIO SUITE2
-   CU_pSuite pSuite2 = NULL;
-   if (CUE_SUCCESS != CU_initialize_registry())
-       return CU_get_error();
-   pSuite2 = CU_add_suite("Suite_2", init_suite1, clean_suite1);
-   if (NULL == pSuite) {
-       CU_cleanup_registry();
-       return CU_get_error();
-   }
-   if ((NULL == CU_add_test(pSuite2, "teste legal 03", teste3))) {
-       CU_cleanup_registry();
-       return CU_get_error();
-   }
-//FIM SUITE2
-*/
 
    /* Run all tests using the CUnit Basic interface */
    CU_basic_set_mode(CU_BRM_VERBOSE);
