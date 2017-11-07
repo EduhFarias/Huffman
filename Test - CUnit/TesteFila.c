@@ -21,11 +21,12 @@ void testCreateNode(){
 
 void testCreateQueue() {
     void *c;
-    char s[6] = {A,B,C,D,E};
+    int s[6] = {1,4,3,6,5,2};
+    
     int i;
     for(i = 0; i < 6; i++){
-        c = &s[i];
-        bt = createQueue(c, i, bt, NULL, NULL);
+        c = &i;
+        bt = createQueue(c, s[i], bt, NULL, NULL);
     }
     if(bt != NULL){
         CU_ASSERT(0);
@@ -33,13 +34,26 @@ void testCreateQueue() {
 }
 
 void testGet(){
-    long long int freq;
-    char *c = (char) malloc(sizeof(char));
-    
+    int s[6] = {1,4,3,6,5,2};
+    int i;
+    for(i = 0; i < 6; i++){
+        if(getFreq(bt) != (i+1)){
+            break;
+        }
+        bt = bt->next;
+    }
+    if(i == 5){
+        CU_ASSERT(0);
+    }
 }
 
 void testRemoveNode() {
-    bt = removeNode(bt);
+    while(bt != NULL){
+        bt = removeNode(bt);
+    }
+    if(bt == NULL){
+        CU_ASSERT(0);
+    }
 }
 
 int main(){
@@ -64,23 +78,6 @@ int main(){
        return CU_get_error();
    }
 //FIM SUITE1
-
-/*
-//INICIO SUITE2
-   CU_pSuite pSuite2 = NULL;
-   if (CUE_SUCCESS != CU_initialize_registry())
-       return CU_get_error();
-   pSuite2 = CU_add_suite("Suite_2", init_suite1, clean_suite1);
-   if (NULL == pSuite) {
-       CU_cleanup_registry();
-       return CU_get_error();
-   }
-   if ((NULL == CU_add_test(pSuite2, "teste legal 03", teste3))) {
-       CU_cleanup_registry();
-       return CU_get_error();
-   }
-//FIM SUITE2
-*/
 
    /* Run all tests using the CUnit Basic interface */
    CU_basic_set_mode(CU_BRM_VERBOSE);
