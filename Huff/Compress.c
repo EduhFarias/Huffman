@@ -43,7 +43,8 @@ BinaryTree* createNode(long long int *ch, BinaryTree *bt){
     int i;
     for(i = 0; i < 256; i++){
         if(ch[i] > 0){
-            void *item = &i;
+            unsigned char *item = (unsigned char*) malloc(sizeof(unsigned char));
+            *item = i;
             bt = createQueue(item, ch[i], bt, NULL, NULL);
         }
     }
@@ -129,9 +130,9 @@ void createTable(BinaryTree *bt, char table[][256], int pos, char *aux) {
 }
 
 BinaryTree* huff(BinaryTree *bt){
-    unsigned char c = '*';
-    void *item = &c;
-
+    unsigned char *item = (unsigned char*) malloc(sizeof(unsigned char));
+    *item = '*';
+    
     while(getNext(bt)) {
         BinaryTree *A, *B;
         A = bt;
