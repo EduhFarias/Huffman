@@ -47,10 +47,10 @@ RM = "C:\Program Files\JetBrains\CLion 2017.2.1\bin\cmake\bin\cmake.exe" -E remo
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "D:\Novo backup\P2\Huffman"
+CMAKE_SOURCE_DIR = C:\Users\Cabral\Documents\GitHub\Huffman
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "D:\Novo backup\P2\Huffman\cmake-build-debug"
+CMAKE_BINARY_DIR = C:\Users\Cabral\Documents\GitHub\Huffman\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -79,9 +79,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "D:\Novo backup\P2\Huffman\cmake-build-debug\CMakeFiles" "D:\Novo backup\P2\Huffman\cmake-build-debug\CMakeFiles\progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Cabral\Documents\GitHub\Huffman\cmake-build-debug\CMakeFiles C:\Users\Cabral\Documents\GitHub\Huffman\cmake-build-debug\CMakeFiles\progress.marks
 	$(MAKE) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "D:\Novo backup\P2\Huffman\cmake-build-debug\CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Cabral\Documents\GitHub\Huffman\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -418,33 +418,6 @@ Test_-_CUnit/TesteFila.c.s:
 	$(MAKE) -f CMakeFiles\Testes.dir\build.make CMakeFiles/Testes.dir/Test_-_CUnit/TesteFila.c.s
 .PHONY : Test_-_CUnit/TesteFila.c.s
 
-Test_-_CUnit/test1.obj: Test_-_CUnit/test1.c.obj
-
-.PHONY : Test_-_CUnit/test1.obj
-
-# target to build an object file
-Test_-_CUnit/test1.c.obj:
-	$(MAKE) -f CMakeFiles\Testes.dir\build.make CMakeFiles/Testes.dir/Test_-_CUnit/test1.c.obj
-.PHONY : Test_-_CUnit/test1.c.obj
-
-Test_-_CUnit/test1.i: Test_-_CUnit/test1.c.i
-
-.PHONY : Test_-_CUnit/test1.i
-
-# target to preprocess a source file
-Test_-_CUnit/test1.c.i:
-	$(MAKE) -f CMakeFiles\Testes.dir\build.make CMakeFiles/Testes.dir/Test_-_CUnit/test1.c.i
-.PHONY : Test_-_CUnit/test1.c.i
-
-Test_-_CUnit/test1.s: Test_-_CUnit/test1.c.s
-
-.PHONY : Test_-_CUnit/test1.s
-
-# target to generate assembly for a file
-Test_-_CUnit/test1.c.s:
-	$(MAKE) -f CMakeFiles\Testes.dir\build.make CMakeFiles/Testes.dir/Test_-_CUnit/test1.c.s
-.PHONY : Test_-_CUnit/test1.c.s
-
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -486,9 +459,6 @@ help:
 	@echo ... Test_-_CUnit/TesteFila.obj
 	@echo ... Test_-_CUnit/TesteFila.i
 	@echo ... Test_-_CUnit/TesteFila.s
-	@echo ... Test_-_CUnit/test1.obj
-	@echo ... Test_-_CUnit/test1.i
-	@echo ... Test_-_CUnit/test1.s
 .PHONY : help
 
 

@@ -16,7 +16,7 @@ int clean_suite1(void) {
 void testCreateNode(){
     bt = createEmpty();
     if(bt == NULL){
-        CU_ASSERT(0);
+        CU_ASSERT(1);
     }
 }
 
@@ -30,7 +30,7 @@ void testCreateQueue() {
         bt = createQueue(c, s[i], bt, NULL, NULL);
     }
     if(bt != NULL){
-        CU_ASSERT(0);
+        CU_ASSERT(1);
     }
 }
 
@@ -44,7 +44,7 @@ void testGet(){
         bt = getNext(bt);
     }
     if(i == 5){
-        CU_ASSERT(0);
+        CU_ASSERT(1);
     }
 }
 
@@ -53,7 +53,7 @@ void testRemoveNode() {
         bt = removeNode(bt);
     }
     if(bt == NULL){
-        CU_ASSERT(0);
+        CU_ASSERT(1);
     }
 }
 
