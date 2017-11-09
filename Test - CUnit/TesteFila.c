@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "BinaryTree.h"
 #include "CUnit/Basic.h"
 
 BinaryTree *bt;
@@ -40,7 +41,7 @@ void testGet(){
         if(getFreq(bt) != (i+1)){
             break;
         }
-        bt = bt->next;
+        bt = getNext(bt);
     }
     if(i == 5){
         CU_ASSERT(0);
@@ -72,8 +73,8 @@ int main(){
    /* add the tests to the suite */
    if ((NULL == CU_add_test(pSuite, "Test of createNode: ", testCreateNode)) ||
        (NULL == CU_add_test(pSuite, "Test of createQueue: ", testCreateQueue)) ||
-       (NULL = CU_add_test(pSuite, "Test of get: ", testGet)) ||
-       (NULL = CU_add_test(pSuite, "Test of removeNode: ", testRemoveNode)) {
+       (NULL == CU_add_test(pSuite, "Test of get: ", testGet)) ||
+       (NULL == CU_add_test(pSuite, "Test of removeNode: ", testRemoveNode))) {
        CU_cleanup_registry();
        return CU_get_error();
    }

@@ -42,10 +42,10 @@ RM = "C:\Program Files\JetBrains\CLion 2017.2.1\bin\cmake\bin\cmake.exe" -E remo
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\Cabral\Documents\GitHub\Huffman
+CMAKE_SOURCE_DIR = "D:\Novo backup\P2\Huffman"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\Cabral\Documents\GitHub\Huffman\cmake-build-debug
+CMAKE_BINARY_DIR = "D:\Novo backup\P2\Huffman\cmake-build-debug"
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Plotagem.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/Plotagem.dir/flags.make
 CMakeFiles/Plotagem.dir/Plot/mainPlot.c.obj: CMakeFiles/Plotagem.dir/flags.make
 CMakeFiles/Plotagem.dir/Plot/mainPlot.c.obj: CMakeFiles/Plotagem.dir/includes_C.rsp
 CMakeFiles/Plotagem.dir/Plot/mainPlot.c.obj: ../Plot/mainPlot.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Cabral\Documents\GitHub\Huffman\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Plotagem.dir/Plot/mainPlot.c.obj"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Plotagem.dir\Plot\mainPlot.c.obj   -c C:\Users\Cabral\Documents\GitHub\Huffman\Plot\mainPlot.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Novo backup\P2\Huffman\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Plotagem.dir/Plot/mainPlot.c.obj"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Plotagem.dir\Plot\mainPlot.c.obj   -c "D:\Novo backup\P2\Huffman\Plot\mainPlot.c"
 
 CMakeFiles/Plotagem.dir/Plot/mainPlot.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Plotagem.dir/Plot/mainPlot.c.i"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Cabral\Documents\GitHub\Huffman\Plot\mainPlot.c > CMakeFiles\Plotagem.dir\Plot\mainPlot.c.i
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "D:\Novo backup\P2\Huffman\Plot\mainPlot.c" > CMakeFiles\Plotagem.dir\Plot\mainPlot.c.i
 
 CMakeFiles/Plotagem.dir/Plot/mainPlot.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Plotagem.dir/Plot/mainPlot.c.s"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Cabral\Documents\GitHub\Huffman\Plot\mainPlot.c -o CMakeFiles\Plotagem.dir\Plot\mainPlot.c.s
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "D:\Novo backup\P2\Huffman\Plot\mainPlot.c" -o CMakeFiles\Plotagem.dir\Plot\mainPlot.c.s
 
 CMakeFiles/Plotagem.dir/Plot/mainPlot.c.obj.requires:
 
@@ -84,16 +84,16 @@ CMakeFiles/Plotagem.dir/Plot/mainPlot.c.obj.provides.build: CMakeFiles/Plotagem.
 CMakeFiles/Plotagem.dir/Plot/LinkedList.c.obj: CMakeFiles/Plotagem.dir/flags.make
 CMakeFiles/Plotagem.dir/Plot/LinkedList.c.obj: CMakeFiles/Plotagem.dir/includes_C.rsp
 CMakeFiles/Plotagem.dir/Plot/LinkedList.c.obj: ../Plot/LinkedList.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Cabral\Documents\GitHub\Huffman\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/Plotagem.dir/Plot/LinkedList.c.obj"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Plotagem.dir\Plot\LinkedList.c.obj   -c C:\Users\Cabral\Documents\GitHub\Huffman\Plot\LinkedList.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Novo backup\P2\Huffman\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/Plotagem.dir/Plot/LinkedList.c.obj"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Plotagem.dir\Plot\LinkedList.c.obj   -c "D:\Novo backup\P2\Huffman\Plot\LinkedList.c"
 
 CMakeFiles/Plotagem.dir/Plot/LinkedList.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Plotagem.dir/Plot/LinkedList.c.i"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Cabral\Documents\GitHub\Huffman\Plot\LinkedList.c > CMakeFiles\Plotagem.dir\Plot\LinkedList.c.i
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "D:\Novo backup\P2\Huffman\Plot\LinkedList.c" > CMakeFiles\Plotagem.dir\Plot\LinkedList.c.i
 
 CMakeFiles/Plotagem.dir/Plot/LinkedList.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Plotagem.dir/Plot/LinkedList.c.s"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Cabral\Documents\GitHub\Huffman\Plot\LinkedList.c -o CMakeFiles\Plotagem.dir\Plot\LinkedList.c.s
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "D:\Novo backup\P2\Huffman\Plot\LinkedList.c" -o CMakeFiles\Plotagem.dir\Plot\LinkedList.c.s
 
 CMakeFiles/Plotagem.dir/Plot/LinkedList.c.obj.requires:
 
@@ -109,16 +109,16 @@ CMakeFiles/Plotagem.dir/Plot/LinkedList.c.obj.provides.build: CMakeFiles/Plotage
 CMakeFiles/Plotagem.dir/Plot/BST.c.obj: CMakeFiles/Plotagem.dir/flags.make
 CMakeFiles/Plotagem.dir/Plot/BST.c.obj: CMakeFiles/Plotagem.dir/includes_C.rsp
 CMakeFiles/Plotagem.dir/Plot/BST.c.obj: ../Plot/BST.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Cabral\Documents\GitHub\Huffman\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/Plotagem.dir/Plot/BST.c.obj"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Plotagem.dir\Plot\BST.c.obj   -c C:\Users\Cabral\Documents\GitHub\Huffman\Plot\BST.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Novo backup\P2\Huffman\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/Plotagem.dir/Plot/BST.c.obj"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Plotagem.dir\Plot\BST.c.obj   -c "D:\Novo backup\P2\Huffman\Plot\BST.c"
 
 CMakeFiles/Plotagem.dir/Plot/BST.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Plotagem.dir/Plot/BST.c.i"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Cabral\Documents\GitHub\Huffman\Plot\BST.c > CMakeFiles\Plotagem.dir\Plot\BST.c.i
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "D:\Novo backup\P2\Huffman\Plot\BST.c" > CMakeFiles\Plotagem.dir\Plot\BST.c.i
 
 CMakeFiles/Plotagem.dir/Plot/BST.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Plotagem.dir/Plot/BST.c.s"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Cabral\Documents\GitHub\Huffman\Plot\BST.c -o CMakeFiles\Plotagem.dir\Plot\BST.c.s
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "D:\Novo backup\P2\Huffman\Plot\BST.c" -o CMakeFiles\Plotagem.dir\Plot\BST.c.s
 
 CMakeFiles/Plotagem.dir/Plot/BST.c.obj.requires:
 
@@ -147,7 +147,7 @@ Plotagem.exe: CMakeFiles/Plotagem.dir/build.make
 Plotagem.exe: CMakeFiles/Plotagem.dir/linklibs.rsp
 Plotagem.exe: CMakeFiles/Plotagem.dir/objects1.rsp
 Plotagem.exe: CMakeFiles/Plotagem.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Cabral\Documents\GitHub\Huffman\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable Plotagem.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="D:\Novo backup\P2\Huffman\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable Plotagem.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Plotagem.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -166,6 +166,6 @@ CMakeFiles/Plotagem.dir/clean:
 .PHONY : CMakeFiles/Plotagem.dir/clean
 
 CMakeFiles/Plotagem.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\Cabral\Documents\GitHub\Huffman C:\Users\Cabral\Documents\GitHub\Huffman C:\Users\Cabral\Documents\GitHub\Huffman\cmake-build-debug C:\Users\Cabral\Documents\GitHub\Huffman\cmake-build-debug C:\Users\Cabral\Documents\GitHub\Huffman\cmake-build-debug\CMakeFiles\Plotagem.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" "D:\Novo backup\P2\Huffman" "D:\Novo backup\P2\Huffman" "D:\Novo backup\P2\Huffman\cmake-build-debug" "D:\Novo backup\P2\Huffman\cmake-build-debug" "D:\Novo backup\P2\Huffman\cmake-build-debug\CMakeFiles\Plotagem.dir\DependInfo.cmake" --color=$(COLOR)
 .PHONY : CMakeFiles/Plotagem.dir/depend
 

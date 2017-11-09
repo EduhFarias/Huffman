@@ -4,11 +4,11 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "C:/Users/Cabral/Documents/GitHub/Huffman/Huff/BinaryTree.c" "C:/Users/Cabral/Documents/GitHub/Huffman/cmake-build-debug/CMakeFiles/Huffman.dir/Huff/BinaryTree.c.obj"
-  "C:/Users/Cabral/Documents/GitHub/Huffman/Huff/Compress.c" "C:/Users/Cabral/Documents/GitHub/Huffman/cmake-build-debug/CMakeFiles/Huffman.dir/Huff/Compress.c.obj"
-  "C:/Users/Cabral/Documents/GitHub/Huffman/Huff/Decompress.c" "C:/Users/Cabral/Documents/GitHub/Huffman/cmake-build-debug/CMakeFiles/Huffman.dir/Huff/Decompress.c.obj"
-  "C:/Users/Cabral/Documents/GitHub/Huffman/Huff/Helpful.c" "C:/Users/Cabral/Documents/GitHub/Huffman/cmake-build-debug/CMakeFiles/Huffman.dir/Huff/Helpful.c.obj"
-  "C:/Users/Cabral/Documents/GitHub/Huffman/Huff/mainHuff.c" "C:/Users/Cabral/Documents/GitHub/Huffman/cmake-build-debug/CMakeFiles/Huffman.dir/Huff/mainHuff.c.obj"
+  "D:/Novo backup/P2/Huffman/Huff/BinaryTree.c" "D:/Novo backup/P2/Huffman/cmake-build-debug/CMakeFiles/Huffman.dir/Huff/BinaryTree.c.obj"
+  "D:/Novo backup/P2/Huffman/Huff/Compress.c" "D:/Novo backup/P2/Huffman/cmake-build-debug/CMakeFiles/Huffman.dir/Huff/Compress.c.obj"
+  "D:/Novo backup/P2/Huffman/Huff/Decompress.c" "D:/Novo backup/P2/Huffman/cmake-build-debug/CMakeFiles/Huffman.dir/Huff/Decompress.c.obj"
+  "D:/Novo backup/P2/Huffman/Huff/Helpful.c" "D:/Novo backup/P2/Huffman/cmake-build-debug/CMakeFiles/Huffman.dir/Huff/Helpful.c.obj"
+  "D:/Novo backup/P2/Huffman/Huff/mainHuff.c" "D:/Novo backup/P2/Huffman/cmake-build-debug/CMakeFiles/Huffman.dir/Huff/mainHuff.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

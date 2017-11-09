@@ -8,28 +8,28 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="C:/Users/Cabral/Documents/GitHub/Huffman/cmake-build-debug"/>
+				<Option working_dir="D:/Novo backup/P2/Huffman/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Cabral/Documents/GitHub/Huffman/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Cabral/Documents/GitHub/Huffman/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Cabral/Documents/GitHub/Huffman/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Cabral/Documents/GitHub/Huffman/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Novo backup/P2/Huffman/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Novo backup/P2/Huffman/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Novo backup/P2/Huffman/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Novo backup/P2/Huffman/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="C:/Users/Cabral/Documents/GitHub/Huffman/cmake-build-debug"/>
+				<Option working_dir="D:/Novo backup/P2/Huffman/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Cabral/Documents/GitHub/Huffman/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Cabral/Documents/GitHub/Huffman/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Cabral/Documents/GitHub/Huffman/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Cabral/Documents/GitHub/Huffman/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Novo backup/P2/Huffman/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Novo backup/P2/Huffman/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Novo backup/P2/Huffman/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Novo backup/P2/Huffman/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Plotagem">
-				<Option output="C:/Users/Cabral/Documents/GitHub/Huffman/cmake-build-debug/Plotagem.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/Cabral/Documents/GitHub/Huffman/cmake-build-debug"/>
+				<Option output="D:/Novo backup/P2/Huffman/cmake-build-debug/Plotagem.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Novo backup/P2/Huffman/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -44,15 +44,15 @@
 					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Cabral/Documents/GitHub/Huffman/cmake-build-debug/Makefile&quot;  VERBOSE=1 Plotagem"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Cabral/Documents/GitHub/Huffman/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Cabral/Documents/GitHub/Huffman/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Cabral/Documents/GitHub/Huffman/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Novo backup/P2/Huffman/cmake-build-debug/Makefile&quot;  VERBOSE=1 Plotagem"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Novo backup/P2/Huffman/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Novo backup/P2/Huffman/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Novo backup/P2/Huffman/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Plotagem/fast">
-				<Option output="C:/Users/Cabral/Documents/GitHub/Huffman/cmake-build-debug/Plotagem.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/Cabral/Documents/GitHub/Huffman/cmake-build-debug"/>
+				<Option output="D:/Novo backup/P2/Huffman/cmake-build-debug/Plotagem.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Novo backup/P2/Huffman/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -67,15 +67,15 @@
 					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Cabral/Documents/GitHub/Huffman/cmake-build-debug/Makefile&quot;  VERBOSE=1 Plotagem/fast"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Cabral/Documents/GitHub/Huffman/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Cabral/Documents/GitHub/Huffman/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Cabral/Documents/GitHub/Huffman/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Novo backup/P2/Huffman/cmake-build-debug/Makefile&quot;  VERBOSE=1 Plotagem/fast"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Novo backup/P2/Huffman/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Novo backup/P2/Huffman/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Novo backup/P2/Huffman/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Huffman">
-				<Option output="C:/Users/Cabral/Documents/GitHub/Huffman/cmake-build-debug/Huffman.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/Cabral/Documents/GitHub/Huffman/cmake-build-debug"/>
+				<Option output="D:/Novo backup/P2/Huffman/cmake-build-debug/Huffman.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Novo backup/P2/Huffman/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -90,15 +90,15 @@
 					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Cabral/Documents/GitHub/Huffman/cmake-build-debug/Makefile&quot;  VERBOSE=1 Huffman"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Cabral/Documents/GitHub/Huffman/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Cabral/Documents/GitHub/Huffman/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Cabral/Documents/GitHub/Huffman/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Novo backup/P2/Huffman/cmake-build-debug/Makefile&quot;  VERBOSE=1 Huffman"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Novo backup/P2/Huffman/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Novo backup/P2/Huffman/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Novo backup/P2/Huffman/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Huffman/fast">
-				<Option output="C:/Users/Cabral/Documents/GitHub/Huffman/cmake-build-debug/Huffman.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/Cabral/Documents/GitHub/Huffman/cmake-build-debug"/>
+				<Option output="D:/Novo backup/P2/Huffman/cmake-build-debug/Huffman.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Novo backup/P2/Huffman/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -113,15 +113,15 @@
 					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Cabral/Documents/GitHub/Huffman/cmake-build-debug/Makefile&quot;  VERBOSE=1 Huffman/fast"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Cabral/Documents/GitHub/Huffman/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Cabral/Documents/GitHub/Huffman/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Cabral/Documents/GitHub/Huffman/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Novo backup/P2/Huffman/cmake-build-debug/Makefile&quot;  VERBOSE=1 Huffman/fast"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Novo backup/P2/Huffman/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Novo backup/P2/Huffman/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Novo backup/P2/Huffman/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Testes">
-				<Option output="C:/Users/Cabral/Documents/GitHub/Huffman/cmake-build-debug/Testes.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/Cabral/Documents/GitHub/Huffman/cmake-build-debug"/>
+				<Option output="D:/Novo backup/P2/Huffman/cmake-build-debug/Testes.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Novo backup/P2/Huffman/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -136,15 +136,15 @@
 					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Cabral/Documents/GitHub/Huffman/cmake-build-debug/Makefile&quot;  VERBOSE=1 Testes"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Cabral/Documents/GitHub/Huffman/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Cabral/Documents/GitHub/Huffman/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Cabral/Documents/GitHub/Huffman/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Novo backup/P2/Huffman/cmake-build-debug/Makefile&quot;  VERBOSE=1 Testes"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Novo backup/P2/Huffman/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Novo backup/P2/Huffman/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Novo backup/P2/Huffman/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Testes/fast">
-				<Option output="C:/Users/Cabral/Documents/GitHub/Huffman/cmake-build-debug/Testes.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/Cabral/Documents/GitHub/Huffman/cmake-build-debug"/>
+				<Option output="D:/Novo backup/P2/Huffman/cmake-build-debug/Testes.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Novo backup/P2/Huffman/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -159,75 +159,78 @@
 					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Cabral/Documents/GitHub/Huffman/cmake-build-debug/Makefile&quot;  VERBOSE=1 Testes/fast"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Cabral/Documents/GitHub/Huffman/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Cabral/Documents/GitHub/Huffman/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Cabral/Documents/GitHub/Huffman/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Novo backup/P2/Huffman/cmake-build-debug/Makefile&quot;  VERBOSE=1 Testes/fast"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Novo backup/P2/Huffman/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Novo backup/P2/Huffman/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Novo backup/P2/Huffman/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="C:/Users/Cabral/Documents/GitHub/Huffman/cmake-build-debug"/>
+				<Option working_dir="D:/Novo backup/P2/Huffman/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Cabral/Documents/GitHub/Huffman/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Cabral/Documents/GitHub/Huffman/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Cabral/Documents/GitHub/Huffman/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Cabral/Documents/GitHub/Huffman/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Novo backup/P2/Huffman/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Novo backup/P2/Huffman/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Novo backup/P2/Huffman/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Novo backup/P2/Huffman/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/Cabral/Documents/GitHub/Huffman/Huff/BinaryTree.c">
+		<Unit filename="D:/Novo backup/P2/Huffman/Huff/BinaryTree.c">
 			<Option target="Huffman"/>
 		</Unit>
-		<Unit filename="C:/Users/Cabral/Documents/GitHub/Huffman/Huff/BinaryTree.h">
+		<Unit filename="D:/Novo backup/P2/Huffman/Huff/BinaryTree.h">
 			<Option target="Huffman"/>
 		</Unit>
-		<Unit filename="C:/Users/Cabral/Documents/GitHub/Huffman/Huff/Compress.c">
+		<Unit filename="D:/Novo backup/P2/Huffman/Huff/Compress.c">
 			<Option target="Huffman"/>
 		</Unit>
-		<Unit filename="C:/Users/Cabral/Documents/GitHub/Huffman/Huff/Compress.h">
+		<Unit filename="D:/Novo backup/P2/Huffman/Huff/Compress.h">
 			<Option target="Huffman"/>
 		</Unit>
-		<Unit filename="C:/Users/Cabral/Documents/GitHub/Huffman/Huff/Decompress.c">
+		<Unit filename="D:/Novo backup/P2/Huffman/Huff/Decompress.c">
 			<Option target="Huffman"/>
 		</Unit>
-		<Unit filename="C:/Users/Cabral/Documents/GitHub/Huffman/Huff/Decompress.h">
+		<Unit filename="D:/Novo backup/P2/Huffman/Huff/Decompress.h">
 			<Option target="Huffman"/>
 		</Unit>
-		<Unit filename="C:/Users/Cabral/Documents/GitHub/Huffman/Huff/Helpful.c">
+		<Unit filename="D:/Novo backup/P2/Huffman/Huff/Helpful.c">
 			<Option target="Huffman"/>
 		</Unit>
-		<Unit filename="C:/Users/Cabral/Documents/GitHub/Huffman/Huff/Helpful.h">
+		<Unit filename="D:/Novo backup/P2/Huffman/Huff/Helpful.h">
 			<Option target="Huffman"/>
 		</Unit>
-		<Unit filename="C:/Users/Cabral/Documents/GitHub/Huffman/Huff/mainHuff.c">
+		<Unit filename="D:/Novo backup/P2/Huffman/Huff/mainHuff.c">
 			<Option target="Huffman"/>
 		</Unit>
-		<Unit filename="C:/Users/Cabral/Documents/GitHub/Huffman/Plot/BST.c">
+		<Unit filename="D:/Novo backup/P2/Huffman/Plot/BST.c">
 			<Option target="Plotagem"/>
 		</Unit>
-		<Unit filename="C:/Users/Cabral/Documents/GitHub/Huffman/Plot/BST.h">
+		<Unit filename="D:/Novo backup/P2/Huffman/Plot/BST.h">
 			<Option target="Plotagem"/>
 		</Unit>
-		<Unit filename="C:/Users/Cabral/Documents/GitHub/Huffman/Plot/LinkedList.c">
+		<Unit filename="D:/Novo backup/P2/Huffman/Plot/LinkedList.c">
 			<Option target="Plotagem"/>
 		</Unit>
-		<Unit filename="C:/Users/Cabral/Documents/GitHub/Huffman/Plot/LinkedList.h">
+		<Unit filename="D:/Novo backup/P2/Huffman/Plot/LinkedList.h">
 			<Option target="Plotagem"/>
 		</Unit>
-		<Unit filename="C:/Users/Cabral/Documents/GitHub/Huffman/Plot/mainPlot.c">
+		<Unit filename="D:/Novo backup/P2/Huffman/Plot/mainPlot.c">
 			<Option target="Plotagem"/>
 		</Unit>
-		<Unit filename="C:/Users/Cabral/Documents/GitHub/Huffman/Test - CUnit/TesteArvore.c">
+		<Unit filename="D:/Novo backup/P2/Huffman/Test - CUnit/BinaryTree.c">
 			<Option target="Testes"/>
 		</Unit>
-		<Unit filename="C:/Users/Cabral/Documents/GitHub/Huffman/Test - CUnit/TesteFila.c">
+		<Unit filename="D:/Novo backup/P2/Huffman/Test - CUnit/BinaryTree.h">
 			<Option target="Testes"/>
 		</Unit>
-		<Unit filename="C:/Users/Cabral/Documents/GitHub/Huffman/Test - CUnit/test1.c">
+		<Unit filename="D:/Novo backup/P2/Huffman/Test - CUnit/TesteFila.c">
 			<Option target="Testes"/>
 		</Unit>
-		<Unit filename="C:/Users/Cabral/Documents/GitHub/Huffman/CMakeLists.txt">
+		<Unit filename="D:/Novo backup/P2/Huffman/Test - CUnit/test1.c">
+			<Option target="Testes"/>
+		</Unit>
+		<Unit filename="D:/Novo backup/P2/Huffman/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

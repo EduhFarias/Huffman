@@ -9,7 +9,7 @@ int main(void){
     scanf("%c", &c);
     //scanf("%[^\n]", inputFileName);
     FILE *iFile;
-    iFile = fopen("C:\\Users\\Cabral\\Documents\\Prog\\teste.txt", "rb");
+    iFile = fopen("C:\\Users\\Cabral\\Documents\\Prog\\saida.huff", "rb");
     if(iFile == NULL){
         printf("Arquivo nao pode ser aberto\n");
         exit(1);

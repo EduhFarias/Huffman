@@ -1,5 +1,5 @@
-C:/Users/Cabral/Documents/GitHub/Huffman/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/Cabral/Documents/GitHub/Huffman/cmake-build-debug/CMakeFiles/Plotagem.dir
-C:/Users/Cabral/Documents/GitHub/Huffman/cmake-build-debug/CMakeFiles/Huffman.dir
-C:/Users/Cabral/Documents/GitHub/Huffman/cmake-build-debug/CMakeFiles/Testes.dir
-C:/Users/Cabral/Documents/GitHub/Huffman/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+D:/Novo backup/P2/Huffman/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/Novo backup/P2/Huffman/cmake-build-debug/CMakeFiles/Plotagem.dir
+D:/Novo backup/P2/Huffman/cmake-build-debug/CMakeFiles/Huffman.dir
+D:/Novo backup/P2/Huffman/cmake-build-debug/CMakeFiles/Testes.dir
+D:/Novo backup/P2/Huffman/cmake-build-debug/CMakeFiles/rebuild_cache.dir

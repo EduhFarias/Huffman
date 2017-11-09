@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "C:/Users/Cabral/Documents/GitHub/Huffman/Plot/BST.c" "C:/Users/Cabral/Documents/GitHub/Huffman/cmake-build-debug/CMakeFiles/Plotagem.dir/Plot/BST.c.obj"
-  "C:/Users/Cabral/Documents/GitHub/Huffman/Plot/LinkedList.c" "C:/Users/Cabral/Documents/GitHub/Huffman/cmake-build-debug/CMakeFiles/Plotagem.dir/Plot/LinkedList.c.obj"
-  "C:/Users/Cabral/Documents/GitHub/Huffman/Plot/mainPlot.c" "C:/Users/Cabral/Documents/GitHub/Huffman/cmake-build-debug/CMakeFiles/Plotagem.dir/Plot/mainPlot.c.obj"
+  "D:/Novo backup/P2/Huffman/Plot/BST.c" "D:/Novo backup/P2/Huffman/cmake-build-debug/CMakeFiles/Plotagem.dir/Plot/BST.c.obj"
+  "D:/Novo backup/P2/Huffman/Plot/LinkedList.c" "D:/Novo backup/P2/Huffman/cmake-build-debug/CMakeFiles/Plotagem.dir/Plot/LinkedList.c.obj"
+  "D:/Novo backup/P2/Huffman/Plot/mainPlot.c" "D:/Novo backup/P2/Huffman/cmake-build-debug/CMakeFiles/Plotagem.dir/Plot/mainPlot.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
