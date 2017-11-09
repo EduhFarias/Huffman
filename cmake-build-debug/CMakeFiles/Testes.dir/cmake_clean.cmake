@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Testes.dir/Test_-_CUnit/test1.c.obj"
   "CMakeFiles/Testes.dir/Test_-_CUnit/TesteFila.c.obj"
-  "CMakeFiles/Testes.dir/Test_-_CUnit/TesteArvore.c.obj"
+  "CMakeFiles/Testes.dir/Test_-_CUnit/BinaryTree.c.obj"
   "Testes.pdb"
   "Testes.exe"
   "Testes.exe.manifest"

@@ -6,23 +6,23 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/Cabral/Documents/GitHub/Huffman/Huff/BinaryTree.c
+D:/Novo backup/P2/Huffman/Huff/BinaryTree.c
 BinaryTree.h
-C:/Users/Cabral/Documents/GitHub/Huffman/Huff/BinaryTree.h
+D:/Novo backup/P2/Huffman/Huff/BinaryTree.h
 stdio.h
 -
 stdlib.h
 -
 
-C:/Users/Cabral/Documents/GitHub/Huffman/Huff/BinaryTree.h
+D:/Novo backup/P2/Huffman/Huff/BinaryTree.h
 stdio.h
 -
 
-C:/Users/Cabral/Documents/GitHub/Huffman/Huff/Compress.c
+D:/Novo backup/P2/Huffman/Huff/Compress.c
 Compress.h
-C:/Users/Cabral/Documents/GitHub/Huffman/Huff/Compress.h
+D:/Novo backup/P2/Huffman/Huff/Compress.h
 BinaryTree.h
-C:/Users/Cabral/Documents/GitHub/Huffman/Huff/BinaryTree.h
+D:/Novo backup/P2/Huffman/Huff/BinaryTree.h
 stdio.h
 -
 stdlib.h
@@ -30,31 +30,31 @@ stdlib.h
 string.h
 -
 Helpful.h
-C:/Users/Cabral/Documents/GitHub/Huffman/Huff/Helpful.h
+D:/Novo backup/P2/Huffman/Huff/Helpful.h
 
-C:/Users/Cabral/Documents/GitHub/Huffman/Huff/Compress.h
+D:/Novo backup/P2/Huffman/Huff/Compress.h
 stdio.h
 -
 BinaryTree.h
-C:/Users/Cabral/Documents/GitHub/Huffman/Huff/BinaryTree.h
+D:/Novo backup/P2/Huffman/Huff/BinaryTree.h
 
-C:/Users/Cabral/Documents/GitHub/Huffman/Huff/Decompress.c
+D:/Novo backup/P2/Huffman/Huff/Decompress.c
 stdio.h
 -
 stdlib.h
 -
 Decompress.h
-C:/Users/Cabral/Documents/GitHub/Huffman/Huff/Decompress.h
+D:/Novo backup/P2/Huffman/Huff/Decompress.h
 Helpful.h
-C:/Users/Cabral/Documents/GitHub/Huffman/Huff/Helpful.h
+D:/Novo backup/P2/Huffman/Huff/Helpful.h
 
-C:/Users/Cabral/Documents/GitHub/Huffman/Huff/Decompress.h
+D:/Novo backup/P2/Huffman/Huff/Decompress.h
 BinaryTree.h
-C:/Users/Cabral/Documents/GitHub/Huffman/Huff/BinaryTree.h
+D:/Novo backup/P2/Huffman/Huff/BinaryTree.h
 
-C:/Users/Cabral/Documents/GitHub/Huffman/Huff/Helpful.c
+D:/Novo backup/P2/Huffman/Huff/Helpful.c
 Helpful.h
-C:/Users/Cabral/Documents/GitHub/Huffman/Huff/Helpful.h
+D:/Novo backup/P2/Huffman/Huff/Helpful.h
 stdlib.h
 -
 string.h
@@ -62,15 +62,15 @@ string.h
 math.h
 -
 
-C:/Users/Cabral/Documents/GitHub/Huffman/Huff/Helpful.h
+D:/Novo backup/P2/Huffman/Huff/Helpful.h
 
-C:/Users/Cabral/Documents/GitHub/Huffman/Huff/mainHuff.c
+D:/Novo backup/P2/Huffman/Huff/mainHuff.c
 stdlib.h
 -
 stdio.h
 -
 Compress.h
-C:/Users/Cabral/Documents/GitHub/Huffman/Huff/Compress.h
+D:/Novo backup/P2/Huffman/Huff/Compress.h
 Decompress.h
-C:/Users/Cabral/Documents/GitHub/Huffman/Huff/Decompress.h
+D:/Novo backup/P2/Huffman/Huff/Decompress.h
 
