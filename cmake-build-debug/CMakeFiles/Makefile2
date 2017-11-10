@@ -53,10 +53,10 @@ RM = "C:\Program Files\JetBrains\CLion 2017.2.1\bin\cmake\bin\cmake.exe" -E remo
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "D:\Novo backup\P2\Huffman"
+CMAKE_SOURCE_DIR = C:\Users\Cabral\Documents\GitHub\Huffman
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "D:\Novo backup\P2\Huffman\cmake-build-debug"
+CMAKE_BINARY_DIR = C:\Users\Cabral\Documents\GitHub\Huffman\cmake-build-debug
 
 #=============================================================================
 # Target rules for target CMakeFiles/Plotagem.dir
@@ -65,7 +65,7 @@ CMAKE_BINARY_DIR = "D:\Novo backup\P2\Huffman\cmake-build-debug"
 CMakeFiles/Plotagem.dir/all:
 	$(MAKE) -f CMakeFiles\Plotagem.dir\build.make CMakeFiles/Plotagem.dir/depend
 	$(MAKE) -f CMakeFiles\Plotagem.dir\build.make CMakeFiles/Plotagem.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="D:\Novo backup\P2\Huffman\cmake-build-debug\CMakeFiles" --progress-num=7,8,9,10 "Built target Plotagem"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\Cabral\Documents\GitHub\Huffman\cmake-build-debug\CMakeFiles --progress-num=7,8,9,10 "Built target Plotagem"
 .PHONY : CMakeFiles/Plotagem.dir/all
 
 # Include target in all.
@@ -75,9 +75,9 @@ all: CMakeFiles/Plotagem.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Plotagem.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "D:\Novo backup\P2\Huffman\cmake-build-debug\CMakeFiles" 4
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Cabral\Documents\GitHub\Huffman\cmake-build-debug\CMakeFiles 4
 	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/Plotagem.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start "D:\Novo backup\P2\Huffman\cmake-build-debug\CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Cabral\Documents\GitHub\Huffman\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/Plotagem.dir/rule
 
 # Convenience name for target.
@@ -102,7 +102,7 @@ clean: CMakeFiles/Plotagem.dir/clean
 CMakeFiles/Huffman.dir/all:
 	$(MAKE) -f CMakeFiles\Huffman.dir\build.make CMakeFiles/Huffman.dir/depend
 	$(MAKE) -f CMakeFiles\Huffman.dir\build.make CMakeFiles/Huffman.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="D:\Novo backup\P2\Huffman\cmake-build-debug\CMakeFiles" --progress-num=1,2,3,4,5,6 "Built target Huffman"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\Cabral\Documents\GitHub\Huffman\cmake-build-debug\CMakeFiles --progress-num=1,2,3,4,5,6 "Built target Huffman"
 .PHONY : CMakeFiles/Huffman.dir/all
 
 # Include target in all.
@@ -112,9 +112,9 @@ all: CMakeFiles/Huffman.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Huffman.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "D:\Novo backup\P2\Huffman\cmake-build-debug\CMakeFiles" 6
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Cabral\Documents\GitHub\Huffman\cmake-build-debug\CMakeFiles 6
 	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/Huffman.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start "D:\Novo backup\P2\Huffman\cmake-build-debug\CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Cabral\Documents\GitHub\Huffman\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/Huffman.dir/rule
 
 # Convenience name for target.
@@ -139,7 +139,7 @@ clean: CMakeFiles/Huffman.dir/clean
 CMakeFiles/Testes.dir/all:
 	$(MAKE) -f CMakeFiles\Testes.dir\build.make CMakeFiles/Testes.dir/depend
 	$(MAKE) -f CMakeFiles\Testes.dir\build.make CMakeFiles/Testes.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="D:\Novo backup\P2\Huffman\cmake-build-debug\CMakeFiles" --progress-num=11,12,13,14 "Built target Testes"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\Cabral\Documents\GitHub\Huffman\cmake-build-debug\CMakeFiles --progress-num=11,12,13 "Built target Testes"
 .PHONY : CMakeFiles/Testes.dir/all
 
 # Include target in all.
@@ -149,9 +149,9 @@ all: CMakeFiles/Testes.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Testes.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "D:\Novo backup\P2\Huffman\cmake-build-debug\CMakeFiles" 4
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Cabral\Documents\GitHub\Huffman\cmake-build-debug\CMakeFiles 3
 	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/Testes.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start "D:\Novo backup\P2\Huffman\cmake-build-debug\CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Cabral\Documents\GitHub\Huffman\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/Testes.dir/rule
 
 # Convenience name for target.

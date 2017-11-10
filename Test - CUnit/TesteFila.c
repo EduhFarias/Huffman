@@ -16,22 +16,22 @@ int clean_suite1(void) {
 void testCreateNode(){
     bt = createEmpty();
     if(bt == NULL){
-        CU_ASSERT(0);
-    }
+        CU_ASSERT(1);
+    } else CU_ASSERT(0);
 }
 
 void testCreateQueue() {
-    void *c;
+    unsigned char *item = (unsigned char*) malloc(sizeof(unsigned char));
     int s[6] = {1,4,3,6,5,2};
     
     int i;
     for(i = 0; i < 6; i++){
-        c = &i;
-        bt = createQueue(c, s[i], bt, NULL, NULL);
+        *item = (unsigned char)i;
+        bt = createQueue(item, s[i], bt, NULL, NULL);
     }
     if(bt != NULL){
-        CU_ASSERT(0);
-    }
+        CU_ASSERT(1);
+    } else CU_ASSERT(0);
 }
 
 void testGet(){
@@ -43,9 +43,9 @@ void testGet(){
         }
         bt = getNext(bt);
     }
-    if(i == 5){
-        CU_ASSERT(0);
-    }
+    if(i == 6){
+        CU_ASSERT(1);
+    } else CU_ASSERT(0);
 }
 
 void testRemoveNode() {
@@ -53,8 +53,8 @@ void testRemoveNode() {
         bt = removeNode(bt);
     }
     if(bt == NULL){
-        CU_ASSERT(0);
-    }
+        CU_ASSERT(1);
+    } else CU_ASSERT(0);
 }
 
 int main(){
