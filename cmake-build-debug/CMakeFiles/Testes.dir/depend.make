@@ -4,11 +4,11 @@
 CMakeFiles/Testes.dir/Test_-_CUnit/BinaryTree.c.obj: ../Test\ -\ CUnit/BinaryTree.c
 CMakeFiles/Testes.dir/Test_-_CUnit/BinaryTree.c.obj: ../Test\ -\ CUnit/BinaryTree.h
 
-CMakeFiles/Testes.dir/Test_-_CUnit/TesteFila.c.obj: ../Test\ -\ CUnit/BinaryTree.h
-CMakeFiles/Testes.dir/Test_-_CUnit/TesteFila.c.obj: ../Test\ -\ CUnit/TesteFila.c
-CMakeFiles/Testes.dir/Test_-_CUnit/TesteFila.c.obj: C:/cunit/include/CUnit/Basic.h
-CMakeFiles/Testes.dir/Test_-_CUnit/TesteFila.c.obj: C:/cunit/include/CUnit/CUError.h
-CMakeFiles/Testes.dir/Test_-_CUnit/TesteFila.c.obj: C:/cunit/include/CUnit/CUnit.h
-CMakeFiles/Testes.dir/Test_-_CUnit/TesteFila.c.obj: C:/cunit/include/CUnit/TestDB.h
-CMakeFiles/Testes.dir/Test_-_CUnit/TesteFila.c.obj: C:/cunit/include/CUnit/TestRun.h
+CMakeFiles/Testes.dir/Test_-_CUnit/Teste.c.obj: ../Test\ -\ CUnit/BinaryTree.h
+CMakeFiles/Testes.dir/Test_-_CUnit/Teste.c.obj: ../Test\ -\ CUnit/Teste.c
+CMakeFiles/Testes.dir/Test_-_CUnit/Teste.c.obj: C:/cunit/include/CUnit/Basic.h
+CMakeFiles/Testes.dir/Test_-_CUnit/Teste.c.obj: C:/cunit/include/CUnit/CUError.h
+CMakeFiles/Testes.dir/Test_-_CUnit/Teste.c.obj: C:/cunit/include/CUnit/CUnit.h
+CMakeFiles/Testes.dir/Test_-_CUnit/Teste.c.obj: C:/cunit/include/CUnit/TestDB.h
+CMakeFiles/Testes.dir/Test_-_CUnit/Teste.c.obj: C:/cunit/include/CUnit/TestRun.h
 

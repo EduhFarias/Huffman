@@ -56,29 +56,29 @@ include CMakeFiles/Testes.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Testes.dir/flags.make
 
-CMakeFiles/Testes.dir/Test_-_CUnit/TesteFila.c.obj: CMakeFiles/Testes.dir/flags.make
-CMakeFiles/Testes.dir/Test_-_CUnit/TesteFila.c.obj: CMakeFiles/Testes.dir/includes_C.rsp
-CMakeFiles/Testes.dir/Test_-_CUnit/TesteFila.c.obj: ../Test\ -\ CUnit/TesteFila.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Cabral\Documents\GitHub\Huffman\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Testes.dir/Test_-_CUnit/TesteFila.c.obj"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Testes.dir\Test_-_CUnit\TesteFila.c.obj   -c "C:\Users\Cabral\Documents\GitHub\Huffman\Test - CUnit\TesteFila.c"
+CMakeFiles/Testes.dir/Test_-_CUnit/Teste.c.obj: CMakeFiles/Testes.dir/flags.make
+CMakeFiles/Testes.dir/Test_-_CUnit/Teste.c.obj: CMakeFiles/Testes.dir/includes_C.rsp
+CMakeFiles/Testes.dir/Test_-_CUnit/Teste.c.obj: ../Test\ -\ CUnit/Teste.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Cabral\Documents\GitHub\Huffman\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Testes.dir/Test_-_CUnit/Teste.c.obj"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Testes.dir\Test_-_CUnit\Teste.c.obj   -c "C:\Users\Cabral\Documents\GitHub\Huffman\Test - CUnit\Teste.c"
 
-CMakeFiles/Testes.dir/Test_-_CUnit/TesteFila.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Testes.dir/Test_-_CUnit/TesteFila.c.i"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\Cabral\Documents\GitHub\Huffman\Test - CUnit\TesteFila.c" > CMakeFiles\Testes.dir\Test_-_CUnit\TesteFila.c.i
+CMakeFiles/Testes.dir/Test_-_CUnit/Teste.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Testes.dir/Test_-_CUnit/Teste.c.i"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\Cabral\Documents\GitHub\Huffman\Test - CUnit\Teste.c" > CMakeFiles\Testes.dir\Test_-_CUnit\Teste.c.i
 
-CMakeFiles/Testes.dir/Test_-_CUnit/TesteFila.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Testes.dir/Test_-_CUnit/TesteFila.c.s"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\Cabral\Documents\GitHub\Huffman\Test - CUnit\TesteFila.c" -o CMakeFiles\Testes.dir\Test_-_CUnit\TesteFila.c.s
+CMakeFiles/Testes.dir/Test_-_CUnit/Teste.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Testes.dir/Test_-_CUnit/Teste.c.s"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\Cabral\Documents\GitHub\Huffman\Test - CUnit\Teste.c" -o CMakeFiles\Testes.dir\Test_-_CUnit\Teste.c.s
 
-CMakeFiles/Testes.dir/Test_-_CUnit/TesteFila.c.obj.requires:
+CMakeFiles/Testes.dir/Test_-_CUnit/Teste.c.obj.requires:
 
-.PHONY : CMakeFiles/Testes.dir/Test_-_CUnit/TesteFila.c.obj.requires
+.PHONY : CMakeFiles/Testes.dir/Test_-_CUnit/Teste.c.obj.requires
 
-CMakeFiles/Testes.dir/Test_-_CUnit/TesteFila.c.obj.provides: CMakeFiles/Testes.dir/Test_-_CUnit/TesteFila.c.obj.requires
-	$(MAKE) -f CMakeFiles\Testes.dir\build.make CMakeFiles/Testes.dir/Test_-_CUnit/TesteFila.c.obj.provides.build
-.PHONY : CMakeFiles/Testes.dir/Test_-_CUnit/TesteFila.c.obj.provides
+CMakeFiles/Testes.dir/Test_-_CUnit/Teste.c.obj.provides: CMakeFiles/Testes.dir/Test_-_CUnit/Teste.c.obj.requires
+	$(MAKE) -f CMakeFiles\Testes.dir\build.make CMakeFiles/Testes.dir/Test_-_CUnit/Teste.c.obj.provides.build
+.PHONY : CMakeFiles/Testes.dir/Test_-_CUnit/Teste.c.obj.provides
 
-CMakeFiles/Testes.dir/Test_-_CUnit/TesteFila.c.obj.provides.build: CMakeFiles/Testes.dir/Test_-_CUnit/TesteFila.c.obj
+CMakeFiles/Testes.dir/Test_-_CUnit/Teste.c.obj.provides.build: CMakeFiles/Testes.dir/Test_-_CUnit/Teste.c.obj
 
 
 CMakeFiles/Testes.dir/Test_-_CUnit/BinaryTree.c.obj: CMakeFiles/Testes.dir/flags.make
@@ -108,13 +108,13 @@ CMakeFiles/Testes.dir/Test_-_CUnit/BinaryTree.c.obj.provides.build: CMakeFiles/T
 
 # Object files for target Testes
 Testes_OBJECTS = \
-"CMakeFiles/Testes.dir/Test_-_CUnit/TesteFila.c.obj" \
+"CMakeFiles/Testes.dir/Test_-_CUnit/Teste.c.obj" \
 "CMakeFiles/Testes.dir/Test_-_CUnit/BinaryTree.c.obj"
 
 # External object files for target Testes
 Testes_EXTERNAL_OBJECTS =
 
-Testes.exe: CMakeFiles/Testes.dir/Test_-_CUnit/TesteFila.c.obj
+Testes.exe: CMakeFiles/Testes.dir/Test_-_CUnit/Teste.c.obj
 Testes.exe: CMakeFiles/Testes.dir/Test_-_CUnit/BinaryTree.c.obj
 Testes.exe: CMakeFiles/Testes.dir/build.make
 Testes.exe: CMakeFiles/Testes.dir/linklibs.rsp
@@ -128,7 +128,7 @@ CMakeFiles/Testes.dir/build: Testes.exe
 
 .PHONY : CMakeFiles/Testes.dir/build
 
-CMakeFiles/Testes.dir/requires: CMakeFiles/Testes.dir/Test_-_CUnit/TesteFila.c.obj.requires
+CMakeFiles/Testes.dir/requires: CMakeFiles/Testes.dir/Test_-_CUnit/Teste.c.obj.requires
 CMakeFiles/Testes.dir/requires: CMakeFiles/Testes.dir/Test_-_CUnit/BinaryTree.c.obj.requires
 
 .PHONY : CMakeFiles/Testes.dir/requires

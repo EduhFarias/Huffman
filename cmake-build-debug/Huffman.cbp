@@ -224,7 +224,7 @@
 		<Unit filename="C:/Users/Cabral/Documents/GitHub/Huffman/Test - CUnit/BinaryTree.h">
 			<Option target="Testes"/>
 		</Unit>
-		<Unit filename="C:/Users/Cabral/Documents/GitHub/Huffman/Test - CUnit/TesteFila.c">
+		<Unit filename="C:/Users/Cabral/Documents/GitHub/Huffman/Test - CUnit/Teste.c">
 			<Option target="Testes"/>
 		</Unit>
 		<Unit filename="C:/Users/Cabral/Documents/GitHub/Huffman/CMakeLists.txt">

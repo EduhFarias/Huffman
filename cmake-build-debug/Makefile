@@ -391,32 +391,32 @@ Test_-_CUnit/BinaryTree.c.s:
 	$(MAKE) -f CMakeFiles\Testes.dir\build.make CMakeFiles/Testes.dir/Test_-_CUnit/BinaryTree.c.s
 .PHONY : Test_-_CUnit/BinaryTree.c.s
 
-Test_-_CUnit/TesteFila.obj: Test_-_CUnit/TesteFila.c.obj
+Test_-_CUnit/Teste.obj: Test_-_CUnit/Teste.c.obj
 
-.PHONY : Test_-_CUnit/TesteFila.obj
+.PHONY : Test_-_CUnit/Teste.obj
 
 # target to build an object file
-Test_-_CUnit/TesteFila.c.obj:
-	$(MAKE) -f CMakeFiles\Testes.dir\build.make CMakeFiles/Testes.dir/Test_-_CUnit/TesteFila.c.obj
-.PHONY : Test_-_CUnit/TesteFila.c.obj
+Test_-_CUnit/Teste.c.obj:
+	$(MAKE) -f CMakeFiles\Testes.dir\build.make CMakeFiles/Testes.dir/Test_-_CUnit/Teste.c.obj
+.PHONY : Test_-_CUnit/Teste.c.obj
 
-Test_-_CUnit/TesteFila.i: Test_-_CUnit/TesteFila.c.i
+Test_-_CUnit/Teste.i: Test_-_CUnit/Teste.c.i
 
-.PHONY : Test_-_CUnit/TesteFila.i
+.PHONY : Test_-_CUnit/Teste.i
 
 # target to preprocess a source file
-Test_-_CUnit/TesteFila.c.i:
-	$(MAKE) -f CMakeFiles\Testes.dir\build.make CMakeFiles/Testes.dir/Test_-_CUnit/TesteFila.c.i
-.PHONY : Test_-_CUnit/TesteFila.c.i
+Test_-_CUnit/Teste.c.i:
+	$(MAKE) -f CMakeFiles\Testes.dir\build.make CMakeFiles/Testes.dir/Test_-_CUnit/Teste.c.i
+.PHONY : Test_-_CUnit/Teste.c.i
 
-Test_-_CUnit/TesteFila.s: Test_-_CUnit/TesteFila.c.s
+Test_-_CUnit/Teste.s: Test_-_CUnit/Teste.c.s
 
-.PHONY : Test_-_CUnit/TesteFila.s
+.PHONY : Test_-_CUnit/Teste.s
 
 # target to generate assembly for a file
-Test_-_CUnit/TesteFila.c.s:
-	$(MAKE) -f CMakeFiles\Testes.dir\build.make CMakeFiles/Testes.dir/Test_-_CUnit/TesteFila.c.s
-.PHONY : Test_-_CUnit/TesteFila.c.s
+Test_-_CUnit/Teste.c.s:
+	$(MAKE) -f CMakeFiles\Testes.dir\build.make CMakeFiles/Testes.dir/Test_-_CUnit/Teste.c.s
+.PHONY : Test_-_CUnit/Teste.c.s
 
 # Help Target
 help:
@@ -456,9 +456,9 @@ help:
 	@echo ... Test_-_CUnit/BinaryTree.obj
 	@echo ... Test_-_CUnit/BinaryTree.i
 	@echo ... Test_-_CUnit/BinaryTree.s
-	@echo ... Test_-_CUnit/TesteFila.obj
-	@echo ... Test_-_CUnit/TesteFila.i
-	@echo ... Test_-_CUnit/TesteFila.s
+	@echo ... Test_-_CUnit/Teste.obj
+	@echo ... Test_-_CUnit/Teste.i
+	@echo ... Test_-_CUnit/Teste.s
 .PHONY : help
 
 
