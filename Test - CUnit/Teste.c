@@ -17,7 +17,7 @@ void testCreateNode(){
     bt = createEmpty();
     if(bt == NULL){
         CU_ASSERT(1);
-    } else CU_ASSERT(0);
+    }
 }
 
 void testCreateQueue() {
@@ -31,21 +31,21 @@ void testCreateQueue() {
     }
     if(bt != NULL){
         CU_ASSERT(1);
-    } else CU_ASSERT(0);
+    }
 }
 
 void testGet(){
-    int s[6] = {1,4,3,6,5,2};
+    BinaryTree *cur = bt;
     int i;
     for(i = 0; i < 6; i++){
-        if(getFreq(bt) != (i+1)){
+        if(getFreq(cur) != (i+1)){
             break;
         }
-        bt = getNext(bt);
+        cur = getNext(cur);
     }
-    if(i == 6){
-        CU_ASSERT(1);
-    } else CU_ASSERT(0);
+    if(i != 6){
+        CU_ASSERT(0);
+    }
 }
 
 void testRemoveNode() {
@@ -54,7 +54,7 @@ void testRemoveNode() {
     }
     if(bt == NULL){
         CU_ASSERT(1);
-    } else CU_ASSERT(0);
+    }
 }
 
 int main(){
@@ -73,8 +73,8 @@ int main(){
    /* add the tests to the suite */
    if ((NULL == CU_add_test(pSuite, "Test of createNode: ", testCreateNode)) ||
        (NULL == CU_add_test(pSuite, "Test of createQueue: ", testCreateQueue)) ||
-       (NULL == CU_add_test(pSuite, "Test of get: ", testGet)) ||
-       (NULL == CU_add_test(pSuite, "Test of removeNode: ", testRemoveNode))) {
+       (NULL == CU_add_test(pSuite, "Test of getFreq: ", testGet)) ||
+       (NULL == CU_add_test(pSuite, "Test of removeNode: ", testRemoveNode))   ) {
        CU_cleanup_registry();
        return CU_get_error();
    }
