@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Cabral/Documents/GitHub/Huffman/Plot/BST.c
+stdio.h
+-
+stdlib.h
+-
+BST.h
+C:/Users/Cabral/Documents/GitHub/Huffman/Plot/BST.h
+
+C:/Users/Cabral/Documents/GitHub/Huffman/Plot/BST.h
+
+C:/Users/Cabral/Documents/GitHub/Huffman/Plot/LinkedList.c
+stdio.h
+-
+stdlib.h
+-
+LinkedList.h
+C:/Users/Cabral/Documents/GitHub/Huffman/Plot/LinkedList.h
+
+C:/Users/Cabral/Documents/GitHub/Huffman/Plot/LinkedList.h
+
+C:/Users/Cabral/Documents/GitHub/Huffman/Plot/mainPlot.c
+stdio.h
+-
+stdlib.h
+-
+LinkedList.h
+C:/Users/Cabral/Documents/GitHub/Huffman/Plot/LinkedList.h
+BST.h
+C:/Users/Cabral/Documents/GitHub/Huffman/Plot/BST.h
+
