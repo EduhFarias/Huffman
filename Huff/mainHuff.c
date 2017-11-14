@@ -5,21 +5,27 @@
 
 int main(void){
     printf("Deseja (C)omprimir ou (D)escomprimir ?\n");
-    char c;
+    char c, eFile[150], sFile[150];
     scanf("%c", &c);
-    //scanf("%[^\n]", inputFileName);
+    getchar();
+    printf("Digite o local do arquivo de entrada: \n");
+    scanf("%[^\n]", eFile);
+    getchar();
+    printf("Digite o local do arquivo de saida: \n");
+    scanf("%[^\n]", sFile);
     FILE *iFile;
-    iFile = fopen("C:\\Users\\Cabral\\Documents\\Prog\\saida.huff", "rb");
+    iFile = fopen(eFile, "rb");
+    
     if(iFile == NULL){
         printf("Arquivo nao pode ser aberto\n");
         exit(1);
     }
 
     if(c == 'C'){
-        FILE *oFile = fopen("C:\\Users\\Cabral\\Documents\\Prog\\saida.huff", "wb");
+        FILE *oFile = fopen(sFile, "wb");
         compress(iFile, oFile);
     } else if(c == 'D'){
-        FILE *oFile = fopen("C:\\Users\\Cabral\\Documents\\Prog\\saida.txt", "wb");
+        FILE *oFile = fopen(sFile, "wb");
         decompress(iFile, oFile);
     } else{
         printf("Comando inválido, programa está sendo encerrado\n");

@@ -22,7 +22,7 @@ int search(Node *node, int item){
     int count = 0;
     while(node){
         if(node->item == item){
-            return count;
+            break;
         }
         count++;
         node = node->next;

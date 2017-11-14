@@ -3,7 +3,7 @@
 #include "LinkedList.h"
 #include "BST.h"
 
-#define MAX 1000
+#define MAX 10000
 
 int main() {
     FILE *file;
@@ -16,12 +16,10 @@ int main() {
         random = rand() % MAX + 1;
         bt = add(bt, random);
         node = insertNode(node, random);
-    }
-    for(i = 0; i < MAX; i++){
         random = rand() % MAX + 1;
         valueN = search(node, random);
         valueT = searchTree(bt, random);
-        fprintf(file, "%d %d %d\n", random, valueN, valueT);
+        fprintf(file, "%d %d %d\n", i, valueN, valueT);
     }
 
     fclose(file);
